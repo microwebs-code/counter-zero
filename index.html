@@ -247,7 +247,7 @@
 
 
 
-    .hero-ctas {
+    .hero-ctas, .cta-container {
       display: flex; gap: 1.2rem; align-items: left; flex-wrap: wrap; justify-content: left;
       opacity: 0; animation: fadeUp 0.9s ease 0.75s forwards;
     }
@@ -1225,13 +1225,14 @@
       nav { padding: 1.2rem 5vw; }
       .nav-links { display: none; }
       .philosophy-grid { grid-template-columns: 1fr; gap: 1px; }
+      .diagnosticox-grid { grid-template-columns: 1fr; gap: 1px; padding: 0; flex-direction: column-reverse; display: flex;}
       .method-wrap { grid-template-columns: 1fr; gap: 4rem; padding-right: 0.5rem; }
       .excl-grid { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr; gap: 3rem; }
     }
     @media (max-width: 640px) {
       .excl-grid { grid-template-columns: 1fr; }
-      .hero-ctas { flex-direction: column; align-items: stretch; text-align: center; }
+      .hero-ctas, .cta-container { flex-direction: column; align-items: stretch; text-align: center; }
       .btn-primary, .btn-secondary, .btn-ghost { text-align: center; }
     }
   </style>
@@ -1334,31 +1335,31 @@
           </p>
           <p class="philx-body">Manual introductorio para iniciar el ordenamiento del Tablero de tu Mundo Interior.</p>
           
-          <div class="cta-container" style="padding: 5rem; text-align: center;">
-            <a href="#acceso" class="btn-secondary"  >Adquirir el Libro</a>
-        </div>      
+          <div class="cta-container" style="text-align: center;">
+            <a href="https://tally.so/r/D4a8qN" class="btn-secondary"  >Adquirir el Libro</a>
+          </div>  
+        </div>    
       </article>
+      
       <article class="philx-card image-column">
         <img src="el-ajedrez-interior-libro.png" alt="CounterZero Space"/> 
       </article>
-    </div>
+   
 
-    <div class="diagnosticox-grid reveal">
+   
       <article class="philx-card textx-column">
         <div>
-        <p class="philx-label">MENTORIA</p>
-        <h3 class="philx-title">Acompañamiento</h3>
-        <p class="philx-body">
-          Un espacio reservado de 60 minutos diseñado exclusivamente para quienes eligen acelerar su proceso, limpiar su posición en el tablero y reconfigurar su realidad desde el Ser.</p>
-        <p class="philx-body">Sesión privada con la Co-Creadora del Sistema "El Ajedrez Interior"</p>
-        
-        <div class="cta-container" style="padding: 5rem; text-align: center;">
-          <a href="https://tally.so/r/D4a8qN" class="btn-secondary"  >Reservar Sesión</a>
-        </div>      
+          <p class="philx-label">MENTORIA</p>
+          <h3 class="philx-title">Acompañamiento</h3>
+          <p class="philx-body">
+            Un espacio reservado de 60 minutos diseñado exclusivamente para quienes eligen acelerar su proceso, limpiar su posición en el tablero y reconfigurar su realidad desde el Ser.</p>
+          <p class="philx-body">Sesión privada con la Co-Creadora del Sistema "El Ajedrez Interior"</p>
+          
+          <div class="cta-container" style="text-align: center;">
+            <a href="https://tally.so/r/D4a8qN" class="btn-secondary"  >Reservar Sesión</a>
+          </div>      
+        </div>
       </article>
-
-
-
       <article class="philx-card image-column">
         <img src="imagen-de-fondo-servicio-mentoria.png" alt="CounterZero Space"/> 
       </article>
