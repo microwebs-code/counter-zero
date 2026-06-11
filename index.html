@@ -291,11 +291,31 @@
       transition: all 0.35s ease;
     }
     .btn-secondary:hover {
-      border-color: rgb(0, 216, 7);
+      border-color: rgb(36, 36, 36);
       box-shadow: 0 0 20px rgba(3, 255, 45, 0.32);
-      background: transparent
+      background: transparent;
     }
 
+    .btn-proceso {
+      font-family: var(--ff-display);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      background: #01ef80;
+      color: black;
+      border: 1px solid rgba(255, 255, 255, 0.405);
+      padding: 1.1rem 2.8rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.35s ease;
+    }
+    .btn-proceso:hover {
+      border-color: rgb(36, 36, 36);
+      box-shadow: 0 0 20px rgba(3, 255, 45, 0.32);
+      background: transparent;
+      color:white
+    }
 
     .btn-ghost {
       font-family: var(--ff-display);
@@ -701,7 +721,7 @@
     /* ── METHOD ── */
     .s-method {
       padding: 15rem 0;
-      background: radial-gradient(ellipse at 70% 50%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 60%);
+      background: radial-gradient(ellipse at 70% 50%, rgb(13, 13, 13) 0%, rgb(40, 40, 40) 60%);
     }
 
     .method-wrap {
@@ -719,7 +739,7 @@
       font-weight: 400;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: black;
+      color: rgb(255, 255, 255);
       line-height: 1;
       margin-bottom: 2rem;
     }
@@ -730,7 +750,7 @@
 
     .method-desc {
       font-size: 0.95rem;
-      color: black;
+      color: rgb(210, 210, 210);
       line-height: 1.8;
       font-weight: 300;
       font-family: var(--ff-body);
@@ -1225,7 +1245,7 @@
       nav { padding: 1.2rem 5vw; }
       .nav-links { display: none; }
       .philosophy-grid { grid-template-columns: 1fr; gap: 1px; }
-      .diagnosticox-grid { grid-template-columns: 1fr; gap: 1px; padding: 0; flex-direction: column-reverse; display: flex;}
+      .diagnosticox-grid { grid-template-columns: 1fr; gap: 1px; padding: 0; }
       .method-wrap { grid-template-columns: 1fr; gap: 4rem; padding-right: 0.5rem; }
       .excl-grid { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr; gap: 3rem; }
@@ -1233,7 +1253,11 @@
     @media (max-width: 640px) {
       .excl-grid { grid-template-columns: 1fr; }
       .hero-ctas, .cta-container { flex-direction: column; align-items: stretch; text-align: center; }
-      .btn-primary, .btn-secondary, .btn-ghost { text-align: center; }
+      .btn-primary, .btn-secondary, .btn-ghost, .btn-proceso { text-align: center; }
+      .hero-headline {
+      font-family: var(--titular);
+      font-size: 3.3rem;
+    }
     }
   </style>
 </head>
@@ -1446,7 +1470,7 @@
           A través del Sistema de El Ajedrez Interno se demuestra como cada nodo representa una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero.
         </p>
         <div class="cta-container" style="padding: 5rem; text-align: center;">
-          <a href="#evaluacion" class="btn-secondary"  >Iniciar Método</a>
+          <a href="#evaluacion" class="btn-proceso "  >Iniciar Método</a>
         </div>    
 
       </div>
@@ -1542,11 +1566,10 @@
       <strong>Los estrategas aprenden las reglas.</strong>
       <span class="line-green">Los maestros diseñan el tablero.</span>
     </p>
-    <p class="manifesto-sig">— CounterZero Space</p>
+    <p class="manifesto-sig" style="padding-bottom: 3rem;">— CounterZero Space</p>
+     <a href="https://tally.so/r/D4a8qN" class="btn-ghost"  >Agendar una Sesión</a>
   </div>
-  <div class="cta-container" style="padding: 5rem; text-align: center;">
-    <a href="https://tally.so/r/D4a8qN" class="btn-ghost"  >Agendar una Sesión</a>
-  </div>      
+      
 </section>
 
 
