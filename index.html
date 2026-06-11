@@ -8,6 +8,12 @@
   <meta property="og:description" content="No vienes a motivarte. Vienes a comprender el tablero, tus jugadas y a ti como jugador."/>
   <meta property="og:type" content="website"/>
   <title>CounterZero Space</title>
+
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
  
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -51,6 +57,10 @@
       font-family: var(--ff-body);
       overflow-x: hidden;
       cursor: crosshair;
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none;    /* Firefox */
+      -ms-user-select: none;     /* IE 10+ */
+      user-select: none;         /* Estándar (Chrome, Edge, etc.) */
     }
 
     ::selection { background: var(--green-dim); color: var(--green); }
@@ -1254,14 +1264,14 @@
       .excl-grid { grid-template-columns: 1fr; }
       .hero-ctas, .cta-container { flex-direction: column; align-items: stretch; text-align: center; }
       .btn-primary, .btn-secondary, .btn-ghost, .btn-proceso { text-align: center; }
-      .hero-headline {
-      font-family: var(--titular);
-      font-size: 3.3rem;
+      .hero-headline {      font-family: var(--titular);       font-size: 3.3rem;     }
+      .s-philosophy, .s-method, .s-acompanamiento, .s-method {padding: 8rem 0; }
     }
-    }
+      
   </style>
 </head>
-<body>
+<body oncontextmenu="return false;" onkeydown="if (event.ctrlKey && (event.key === 'c' || event.key === 'u')) return false;">
+
 
 <!-- NAVBAR -->
 <nav role="navigation" aria-label="Navegación principal">
@@ -1360,7 +1370,7 @@
           <p class="philx-body">Manual introductorio para iniciar el ordenamiento del Tablero de tu Mundo Interior.</p>
           
           <div class="cta-container" style="text-align: center;">
-            <a href="https://tally.so/r/D4a8qN" class="btn-secondary"  >Adquirir el Libro</a>
+            <a href="#" class="btn-secondary"  >Adquirir el Libro</a>
           </div>  
         </div>    
       </article>
@@ -1467,7 +1477,7 @@
         <!--<h2 class="method-title">Un <span>Proceso</span><br/>Estratégico</h2>-->
         <h2 class="method-title">Un Proceso<br/>Estratégico</h2>
         <p class="method-desc">
-          A través del Sistema de El Ajedrez Interno se demuestra como cada nodo representa una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero.
+          A través del Sistema de El Ajedrez Interior, se demuestra como cada nodo representa una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero.
         </p>
         <div class="cta-container" style="padding: 5rem; text-align: center;">
           <a href="#evaluacion" class="btn-proceso "  >Iniciar Método</a>
