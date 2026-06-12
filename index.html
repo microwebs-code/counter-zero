@@ -87,7 +87,7 @@
       z-index: 1000;
       display: flex; align-items: center; justify-content: space-between;
       padding: 1.4rem 5vw;
-      background: rgba(5,5,5,0.6);
+      background: rgba(5, 5, 5, 0.122);
       backdrop-filter: blur(32px) saturate(180%);
       -webkit-backdrop-filter: blur(32px) saturate(180%);
       border-bottom: 1px solid rgba(0,255,136,0.07);
@@ -352,10 +352,9 @@
     }
 
     /* ── SECTION SHARED ── */
-    section { position: relative; overflow: hidden; }
-    .wrap {
-      max-width: 1200px; margin: 0 auto; padding: 0 5vw;
-    }
+    .section { position: relative; overflow: hidden; }
+    .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5vw; box-sizing: border-box;}
+
     .section-label {
       font-family: var(--ff-mono);
       font-size: 0.58rem;
@@ -733,14 +732,17 @@
 
     /* ── METHOD ── */
     .s-method {
-      padding: 15rem 0;
+      padding: 8rem 0; /* Reducido de 15rem para optimizar espacio */
       background: radial-gradient(ellipse at 70% 50%, rgb(13, 13, 13) 0%, rgb(40, 40, 40) 60%);
+      width: 100%;
+      overflow: hidden; /* Corta de raíz cualquier desborde accidental */
+      box-sizing: border-box;
     }
 
     .method-wrap {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 8rem;
+      gap: 4rem;
       align-items: center;
     }
 
@@ -794,6 +796,7 @@
       border-left: 2px solid rgba(0,255,136,0);
       transition: all 0.3s ease;
       cursor: default;
+      box-sizing: border-box;
     }
     .map-node:hover {
       border-left-color: var(--green);
@@ -1307,7 +1310,7 @@
     </h1>
     <h2 class="hero-sub">Creando espacios de armonía con la Unidad.</h2>
     <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
-      <strong style="font-weight: bold;">CounterZero</strong> es un espacio de alta reserva espiritual en donde se ensena como las leyes invisibles influyen en tu estructura y experiencia de vida. Un entrenamiento para que diseñes tu tablero con absoluta consciencia, responsabilidad y dirección.
+      <strong style="font-weight: bold;">CounterZero</strong> es un espacio de alta reserva espiritual en donde se enseña como las capas  invisibles de información  influyen en tu estructura y experiencia de vida. Un entrenamiento para que diseñes tu tablero con absoluta consciencia, responsabilidad y dirección.
     </p>
 
     <div class="hero-ctas">
@@ -1484,7 +1487,7 @@
         <p class="method-desc">
           A través del Sistema de El Ajedrez Interior, se demuestra como cada nodo representa una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero.
         </p>
-        <div class="cta-container" style="padding: 5rem; text-align: center;">
+        <div class="cta-container"  style="margin-top: 2.5rem; text-align: center;">
           <a href="#evaluacion" class="btn-proceso "  >Iniciar Método</a>
         </div>    
 
