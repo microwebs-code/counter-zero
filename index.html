@@ -358,6 +358,8 @@
     /* ── SECTION SHARED ── */
     .section { position: relative; overflow: hidden; }
     .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5vw; box-sizing: border-box;}
+    .wrapx { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5vw; box-sizing: border-box;}
+
     .footer-legal a:hover { color: var(--green-holo) }
 
     .section-label {
@@ -1416,7 +1418,14 @@
       .method-wrap{padding: auto;}
       .hero-desc {background: #0707073c;}
       .s-faq {border:0; border-top: 2rem solid  #00D97A;border-bottom: 2rem solid  #00D97A;}
-      .s-diagnostico {border:0; padding: auto 0;}
+      .s-diagnostico {border:0; padding-top:8rem;}
+       
+      .philx-card {
+      padding: 0;
+      padding-bottom: 3rem;
+      position: relative;
+      transition: all 0.4s ease;
+    }
     }
       
   </style>
@@ -1504,7 +1513,7 @@
 
 <!-- PHILOSOPHY -->
 <section class="s-diagnostico" style="background:white;" id="evaluacion" aria-label="Filosofía del método">
-  <div class="wrap">
+  <div class="wrapx">
     <div class="philosophy-header reveal">
       <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">Estratégia</span>
       <h2 class="diagnostico-title opuesto">Es hora de Alinear</h2>
@@ -1535,7 +1544,7 @@
    
       <article class="philx-card textx-column">
         <div>
-          <p class="philx-label">MENTORIA</p>
+          <p class="philx-label" style="text-align:left ;">MENTORIA</p>
           <h3 class="philx-title">Acompañamiento</h3>
           <p class="philx-body">
             Un espacio reservado de 60 minutos diseñado exclusivamente para quienes eligen acelerar su proceso, limpiar su posición en el tablero y reconfigurar su realidad desde el Ser.</p>
@@ -1555,7 +1564,7 @@
 
 <!-- S3: QUÉ OBTIENES -->
 <section class="s-obtienes" id="obtienes" aria-label="¿Qué obtienes?">
-  <div class="wrap">
+  <div class="wrapx">
     <div class="obtienes-wrap">
       <div class="obtienes-left reveal">
         <span class="section-label">¿Qué obtienes?</span>
@@ -1589,34 +1598,6 @@
 </section>
 
 
-
-<!-- S5: ACOMPAÑAMIENTO
-<section class="s-acompanamiento" id="acompanamiento" aria-label="Para quienes eligen">
-  <div class="wrap">
-    <div class="acomp-header reveal">
-      <span class="section-label" style="justify-content:center; margin-bottom:1.2rem;">Un espacio de acompañamiento para avanzar</span>
-      <h2 class="acomp-title">Creado para quienes eligen...</h2>
-    </div>
-    <div class="acomp-grid reveal">
-      <div class="acomp-card">
-        <span class="acomp-icon" aria-hidden="true">✿</span>
-        <p class="acomp-body">Reconectar con su esencia.</p>
-      </div>
-      <div class="acomp-card">
-        <span class="acomp-icon" aria-hidden="true">✦</span>
-        <p class="acomp-body">Elevar su consciencia y transformar su perspectiva.</p>
-      </div>
-      <div class="acomp-card">
-        <span class="acomp-icon" aria-hidden="true">♡</span>
-        <p class="acomp-body">Despertar su liderazgo personal y autenticidad.</p>
-      </div>
-      <div class="acomp-card">
-        <span class="acomp-icon" aria-hidden="true">✧</span>
-        <p class="acomp-body">Elegir con propósito y alineación.</p>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 
 
