@@ -262,10 +262,12 @@
 
 
 
-    .hero-ctas, .cta-container {
+    .hero-ctas {
       display: flex; gap: 1.2rem; align-items: left; flex-wrap: wrap; justify-content: left;
       opacity: 0; animation: fadeUp 0.9s ease 0.75s forwards;
     }
+
+    .cta-container {margin-top: 2.5rem; text-align: center;}
 
     .btn-primary {
       font-family: var(--ff-display);
@@ -379,6 +381,9 @@
       padding: 10rem 0;
       background: radial-gradient(ellipse at 50% 0%, white 0%, var(--obsidian) 70%);
       border-top: 1px solid rgba(0,255,136,0.07);
+       border-left:  3.5rem solid transparent; 
+       border-right:  3.5rem solid transparent;
+       border-image: radial-gradient(ellipse at 50% 0%, gray 0%, rgba(137, 137, 137, 0.338) 70%) 1;
     }
 
     .contenedor-diagnostico {
@@ -735,7 +740,7 @@
 
     /* ── METHOD ── */
     .s-method {
-      padding: 8rem 0; /* Reducido de 15rem para optimizar espacio */
+      padding: 4rem 0; /* Reducido de 15rem para optimizar espacio */
       background: radial-gradient(ellipse at 70% 50%, rgb(13, 13, 13) 0%, rgb(40, 40, 40) 60%);
       width: 100%;
       overflow: hidden; /* Corta de raíz cualquier desborde accidental */
@@ -1013,6 +1018,7 @@
       background: var(--obsidian);
       width: 100%;
       box-sizing: border-box;
+      border: 5rem solid  #00D97A;
     }
 
     .faq-header {
@@ -1027,7 +1033,7 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--white-tech);
-      margin-top: 1rem;
+      margin-top: 3rem;
       margin-bottom: 1.5rem;
     }
 
@@ -1120,7 +1126,7 @@
     .faq-answer p {
       font-family: var(--ff-body);
       font-size: 0.9rem;
-      color: #b4b4b4;
+      color: #dadada;
       line-height: 1.7;
       padding-bottom: 1.5rem;
       margin: 0;
@@ -1409,6 +1415,8 @@
       .s-philosophy, .s-acompanamiento {padding: 8rem 0; }
       .method-wrap{padding: auto;}
       .hero-desc {background: #0707073c;}
+      .s-faq {border:0; border-top: 2rem solid  #00D97A;border-bottom: 2rem solid  #00D97A;}
+      .s-diagnostico {border:0;}
     }
       
   </style>
@@ -1508,9 +1516,9 @@
           <p class="philx-label">Automaestría</p>
           <h3 class="philx-title">COMPRENDER</h3>
           <p class="philx-body">
-            Las reglas del juego y las claves para tu soberanía y evolución. A través de este mapa literario e iniciático, aprenderás a decodificar las leyes de la Matrix, gobernar el cuadrante de tu vida y a entender con autonomía tu diseño original.
+            Un viaje literario  e iniciático que te revela las reglas ocultas del juego y las claves de tu soberanía. A través de una analogía didáctica del ajedrez, este libro te enseña cómo interactúan las piezas, los oponentes y los personajes en tu día a día. La guía táctica para entender lo que revela la Matrix y tomar el control total de tu propio cuadrante.
           </p>
-          <p class="philx-body">Manual introductorio para iniciar el ordenamiento del Tablero de tu Mundo Interior.<b>Nota:Los resultados del liderazgo interno dependen del compromiso del usuario</b></p>
+          <p class="philx-body"></p>
           
           <div class="cta-container" style="text-align: center;">
             <a href="https://www.amazon.com/dp/B0H4WPKRBR?spcref=PRINT_LISTING" class="btn-secondary"  >Adquirir el Libro</a>
@@ -1622,7 +1630,7 @@
         <p class="method-desc">
           A través del Sistema de El Ajedrez Interior, se demuestra como cada nodo representa una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero.
         </p>
-        <div class="cta-container"  style="margin-top: 2.5rem; text-align: center;">
+        <div class="cta-container">
           <a href="#evaluacion" class="btn-proceso "  >Iniciar Método</a>
         </div>    
 
@@ -1669,44 +1677,6 @@
   </div>
 </section>
 
-<!-- EXCLUSIVITY 
-<section class="s-exclusivity" id="acceso" aria-label="Acceso exclusivo">
-  <div class="wrap">
-    <div class="excl-header reveal">
-      <span class="section-label" style="justify-content:center; margin-bottom:1.5rem;">Evaluación Estratégica</span>
-      <h2 class="excl-title">No todos los jugadores<br/>acceden al tablero.</h2>
-    </div>
-
-    <div class="excl-grid reveal">
-      <article class="excl-card">
-        <p class="excl-num">// 01</p>
-        <h3 class="excl-card-title">Admisión Selectiva</h3>
-        <p class="excl-card-body">Evaluación previa obligatoria. El entorno se preserva con integridad estratégica.</p>
-      </article>
-      <article class="excl-card">
-        <p class="excl-num">// 02</p>
-        <h3 class="excl-card-title">Sesión Estratégica Privada</h3>
-        <p class="excl-card-body">Intervención personalizada 1:1. Directa, precisa y de alta frecuencia.</p>
-      </article>
-      <article class="excl-card">
-        <p class="excl-num">// 03</p>
-        <h3 class="excl-card-title">Plazas Limitadas</h3>
-        <p class="excl-card-body">Capacidad controlada. Cada participante recibe la atención que honra su presencia.</p>
-      </article>
-      <article class="excl-card">
-        <p class="excl-num">// 04</p>
-        <h3 class="excl-card-title">Confidencialidad Absoluta</h3>
-        <p class="excl-card-body">Entorno reservado con tratamiento privado, etica e integridad.</p>
-      </article>
-    </div>
-
-    <div style="text-align:center; margin-top: 5rem;" class="reveal">
-      <a href="#contacto" class="btn-primary" style="display:inline-flex; align-items:center; gap:1rem;">
-        Solicitar Evaluación Estratégica
-      </a>
-    </div>
-  </div>
-</section>-->
 
 <!-- MANIFESTO -->
 <section class="s-manifesto" id="evaluacion" aria-label="Manifiesto CounterZero">
@@ -1726,84 +1696,7 @@
 </section>
 
 
-<!-- FORM SECTION — Evaluación Estratégica 
-<section class="s-form" id="evaluacion-form" aria-label="Formulario de Evaluación Estratégica">
-  <div class="wrap">
-    <div style="text-align:center; margin-bottom:4rem;" class="reveal">
-      <span class="section-label" style="justify-content:center; margin-bottom:1.2rem;">Evaluación Estratégica</span>
-      <h2 style="font-family:var(--ff-display);font-size:clamp(2rem,4vw,3.5rem);font-weight:800;text-transform:uppercase;letter-spacing:0.04em;color:var(--white-tech);line-height:1;">
-        El primer movimiento<br/>es tuyo.
-      </h2>
-    </div>
 
-    <div class="form-shell reveal">
-      <div id="form-body">
-        <div class="field-row">
-          <div class="field-group">
-            <label class="field-label" for="f-nombre">Nombre</label>
-            <input class="field-input" id="f-nombre" type="text" placeholder="Tu nombre" required/>
-          </div>
-          <div class="field-group">
-            <label class="field-label" for="f-email">Correo electrónico</label>
-            <input class="field-input" id="f-email" type="email" placeholder="tu@email.com" required/>
-          </div>
-        </div>
-        <div class="field-group">
-          <label class="field-label" for="f-pais">País / Ciudad</label>
-          <input class="field-input" id="f-pais" type="text" placeholder="Ej. México, CDMX"/>
-        </div>
-
-        <div class="form-divider"></div>
-
-        <div class="field-group">
-          <label class="field-label">¿En qué área sientes mayor bloqueo estratégico?</label>
-          <div class="radio-group">
-            <label class="radio-item">
-              <input type="radio" name="fArea" value="profesional"/>
-              <div class="radio-dot"></div>
-              <span class="radio-text">Proyección profesional / negocios</span>
-            </label>
-            <label class="radio-item">
-              <input type="radio" name="fArea" value="mental"/>
-              <div class="radio-dot"></div>
-              <span class="radio-text">Arquitectura mental / patrones limitantes</span>
-            </label>
-            <label class="radio-item">
-              <input type="radio" name="fArea" value="relaciones"/>
-              <div class="radio-dot"></div>
-              <span class="radio-text">Relaciones / dinámicas de poder</span>
-            </label>
-            <label class="radio-item">
-              <input type="radio" name="fArea" value="multiple"/>
-              <div class="radio-dot"></div>
-              <span class="radio-text">Múltiples áreas simultáneas</span>
-            </label>
-          </div>
-        </div>
-
-        <div class="form-divider"></div>
-
-        <div class="field-group">
-          <label class="field-label" for="f-realidad">Describe tu realidad actual en 3 líneas</label>
-          <textarea class="field-textarea" id="f-realidad" placeholder="¿Qué está pasando en tu tablero ahora mismo?" required></textarea>
-        </div>
-        <div class="field-group">
-          <label class="field-label" for="f-decision">¿Qué te trajo hasta aquí hoy?</label>
-          <textarea class="field-textarea" id="f-decision" placeholder="No hay respuesta correcta o incorrecta." style="height:90px;"></textarea>
-        </div>
-
-        <button class="btn-form-submit" onclick="submitForm()">Enviar Solicitud de Evaluación →</button>
-        <p class="form-note-txt">Tu información es tratada con confidencialidad absoluta.<br/>Recibirás respuesta en 48 horas si el perfil es compatible.</p>
-      </div>
-
-      <div class="form-success" id="form-success">
-        <span class="form-success-icon">✦</span>
-        <h3 class="form-success-h">Solicitud Recibida</h3>
-        <p class="form-success-p">Tu evaluación está en proceso.<br/>Si el perfil es compatible, recibirás instrucciones<br/>para el siguiente movimiento en 48 horas.</p>
-      </div>
-    </div>
-  </div>
-</section>-->
 
 
 <!-- ── SECTION FAQ ── -->
