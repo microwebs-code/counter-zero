@@ -742,10 +742,10 @@
 
     /* ── METHOD ── */
     .s-method {
-      padding: 4rem 0; /* Reducido de 15rem para optimizar espacio */
+      padding: 4rem 0;
       background: radial-gradient(ellipse at 70% 50%, rgb(13, 13, 13) 0%, rgb(40, 40, 40) 60%);
       width: 100%;
-      overflow: hidden; /* Corta de raíz cualquier desborde accidental */
+      overflow: hidden;
       box-sizing: border-box;
     }
 
@@ -754,6 +754,22 @@
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .method-wrap {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .method-map {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.5rem;
+      }
+      .map-node {
+        padding: 1rem 1.2rem;
+        gap: 1rem;
+      }
     }
 
     .method-left .section-label { margin-bottom: 2rem; }
@@ -1405,7 +1421,7 @@
       .nav-links { display: none; }
       .philosophy-grid { grid-template-columns: 1fr; gap: 1px; }
       .diagnosticox-grid { grid-template-columns: 1fr; gap: 1px; padding: 0; }
-      .method-wrap { grid-template-columns: 1fr; gap: 4rem;   }
+      
       .excl-grid { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr; gap: 3rem; }
     }
@@ -1415,7 +1431,7 @@
       .btn-primary, .btn-secondary, .btn-ghost, .btn-proceso { text-align: center; }
       .hero-headline {      font-family: var(--titular);       font-size: 3.3rem;     }
       .s-philosophy, .s-acompanamiento {padding: 8rem 0; }
-      .method-wrap{padding: auto;}
+      
       .hero-desc {background: #0707073c;}
       .s-faq {border:0; border-top: 2rem solid  #00D97A;border-bottom: 2rem solid  #00D97A;}
       .s-diagnostico {border:0; padding-top:8rem;}
@@ -1462,7 +1478,7 @@
     </h1>
     <h2 class="hero-sub">Creando espacios de armonía con la Unidad.</h2>
     <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
-      <strong style="font-weight: bold;">CounterZero</strong> es un espacio de alta reserva espiritual en donde se enseña como las capas  invisibles de información  influyen en tu estructura y experiencia de vida. Un entrenamiento para que diseñes tu tablero con absoluta consciencia, responsabilidad y dirección.
+      <strong style="font-weight: bold;">CounterZero</strong> es un espacio de alta reserva espiritual en donde se enseña como las capas  invisibles de información  influyen en tu estructura y experiencia de vida. Un entrenamiento para que diseñes tu tablero con absoluta consciencia, responsabilidad y ética.
     </p>
 
     <div class="hero-ctas">
@@ -1525,7 +1541,7 @@
           <p class="philx-label">Automaestría</p>
           <h3 class="philx-title">COMPRENDER</h3>
           <p class="philx-body"><strong>
-            Un viaje literario  e iniciático que te revela las reglas ocultas del juego y las claves de tu soberanía. Escrito por Johely Franco en co-creacion con la Divinidad </p></strong>
+            Un viaje literario  e iniciático que te revela lo oculto en el juego y los puntos claves para tu soberanía. Escrito por Johely Franco en co-creacion con la Divinidad </p></strong>
           <p class="philx-body">Esta obra transmite una sabiduria didáctica mediante la analogía del ajedrez. Muestra cómo interactúan las piezas, los oponentes y los personajes, ofreciendo una guía táctica para entender lo que revela la Matrix y tomar el control total de tu propio cuadrante.
           </p>
           <p class="philx-body"></p>
