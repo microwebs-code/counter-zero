@@ -8,7 +8,7 @@
   <meta property="og:description" content="Soberanía y Liderazgo Interior — El Ajedrez Interior"/>
   <meta property="og:image" content="https://counterzero.space/portada.png"/>
   <meta property="og:url" content="https://counterzero.space/links"/>
-  <title>CounterZero Space — Links</title>
+  <title>Johely Franco — Links</title>
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
   <link rel="shortcut icon" href="/favicon.ico"/>
@@ -22,16 +22,16 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --obsidian:   #baab99;
-      --carbon:     #dfd9ce;
-      --titanium:   #6e6353;
-      --crystal:    #d0c0a6;
-      --green:      #ffffff;
-      --green-holo: #ffffff;
+      --obsidian:   #ffffff;
+      --carbon:     #8c8c8c; /**fondo*/
+      --titanium:   #c0c0bf;
+      --crystal:    #d7d7d7;
+      --green:      #333333;
+      --green-holo: #646464;
       --green-dim:  rgba(152, 149, 134, 0.541);
       --green-glow: rgba(255, 255, 255, 0.819);
-      --white-tech: #F4F5F7;
-      --muted:      rgba(255, 255, 255, 0.886);
+      --white-tech: #282828;
+      --muted:      rgba(0, 0, 0, 0.886);
       --ff-display: 'Syne', sans-serif;
       --ff-body:    'Roboto Serif', serif;
       --ff-mono:    'Syne Mono', monospace;
@@ -107,9 +107,9 @@
     }
 
     .brand-logo {
-      height: 90px;
+      height: 120px;
       width: auto;
-      filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.656)) brightness(1.05);
+      filter: drop-shadow(0 0 20px rgba(249, 246, 208, 0.667)) brightness(1.05);
       margin-bottom: 1.2rem;
     }
 
@@ -164,9 +164,9 @@
       align-items: center;
       gap: 1.4rem;
       padding: 1.4rem 1.8rem;
-      background: radial-gradient(ellipse at 0% 50%, var(--titanium) 0%, var(--carbon) 100%);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-left: 2px solid rgba(255, 255, 255, 0);
+      /*background: radial-gradient(ellipse at 0% 50%, var(--titanium) 0%, var(--carbon) 100%);*/
+      border: 1px solid rgb(160, 160, 160);
+      border-left: 8px solid rgb(214, 214, 214);
       text-decoration: none;
       color: var(--white-tech);
       transition: all 0.3s ease;
@@ -179,9 +179,9 @@
 
     .link-item:hover,
     .link-item:active {
-      border-left-color: var(--green);
-      background: radial-gradient(ellipse at 0% 50%, var(--crystal) 0%, var(--titanium) 100%);
-      box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.04), 0 0 20px rgba(1,239,128,0.05);
+      border-left-color: rgb(70, 227, 53);
+      /*background: radial-gradient(ellipse at 0% 50%, var(--crystal) 0%, var(--titanium) 100%);*/
+      box-shadow: inset 0 0 30px rgba(206, 206, 206, 0.574), 0 0 20px rgba(1,239,128,0.05);
     }
 
     .link-item:hover .link-dot,
@@ -211,7 +211,7 @@
       width: 6px; height: 6px;
       border-radius: 50%;
       background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.977);
+      border: 1px solid rgba(42, 42, 42, 0.977);
       transition: all 0.3s ease;
       flex-shrink: 0;
     }
@@ -222,13 +222,14 @@
 
     .link-label {
       font-family: var(--ff-mono);
-      font-size: 0.5rem;
+      font-size: 0.7rem;
       letter-spacing: 0.4em;
       text-transform: uppercase;
-      color: var(--green);
+      color: green;
       opacity: 0.6;
       margin-bottom: 0.3rem;
       display: block;
+      font-weight: 600;
     }
 
     .link-title {
@@ -283,7 +284,7 @@
     .footer-dot-line::after {
       content: '';
       width: 20px; height: 1px;
-      background: rgb(255, 255, 255);
+      background: rgb(91, 91, 91);
     }
 
     .footer-dot-center {
@@ -298,7 +299,7 @@
       font-size: 0.48rem;
       letter-spacing: 0.3em;
       text-transform: uppercase;
-      color: rgb(255, 255, 255);
+      color: rgb(71, 71, 71);
       text-align: center;
     }
 
@@ -325,7 +326,7 @@
 
   <!-- BRAND -->
   <div class="brand-area">
-    <img src="johely-franco-autor.png" alt="Johely Franco imagen" class="brand-logo"/>
+    <img src="johely-franco-autor.png" alt="Johely Franco imagen" class="brand-logo" style="border-radius: 15px; border: 1px solid rgba(0, 0, 0, 0)"/>
     <p class="brand-tag">Soberanía · Liderazgo Interior</p>
     <p class="brand-headline">JOHELY FRANCO</p>
   </div>
@@ -349,6 +350,22 @@
         <span class="link-sub">El Ajedrez Interior</span>
       </div>
       <div> <img src="el-ajedrez-interno-libro-impreso.png" alt="CounterZero Space" class="libro-logo"/></div>
+      <span class="link-arrow" aria-hidden="true">›</span>
+    </a>
+
+    <a
+      href="https://counterzero.space/#evaluacion"
+      class="link-item"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Comprar El Ajedrez Interior en Amazon">
+      
+      <div class="link-text">
+        <span class="link-label">Sesion 60min</span>
+        <span class="link-title">Consultoria</span><br>
+        <span class="link-sub">Regreso al Origen</span>
+      </div>
+      <div> <img src="imagen-de-fondo-servicio-mentoria.png" alt="CounterZero Space" class="libro-logo"/></div>
       <span class="link-arrow" aria-hidden="true">›</span>
     </a>
 
