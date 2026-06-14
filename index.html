@@ -1561,7 +1561,7 @@
           <h3 class="philx-title">Conocimiento</h3>
           <p class="philx-body"><strong>
             Un viaje literario  e iniciático que te revela lo oculto en el juego y los puntos claves para tu soberanía. Escrito por Johely Franco en co-creacion con la Divinidad </p></strong>
-          <p class="philx-body">Esta obra transmite una sabiduria didáctica mediante la analogía del ajedrez. Muestra cómo interactúan las piezas, los oponentes y los personajes, ofreciendo una guía táctica para entender lo que revela la Matrix y tomar el control total de tu propio cuadrante.
+          <p class="philx-body">Esta obra transmite una sabiduria didáctica mediante la analogía del ajedrez. Muestra cómo interactúan las piezas, los oponentes y los personajes, ofreciendo una guía táctica para entender lo que revela la Matrix y gestionar el control de tu propio cuadrante.
           </p>
           <p class="philx-body"></p>
           
@@ -1579,20 +1579,35 @@
    
       <article class="philx-card textx-column">
         <div>
-          <div class="sep" aria-hidden="true"></div>
-          <p class="philx-label" style="text-align:left ;">CONSULTORIA</p>
+          <div class="sep" aria-hidden="true" id="reserva"></div>
+          <p class="philx-label" style="text-align:left;">CONSULTORIA</p>
           <h3 class="philx-title">Retorno al Origen</h3>
           <p class="philx-body">
-            Un espacio reservado de 60 minutos diseñado exclusivamente para quienes eligen acelerar su proceso, limpiar su posición en el tablero y reconfigurar su realidad desde el Ser.</p>
-          <p class="philx-body">Sesión privada con la Co-Creadora del Sistema "El Ajedrez Interior"</p>
+            Un espacio reservado de 60 minutos diseñado exclusivamente para quienes eligen acelerar su proceso, limpiar su posición en el tablero y reconfigurar su realidad desde el Ser.
+          </p>
+          <p class="philx-body">Es una consultoría estratégica directa, cien por ciento orgánica y espiritual, libre de métodos holísticos o dogmas. No constituye un espacio médico, terapéutico ni psicológico.</p>
           
-          <div class="cta-container" style="text-align: center;">
-            <a href="https://tally.so/r/D4a8qN" class="btn-secondary"  >Reservar Sesión</a>
+          <div class="cta-container" style="text-align: center; margin-bottom: 20px;">
+            <!-- Cambié el enlace por un botón con un ID para controlar el clic con JavaScript -->
+            <button id="btn-mostrar-calendario" class="btn-secondary" style="cursor: pointer; border: none;">Reservar Sesión</button>
           </div>      
+
+          
+
         </div>
       </article>
+
       <article class="philx-card image-column">
-        <img src="imagen-de-fondo-servicio-mentoria.png" alt="CounterZero Space"/> 
+        <!-- Añadimos un id a la imagen para  esconderla -->
+        <img id="imagen-mentoria" src="imagen-de-fondo-servicio-mentoria.png" alt="CounterZero Space"/> 
+        
+        <!-- Contenedor del calendario (Inicia escondido) -->
+        <div id="contenedor-calendario" style="display: none; width: 100%;">
+          <!-- Principio del widget integrado de Calendly -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/counterzero-space/60" style="min-width:320px;height:700px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Final del widget integrado de Calendly -->
+        </div>
       </article>
     </div>
   </div>
@@ -1746,7 +1761,7 @@
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <p>Una vez que completas el formulario de contacto, procesamos tu solicitud para confirmar que contamos con la disponibilidad física y estratégica para atender tu caso. Tras esta aprobación, te enviaremos un correo electrónico con el acceso a la pasarela de pago y nuestra agenda en tiempo real para que reserves tu espacio. El servicio es de carácter estrictamente confidencial y se imparte 100% online mediante salas de videollamada cifradas (Zoom o Google Meet).</p>
+          <p>Una vez que completas la reserva de la sesión privada, te enviaremos un correo electrónico con el acceso a la pasarela de pago. El servicio es de carácter estrictamente confidencial y se imparte 100% online mediante salas de videollamada cifradas (Zoom o Google Meet).</p>
         </div>
       </div>
 
@@ -1780,6 +1795,17 @@
         </button>
         <div class="faq-answer">
           <p>No necesitas conocimientos técnicos previos. El único requisito indispensable es la disposición absoluta para observar tu realidad actual con total honestidad y ejecutar las acciones de reconfiguración que se definan en el proceso.</p>
+        </div>
+      </div>
+
+      <!-- Pregunta 6 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>¿Esta consultoría tiene un alcance terapéutico, médico o psicológico?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>No. Esta consultoría estratégica directa y cien por ciento orgánica opera estrictamente en el plano del discernimiento sutil, espiritual y de la ingeniería interior. No constituye, no sustituye, ni reemplaza ningún tipo de tratamiento médico, clínico, psicológico o psiquiátrico. Aquí no se realizan diagnósticos de salud mental ni terapias clínicas. El propósito de este espacio seguro es ofrecerte la debida instrucción y dirección como mentor, para que detectes tus puntos de inflexión en el tablero y desmanteles el autoengaño de la Matrix. Si estás experimentando una condición de salud médica o psicológica, te recomendamos acudir con el profesional de la salud correspondiente. Este encuentro está destinado exclusivamente a jugadores soberanos que buscan ordenar su vida bajo el diseño original y en línea directa con el Padre.</p>
         </div>
       </div>
 
@@ -1860,8 +1886,26 @@
       }
     });
   });
- 
 
+  <!-- Código de JavaScript  aparecer el calendario -->
+   document.getElementById('btn-mostrar-calendario').addEventListener('click', function(e) {
+    e.preventDefault();
+    var img = document.getElementById('imagen-mentoria');
+    var calendario = document.getElementById('contenedor-calendario');
+    
+    if (calendario.style.display === 'none') {
+      img.style.display = 'none';         // Esconde la imagen de la columna
+      calendario.style.display = 'block'; // Muestra el calendario en su lugar
+      
+      // Ajuste opcional para móviles: desplaza la pantalla si el grid se apila verticalmente
+      if (window.innerWidth < 768) {
+        calendario.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      img.style.display = 'block';       // Si vuelven a hacer clic, regresa la imagen
+      calendario.style.display = 'none';  // Y esconde el calendario
+    }
+  });
   
   // Custom cursor glow effect
   const cursor = document.createElement('div');
