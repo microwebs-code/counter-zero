@@ -50,6 +50,7 @@
       --ff-mono:    'Syne Mono', monospace;
       --ff-title:   'Inter', sans-serif;
       --titular:   'Cinzel', serif;
+      
     }
 
     html { scroll-behavior: smooth; }
@@ -166,11 +167,6 @@
       background-size: 91% 
     }
 
-
-
-
-  
-
     /* Radial vignette over everything */
     .hero-vignette {
       position: absolute; inset: 0;
@@ -203,9 +199,9 @@
     }
 
     .hero-access-tag {
-      font-family: var(--ff-mono);
-      font-size: 0.6rem;
-      letter-spacing: 0.5em;
+      font-family: var(--ff-display);
+      font-size: 1.6rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--green);
       margin-bottom: 3.5rem;
@@ -213,21 +209,18 @@
       opacity: 0; animation: fadeUp 0.7s ease 0.1s forwards;
     }
 
-    /*
-    .hero-access-tag::before, .hero-access-tag::after {
-      content: '//'; opacity: 0.4; font-size: 0.55rem;
-    }
-    */
+    .hero-micro{display:flex;align-items:flex-start;gap:0.8rem;margin-bottom:2.5rem;max-width:680px;}
+
 
     .hero-headline {
       font-family: var(--titular);
-      font-size: 4.3rem;
+      font-size: 4rem;
       font-weight: 300;
       line-height: 1.1;
       letter-spacing: -0.01em;
       font-optical-sizing: auto;
       color: var(--white-tech);
-      margin-bottom: 1.8rem;
+      margin-bottom: 0.1rem;
       opacity: 0; animation: fadeUp 0.9s ease 0.45s forwards;
     }
 
@@ -246,6 +239,7 @@
       line-height: 1.75;
       text-transform: uppercase;
       opacity: 0; animation: fadeUp 0.9s ease 0.6s forwards;
+      margin-bottom: 1.1rem;
     }
 
 
@@ -259,8 +253,6 @@
       margin-bottom: 3.5rem;
       opacity: 0; animation: fadeUp 0.9s ease 0.6s forwards;
     }
-
-
 
     .hero-ctas {
       display: flex; gap: 1.2rem; align-items: left; flex-wrap: wrap; justify-content: left;
@@ -355,10 +347,96 @@
       
     }
 
+
+
+    /*Banner ajedrez*/
+    #hero-section {
+      position: relative;
+      width: 100%;
+      height: 820px;
+      background: #000000;
+      overflow: hidden;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Georgia', serif;
+    }
+    #hero-canvas {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    #title-container {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      pointer-events: none;
+      margin-top: 95px;
+    }
+    #main-title {
+      font-family: var(--titular); 
+      font-size: clamp(2rem, 6vw, 3.8rem);
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      background: linear-gradient(180deg, #e8ffe8 0%, #a8f0a8 40%, #4ecb4e 70%, #1a8a1a 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-shadow: none;
+      filter: drop-shadow(0 0 24px rgba(78,203,78,0.55)) drop-shadow(0 0 6px rgba(78,203,78,0.3));
+      animation: titleReveal 2.8s cubic-bezier(0.16,1,0.3,1) forwards;
+      opacity: 0;
+      transform: scale(0.12) translateZ(0);
+      transform-origin: center center;
+    }
+    #subtitle-line {
+      display: block;
+      margin-top: 14px;
+      font-family: 'Georgia', serif;
+      font-size: clamp(0.7rem, 1.8vw, 1rem);
+      letter-spacing: 0.55em;
+      color: rgba(198, 252, 198, 0.839);
+      text-transform: uppercase;
+      animation: subtitleFade 2.3s ease forwards;
+      opacity: 0;
+    }
+
+    #subtitle-line2 {
+      display: block;
+      margin-top: 25px;
+      font-family: var(--ff-display);
+      font-size: clamp(0.7rem, 1.8vw, 1rem);
+      letter-spacing: 0.55em;
+      color: rgba(198, 252, 198, 0.839);
+      text-transform: uppercase;
+      animation: subtitleFade 3.4s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes titleReveal {
+      0%   { opacity: 0;   transform: scale(0.05) translateZ(0); }
+      30%  { opacity: 0.4; }
+      100% { opacity: 1;   transform: scale(1) translateZ(0); }
+    }
+    @keyframes subtitleFade {
+      0%   { opacity: 0; }
+      60%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
     /* ── SECTION SHARED ── */
     .section { position: relative; overflow: hidden; }
     .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5vw; box-sizing: border-box;}
     .wrapx { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5vw; box-sizing: border-box;}
+
+
+
+
+
+
+
 
     .footer-legal a:hover { color: var(--green-holo) }
 
@@ -635,8 +713,11 @@
 
   .para-ti-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3.5rem;text-align: center;padding: 1rem 0;}
   .para-ti-item{display:flex;flex-direction:column;align-items:center;gap:1rem;}
-  .para-ti-icon{width:70px;height:64px;border-radius:50%;border:2px solid black;display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green-holo);background: black;}
+  .para-ti-icon{width:70px;height:64px;border-radius:50%;border:2px solid black;display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green);background: black;}
   .para-ti-item p{font-size:0.88rem;line-height:1.7;color:black;}
+  .para-ti-item2{display:flex;flex-direction:row;align-items:center;}
+  .para-ti-icon2{width:50px;height:44px;border-radius:50%;border:2px solid black;display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green-holo);background: black;}
+  .para-ti-p2 {font-family: var(--ff-display);font-size: clamp(0.7rem, 1.8vw, 1.1rem);color: rgba(255, 255, 255, 0.77);}
   
   /* For Small Laptops and Large Tablets (Landscape) */
   @media (max-width: 1024px) {
@@ -1488,7 +1569,7 @@
     <img src="logo-counter-zero-blanco-esp.png" alt="CounterZero Space" class="nav-logo-img"/>
   </a>
   <ul class="nav-links">
-    <li><a href="#metodo">Método</a></li>
+    <li><a href="#estrategia">Estrategia</a></li>
     <li><a href="#evaluacion">Alineación</a></li>
     <li><a href="https://tally.so/r/D4a8qN">Contacto</a></li>
   </ul>
@@ -1496,36 +1577,21 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero" aria-label="CounterZero Space — Hero Principal">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-vignette" aria-hidden="true"></div>
-
-  <div class="hero-content">
-
-    <p class="hero-access-tag">co-creador del "El Ajedrez Interior"</p>
 
 
-    <h1 class="hero-headline">
-      Soberanía y
-      <br>Liderazgo <strong>Interior</strong>
-    </h1>
-    <h2 class="hero-sub">Creando espacios de armonía con la Unidad.</h2>
-    <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
-      <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio de alta reserva espiritual en donde aprendes cómo las capas invisibles de información influyen en tu estructura y experiencia de vida y asi actives tu <strong style="font-weight: bold;">Liderazgo Interno</strong>. Un entrenamiento diseñado para que ordenes tu tablero con absoluta consciencia, responsabilidad y ética.
-    </p>
-
-    <div class="hero-ctas">
-      <a href="#metodo" class="btn-primary">Conoce el Método</a>
-    </div>
-
-  </div>
+<!-- BENNER AJEDREZ -->
+<section id="hero-section" aria-label="El Ajedrez Interior — sección hero animada">
+  <canvas id="hero-canvas"></canvas>
+  <div id="title-container">
+    <h1 id="main-title">El Ajedrez Interior</h1>
+    <span id="subtitle-line">Estrategia · Mente · Alma</span>
+    <span id="subtitle-line2">JOHELY FRANCO</span>
+  </div>  
 </section>
 
 
-
-
 <!-- DIAGNOSTICO -->
-<section class="s-philosophy" id="diagnostico" aria-label="Filosofía del método">
+<section class="s-philosophy" id="diagnostico" aria-label="Filosofía de la Estrategia">
   <div class="wrap">
     <div class="philosophy-header reveal">
       <span class="section-label" style="justify-content:center; margin-bottom:1.5rem;">El Diagnóstico</span>
@@ -1557,11 +1623,51 @@
   </div>
 </section>
 
- 
+
+
+
+<section class="hero" aria-label="CounterZero Space — Hero Principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-vignette" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-access-tag"></p>
+    <h1 class="hero-headline">
+      Liderazgo y
+      <br>Soberanía <strong>Espiritual</strong>
+    </h1>
+    <h2 class="hero-sub">Aprende a co-crear en armonía con la Unidad.</h2>
+    <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
+      <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio de alta reserva espiritual diseñado para ofrecer dirección, guía y entendimiento para vivir una vida alineada al crecimiento y desarrollo del Espíritu y del Alma.</p> 
+      <p class="hero-desc" style="text-align: justify;">
+      Activa tu <strong style="font-weight: bold;">Arquetipo Interno</strong> y comunícate directo con la Fuente sin intermediarios. A través del <strong style="font-weight: bold;">Ajedrez Interior</strong>, accedes a una estrategia única que no requiere de fórmulas, magia, ni retiros. Es estrategia pura y libre de dogmas para ordenar tu realidad a través de nuestras consultorías de alto impacto y herramientas de autor.
+    </p>
+    <div style="padding-bottom: 5rem;">
+      <div class="para-ti-item2 fade-in">
+        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Sube de nivel y aprovecha el salto cuántico</p> 
+      </div>  
+      <div class="para-ti-item2 fade-in">
+        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Aprende a co-crear en unión con la Fuente</p> 
+      </div> 
+      <div class="para-ti-item2 fade-in">
+        <span class="para-ti-icon2">♔</span><p class="para-ti-p2"> Conviértete en el jugador que domina el tablero de su propia vida</p>
+      </div>   
+    </div>
+
+
+    <div class="hero-ctas">
+      <a href="#estrategia" class="btn-primary">Conoce la Estrategia</a>
+    </div>
+
+  </div>
+</section>
+
+
+
 
 
 <!-- PHILOSOPHY 2 -->
-<section class="s-diagnostico" style="background:white;" id="evaluacion" aria-label="Filosofía del método">
+<section class="s-diagnostico" style="background:white;" id="evaluacion" aria-label="Filosofía de la Estrategia">
   <div class="wrapx">
     <div class="philosophy-header reveal">
       <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">Estratégia</span>
@@ -1605,8 +1711,8 @@
           <p class="philx-label">Automaestría</p>
           <h3 class="philx-title">Conocimiento</h3>
           <p class="philx-body"><strong>
-            Un viaje literario  e iniciático que te revela lo oculto en las dinámmicas de la realidad y los puntos claves para tu soberanía. Escrito por Johely Franco en co-creacion con la Divinidad </p></strong>
-          <p class="philx-body">Esta obra transmite una sabiduria didáctica mediante la analogía del ajedrez. Muestra cómo interactúan las piezas, los oponentes y los personajes, ofreciendo una guía táctica para entender lo que revela la Matrix y gestionar el control de tu propio cuadrante.
+            Un viaje literario  e iniciático que te revela lo oculto en las dinámicas de la realidad y los puntos claves para tu soberanía. Realizado por Johely Franco en co-creación con la Divinidad </p></strong>
+          <p class="philx-body">Esta obra transmite una sabiduría didáctica mediante la analogía del ajedrez. Muestra cómo interactúan las piezas, los oponentes y los personajes, ofreciendo una guía táctica para entender lo que revela la Matrix y gestionar el control de tu propio cuadrante.
           </p>
           <p class="philx-body"></p>
           
@@ -1635,10 +1741,7 @@
           <div class="cta-container" style="text-align: center; margin-bottom: 20px;">
             <!-- Cambié el enlace por un botón con un ID para controlar el clic con JavaScript -->
             <button id="btn-mostrar-calendario" class="btn-secondary" style="cursor: pointer; border: none;">Reservar Sesión</button>
-          </div>      
-
-          
-
+          </div>           
         </div>
       </article>
 
@@ -1664,7 +1767,7 @@
     <div class="obtienes-wrap">
       <div class="obtienes-left reveal">
         <span class="section-label">¿Qué obtienes?</span>
-        <h2 class="obtienes-headline">Una nueva forma<br/>de observar.</h2>
+        <h2 class="obtienes-headline">Una nueva forma<br/>de CREAR.</h2>
       </div>
 
       <div class="obtienes-right reveal">
@@ -1698,18 +1801,18 @@
 
 
 <!-- METHOD MAP -->
-<section class="s-method" aria-label="Mapa estrategico del método" id="metodo">
+<section class="s-method" aria-label="Mapa estrategico de la  Estrategia" id="estrategia">
   <div class="wrap">
     <div class="method-wrap">
       <div class="method-left reveal">
-        <span class="section-label">EL Método</span>
+        <span class="section-label">La Estrategia</span>
         <!--<h2 class="method-title">Un <span>Proceso</span><br/>Estratégico</h2>-->
-        <h2 class="method-title">Un Proceso<br/>Estratégico</h2>
+        <h2 class="method-title">Un Proceso<br/>Orgánico</h2>
         <p class="method-desc">
-          A través del Sistema de El Ajedrez Interior, se demuestra como cada nodo representa una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero.
+          A través del Sistema de El Ajedrez Interior, te demuestra como cada nodo representa una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero desde tu autonomia.
         </p>
         <div class="cta-container">
-          <a href="#evaluacion" class="btn-proceso "  >Iniciar Método</a>
+          <a href="#evaluacion" class="btn-proceso "  >Iniciar Estrategia</a>
         </div>    
 
       </div>
@@ -1796,7 +1899,7 @@
         </button>
 
         <div class="faq-answer">
-          <p>Es una plataforma de acompañamiento espiritual orientada a la desprogramación mental y al retorno al diseño original. A través de la obra El Ajedrez Interior y de sesiones de consultoría privada cien por ciento orgánicas —libres de dogmas o métodos holísticos—, te ofrezco el orden y la claridad que necesitas para que ejecutes, por tu propia cuenta, tu movimiento de regreso al Origen.</p>
+          <p>Es una plataforma de acompañamiento espiritual orientada a la desprogramación mental y al retorno al diseño original. A través de la obra El Ajedrez Interior y de sesiones de consultoría privada cien por ciento orgánicas —libres de dogmas o terapias holísticos—, te ofrezco el orden y la claridad que necesitas para que ejecutes, por tu propia cuenta, tu movimiento de regreso al Origen.</p>
         </div>
       </div>
       
@@ -1807,7 +1910,7 @@
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <p>Están dirigidas a todo aquel que siente que ha perdido el control estratégico de su entorno y de su propio propósito. Si sientes que eres una pieza movida por las circunstancias en lugar de ser el jugador que dirige el tablero, entonces este método es para ti.</p>
+          <p>Están dirigidas a todo aquel que siente que ha perdido el control estratégico de su entorno y de su propio propósito. Si sientes que eres una pieza movida por las circunstancias en lugar de ser el jugador que dirige el tablero, entonces esta Estrategia es para ti.</p>
         </div>
       </div>
 
@@ -1847,7 +1950,7 @@
       <!-- Pregunta 5 -->
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>¿Se requiere preparación previa para iniciar el Método?</span>
+          <span>¿Se requiere preparación previa para iniciar con la Estrategia?</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
@@ -1981,6 +2084,172 @@
     cursor.style.left = mx + 'px';
     cursor.style.top = my + 'px';
   });
+
+
+
+  // Banner ajedrez
+  (function() {
+    const canvas = document.getElementById('hero-canvas');
+    const ctx = canvas.getContext('2d');
+
+    function resize() {
+      const rect = canvas.parentElement.getBoundingClientRect();
+      canvas.width = rect.width || 680;
+      canvas.height = rect.height || 420;
+    }
+    resize();
+    window.addEventListener('resize', () => { resize(); });
+
+    const W = () => canvas.width;
+    const H = () => canvas.height;
+
+    // ── Luz verde radial animada ──
+    let lightAngle = 0;
+
+    // ── Partículas / piezas de ajedrez en perspectiva ──
+    const SYMBOLS = ['♟','♜','♞','♝','♛','♚'];
+    const PARTICLES = [];
+    const COUNT = 38;
+
+    function randomParticle(earlyPhase) {
+      const z = earlyPhase ? Math.random() * 0.3 : 0.01 + Math.random() * 0.15;
+      return {
+        x: (Math.random() - 0.5) * 1.6,
+        y: (Math.random() - 0.5) * 1.6,
+        z: z,
+        vz: 0.0018 + Math.random() * 0.0022,
+        symbol: SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)],
+        opacity: 0.08 + Math.random() * 0.22,
+        hue: 120 + (Math.random() - 0.5) * 30,
+      };
+    }
+
+    for (let i = 0; i < COUNT; i++) PARTICLES.push(randomParticle(true));
+
+    function project(p, w, h) {
+      const fov = 0.7;
+      const scale = fov / (fov + p.z);
+      return {
+        sx: w / 2 + p.x * scale * w * 0.5,
+        sy: h / 2 + p.y * scale * h * 0.5,
+        size: scale * 44,
+        alpha: Math.min(1, p.opacity * (p.z * 0.6 + 0.3) * 2.2),
+      };
+    }
+
+    // ── Partículas de polvo verde ──
+    const DUST = Array.from({length: 60}, () => ({
+      x: Math.random(),
+      y: Math.random(),
+      r: 0.6 + Math.random() * 1.8,
+      speed: 0.00012 + Math.random() * 0.00022,
+      alpha: 0.04 + Math.random() * 0.12,
+      angle: Math.random() * Math.PI * 2,
+      drift: (Math.random() - 0.5) * 0.0004,
+    }));
+
+    let frame = 0;
+
+    function draw() {
+      frame++;
+      const w = W(), h = H();
+      ctx.clearRect(0, 0, w, h);
+
+      // Fondo negro-gris muy oscuro
+      ctx.fillStyle = '#090b09';
+      ctx.fillRect(0, 0, w, h);
+
+      // Luz verde radial con movimiento suave
+      lightAngle += 0.008;
+      const lx = w * (0.5 + Math.sin(lightAngle * 0.7) * 0.18);
+      const ly = h * (0.5 + Math.cos(lightAngle * 0.5) * 0.14);
+      const grad = ctx.createRadialGradient(lx, ly, 0, lx, ly, w * 0.65);
+      grad.addColorStop(0,   'rgba(30,120,30, 0.22)');
+      grad.addColorStop(0.3, 'rgba(20,90,20, 0.13)');
+      grad.addColorStop(0.7, 'rgba(10,50,10, 0.06)');
+      grad.addColorStop(1,   'rgba(0,0,0, 0)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, w, h);
+
+      // Polvo flotante verde
+      for (const d of DUST) {
+        d.angle += d.drift;
+        d.x += Math.cos(d.angle) * d.speed;
+        d.y += Math.sin(d.angle) * d.speed * 0.6 - d.speed * 0.3;
+        if (d.x < -0.05) d.x = 1.05;
+        if (d.x > 1.05)  d.x = -0.05;
+        if (d.y < -0.05) d.y = 1.05;
+        if (d.y > 1.05)  d.y = -0.05;
+        ctx.beginPath();
+        ctx.arc(d.x * w, d.y * h, d.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(80,200,80,${d.alpha})`;
+        ctx.fill();
+      }
+
+      // Líneas de perspectiva tenues (tablero)
+      const LINES = 8;
+      ctx.save();
+      for (let i = 0; i <= LINES; i++) {
+        const t = i / LINES;
+        const xOff = (t - 0.5) * w * 1.4;
+        ctx.beginPath();
+        ctx.moveTo(w/2, h/2);
+        ctx.lineTo(w/2 + xOff, h * 1.05);
+        ctx.strokeStyle = `rgba(30,160,30,${0.035 + 0.025 * Math.abs(0.5 - t)})`;
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+      }
+      for (let i = 0; i <= 6; i++) {
+        const t = i / 6;
+        const pers = 0.5 + t * t * 0.5;
+        const yLine = h * 0.5 + (h * 0.55) * t * t;
+        const spread = w * 0.7 * t * t;
+        ctx.beginPath();
+        ctx.moveTo(w/2 - spread, yLine);
+        ctx.lineTo(w/2 + spread, yLine);
+        ctx.strokeStyle = `rgba(30,160,30,${0.03 + 0.02 * t})`;
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+      }
+      ctx.restore();
+
+      // Piezas en perspectiva 3D
+      ctx.save();
+      ctx.font = '20px serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+
+      for (let i = 0; i < PARTICLES.length; i++) {
+        const p = PARTICLES[i];
+        p.z += p.vz;
+        if (p.z > 0.95) {
+          PARTICLES[i] = randomParticle(false);
+          continue;
+        }
+        const {sx, sy, size, alpha} = project(p, w, h);
+        if (sx < -60 || sx > w+60 || sy < -60 || sy > h+60) continue;
+        const fade = Math.min(1, p.z * 2.5);
+        ctx.globalAlpha = Math.min(alpha, 0.55) * fade;
+        ctx.font = `${Math.max(8, size)}px serif`;
+        ctx.fillStyle = `hsl(${p.hue},70%,60%)`;
+        ctx.fillText(p.symbol, sx, sy);
+      }
+      ctx.globalAlpha = 1;
+      ctx.restore();
+
+      // Viñeta perimetral sutil
+      const vign = ctx.createRadialGradient(w/2, h/2, h*0.28, w/2, h/2, w*0.75);
+      vign.addColorStop(0, 'rgba(0,0,0,0)');
+      vign.addColorStop(1, 'rgba(0,0,0,0.72)');
+      ctx.fillStyle = vign;
+      ctx.fillRect(0, 0, w, h);
+
+      requestAnimationFrame(draw);
+    }
+
+    draw();
+  })();
+
 </script>
 </body>
 </html>
