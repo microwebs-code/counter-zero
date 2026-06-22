@@ -281,11 +281,36 @@
       position: relative; overflow: hidden;
     }
     .btn-primary:hover {
-      background: rgba(55, 55, 55, 0.314);
+      background: rgba(0, 0, 0, 0.314);
       color: var(--green);
        
        
       border-color: 1px solid rgb(255, 255, 255);
+    }
+
+
+    .btn-triple {
+      font-family: var(--ff-display);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--obsidian);
+      /*background: var(--green);*/
+      background: var(--gree-mint);
+      border: none;
+      padding: 1.1rem 3.8rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.35s ease;
+      position: relative; overflow: hidden;
+      box-shadow: 0 0 30px rgba(246, 255, 0, 0.671), 0 0 60px rgba(0,255,136,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.405);
+    }
+    .btn-triple:hover {
+      background: rgb(0, 0, 0);
+      color: var(--green);    
+      
     }
 
     .btn-secondary {
@@ -480,9 +505,9 @@
       padding: 10rem 0;
       background: radial-gradient(ellipse at 50% 0%, white 0%, var(--obsidian) 70%);
       border-top: 1px solid rgba(0,255,136,0.07);
-       border-left:  3.5rem solid transparent; 
-       border-right:  3.5rem solid transparent;
-       border-image: radial-gradient(ellipse at 50% 0%, gray 0%, rgba(137, 137, 137, 0.338) 70%) 1;
+      border-left:  3.5rem solid transparent; 
+      border-right:  3.5rem solid transparent;
+      border-image: radial-gradient(ellipse at 50% 0%, gray 0%, rgba(137, 137, 137, 0.338) 70%) 1;
     }
 
     .contenedor-diagnostico {
@@ -1187,7 +1212,7 @@
       background: rgb(0, 0, 0);
       width: 100%;
       box-sizing: border-box;
-      border: 5rem solid  #ecffed; /* #00D97A;*/
+      border: 5rem solid  #eeeeee; /* #00D97A;*/
     }
 
     .faq-header {
@@ -1743,9 +1768,12 @@
         </div>
       </div>
 
-      <p class="philx-body" style="color: black; font-size: 1rem; margin-top: 1.5rem;">
+      <p class="philx-body" style="color: black; font-size: 1rem; margin-top: 1.5rem;padding-bottom: 3rem;">
         Accede a las herramientas de <strong style="color:#00892c; font-weight: 600;">El Ajedrez Interior</strong> junto a un mentor que experimentó ese recorrido en la vida real. Descubre el camino al origen y ejecuta tu movimiento definitivo de regreso al Padre.
       </p>
+      <div class="cta-container">
+        <a href="#soluciones" class="btn-triple" style="box-shadow: none; ">Iniciar Maestría</a>
+      </div>    
     </div>
 
   </div>
@@ -1842,7 +1870,7 @@
             <p class="philx-body" style="color: black; padding-bottom: 2rem;"> A través del Sistema de El Ajedrez Interior mostramos como alinearse en cada nodo representando una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero desde tu autonomia.</p>
             
             <div class="cta-container">
-              <a href="#alineacion" class="btn-primary" style="box-shadow: none;">Iniciar Estrategia</a>
+              <a href="#soluciones" class="btn-triple" style="box-shadow: none;">Iniciar Estrategia</a>
             </div>    
           </div>
         </article>
@@ -1996,9 +2024,9 @@
     <p class="manifesto-text" style="color: black; font-size: 2rem ;">
     Las Reglas del Juego y las Claves de Soberanía para tu Evolución</strong>
     </p>
-    <p class="manifesto-text" style="color: black; font-size: 3rem ; padding-top:2rem;">♔♕♖♗♘♙</p>
+    <p class="manifesto-text" style="color: black; font-size: 3rem ; padding-top:2rem;padding-bottom: 3rem;">♔♕♖♗♘♙</p>
     <div class="cta-container" style="text-align: center;">
-      <a href="https://www.amazon.com/dp/B0H4WPKRBR?spcref=PRINT_LISTING" class="btn-proceso" >Adquirir el Libro</a>
+      <a href="https://www.amazon.com/dp/B0H4WPKRBR?spcref=PRINT_LISTING" class="btn-proceso" >Adquirir Libro</a>
     </div>  
   </div>
       
@@ -2117,6 +2145,9 @@
 
     </div>
   </div>
+  <div class="cta-container" style="text-align: center;padding-top: 3rem;padding-bottom: 5rem;">
+      <a href="#soluciones" class="btn-secondary">Iniciar Maestría </a>
+    </div>  
 </section>
 
 
@@ -2140,7 +2171,7 @@
     <a href="https://counterzero.space/condiciones.html" style="color: var(--white-tech);">Términos y Condiciones</a>
 </div>
     <div class="footer-bottom">
-      <p class="footer-copy">© 2026 CounterZero Space — Todos los derechos reservados.</p>
+      <p class="footer-copy">© 2026 Johely Franco | CounterZeroSpace — Todos los derechos reservados.</p>
       <div class="footer-dot" aria-hidden="true"></div>
     </div>
   </div>
