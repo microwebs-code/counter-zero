@@ -306,6 +306,7 @@
       border-color: rgb(36, 36, 36);
       box-shadow: 0 0 20px rgba(3, 255, 45, 0.32);
       background: transparent;
+      color: #00ca0d;
     }
 
     .btn-proceso {
@@ -546,7 +547,7 @@
     .s-philosophy {
       padding: 15rem 0;
       background: radial-gradient(ellipse at 50% 0%, var(--carbon) 0%, var(--obsidian) 70%);
-      border-top: 2px solid greenyellow;
+      /*border-top: 2px solid greenyellow;*/
     }
 
     .philosophy-header {
@@ -640,7 +641,7 @@
 
     /* Estilos base para las tarjetas */
     .philx-card {
-      background: white;
+      background: transparent;
       box-sizing: border-box;
       padding: 3.5rem 3rem;
       position: relative;
@@ -654,7 +655,7 @@
     /* Estilos específicos de las etiquetas del texto */
     .philx-label {
       font-size: 1rem; 
-      color: #008709;
+      color: #00ca0d;
       margin-bottom: 8px;
       font-family: var(--ff-mono);      
       text-transform: uppercase;
@@ -665,7 +666,7 @@
     }
 
     .philx-title {
-      color: rgb(73, 73, 73);
+      color: rgb(225, 225, 225);
       margin-top: 0;
       margin-bottom: 12px;
       font-family: var(--ff-display);
@@ -678,7 +679,7 @@
 
     .philx-body {
       text-align: justify; 
-      color: #2E343C;
+      color: #c8c8c8;
       line-height: 1.6;
       margin-bottom: 20px;
       font-size: 0.92rem;
@@ -700,6 +701,8 @@
       max-width: 350px; /* Evita que la portada se pixelee si la pantalla es muy grande */
       height: auto;
       object-fit: contain;
+      margin: auto;
+    
     }
 
     /* Responsivo: Se transforma en 1 sola columna en celulares */
@@ -715,7 +718,7 @@
     }
 
   .para-ti-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3.5rem;text-align: center;padding: 1rem 0;}
-  .para-ti-item{display:flex;flex-direction:column;align-items:center;gap:1rem;}
+  .para-ti-item{display:flex;flex-direction:column;align-items:center;gap:1rem;background: #f2f2f2;padding: 1rem;}
   .para-ti-icon{width:70px;height:64px;border-radius:50%;border:2px solid rgb(128, 255, 0);display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green);background: black;}
   .para-ti-item p{font-size:0.88rem;line-height:1.7;color:black;}
   .para-ti-item2{display:flex;flex-direction:row;align-items:center;}
@@ -864,6 +867,8 @@
       width: 100%;
       overflow: hidden;
       box-sizing: border-box;
+      padding-top:8rem ;
+      padding-bottom: 8rem ;
     }
 
     .method-wrap {
@@ -1583,6 +1588,7 @@
   <ul class="nav-links">
     <li><a href="#estrategia">Estrategia</a></li>
     <li><a href="#alineacion">Alineación</a></li>
+    <li><a href="#soluciones">Soluciones</a></li>
     <li><a href="https://tally.so/r/D4a8qN">Contacto</a></li>
   </ul>
   <a href="https://tally.so/r/D4a8qN" class="btn-nav-cta">Solicitar Acceso</a>
@@ -1652,7 +1658,7 @@
     <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
       <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio de alta reserva espiritual diseñado para ofrecer dirección, guía y entendimiento para vivir una vida alineada al crecimiento y desarrollo del Espíritu y del Alma.</p> 
       <p class="hero-desc" style="text-align: justify;">
-      Activa tu <strong style="font-weight: bold;">Arquetipo Interno</strong> y comunícate directo con la Fuente sin intermediarios. A través del <strong style="font-weight: bold;">Ajedrez Interior</strong>, accedes a una estrategia única que no requiere de fórmulas, magia, ni retiros. Es estrategia pura y libre de dogmas para ordenar tu realidad a través de nuestras herramientas de autor y consultorías de alto impacto.
+      Activa tu <strong style="font-weight: bold;">Arquetipo Interno</strong> y comunícate directo con la Fuente sin intermediarios. A través del <strong style="font-weight: bold;">Ajedrez Interior</strong>, accedes a una estrategia única que no requiere de fórmulas, magia ni codependencia. Es estrategia pura y libre de dogmas para ordenar tu realidad a partir de la sabiduría transmitida al autor, la cual hoy comparte a través de su consultoría y recurso literario.
     </p>
     <div style="padding-bottom: 5rem;">
       <div class="para-ti-item2 fade-in">
@@ -1688,7 +1694,7 @@
 
     <div>
       <p class="philx-body" style="color: black; font-size: 1.2rem; font-weight: 600;">Haz una pausa táctica.</p>
-      <p class="philx-body" style="color: black; font-size: 1rem;">Gana ventaja y sabiduría recorriendo un camino seguro y libre de dogmas junto a un experto.<strong style="color:#00842a; font-weight: 600 ;"> Esto es consultoría estratégica directa </strong>   100% orgánica, bajo un diseño unico creado para que reviertas el estado actual en el que te encuentras e inicies el camino hacia una vida mas alineada y en armonía.
+      <p class="philx-body" style="color: black; font-size: 1rem;">Gana claridad y ventaja recorriendo un camino libre de dogmas junto a un experto. <strong style="color:#00842a; font-weight: 600 ;"> Esto es consultoría estratégica directa</strong>: un proceso    100% orgánico y exclusivo, diseñado para transformar tu realidad actual y guiarte hacia una vida en auténtica armonía.
       
       <p class="philx-body" style="color: black; font-size: 1rem;">
 
@@ -1716,43 +1722,60 @@
       </p>
     </div>
 
-    <div class="diagnosticox-grid reveal">
-      <article class="philx-card textx-column">
-        <div>
-          <div class="sep" aria-hidden="true"></div>
-          <p class="philx-label">Automaestría</p>
-          <h3 class="philx-title">Conocimiento</h3>
-          <p class="philx-body"><strong>
-            Un viaje literario  e iniciático que te revela lo oculto en las dinámicas de la realidad y los puntos claves para tu soberanía. Realizado por Johely Franco en co-creación con la Divinidad </p></strong>
-          <p class="philx-body">Esta obra transmite una sabiduría didáctica mediante la analogía del ajedrez. Muestra cómo interactúan las piezas, los oponentes y los personajes, ofreciendo una guía táctica para entender lo que revela la Matrix y gestionar el control de tu propio cuadrante.
-          </p>
-          <p class="philx-body"></p>
-          
-          <div class="cta-container" style="text-align: center;">
-            <a href="https://www.amazon.com/dp/B0H4WPKRBR?spcref=PRINT_LISTING" class="btn-secondary"  >Adquirir el Libro</a>
-          </div>  
-        </div>    
-      </article>
-      
-      <article class="philx-card image-column">
-        <img src="libro-impreso-tapa-dura.png" alt="CounterZero Space"/> 
-      </article>
+  </div>
+</section>
+
+
+<!-- SOLUCIONES -->
+<section class="s-diagnostico" style="background:rgb(26, 26, 26); border:0;" id="soluciones" aria-label="Filosofía de la Estrategia">
+  <div class="wrapx">
+    <div class="philosophy-header reveal">
+      <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">Los Recursos</span>
+      <h2 class="diagnostico-title" style="color: #ffffff;">Es hora de Iniciar</h2>
+    </div>
+
+
+
+    <div style="background:rgba(37, 37, 37, 0.544)">
+      <div class="diagnosticox-grid reveal"> 
+        <article class="philx-card textx-column" style="padding-left:  0.8rem; padding-right:  0.8rem;">
+          <div>
+            <div class="sep" aria-hidden="true"></div>
+            <p class="philx-label">Automaestría</p>
+            <h3 class="philx-title">Conocimiento</h3>
+            <p class="philx-body"><strong>
+              Un viaje literario  e iniciático que te revela lo oculto en las dinámicas de la realidad y los puntos claves para tu soberanía. Realizado por Johely Franco en co-creación con la Divinidad </p></strong>
+            <p class="philx-body">Esta obra transmite una sabiduría didáctica mediante la analogía del ajedrez. Muestra cómo interactúan las piezas, los oponentes y los personajes, ofreciendo una guía táctica para entender lo que revela la Matrix y gestionar el control de tu propio cuadrante.
+            </p>
+            <p class="philx-body"></p>
+            
+            <div class="cta-container" style="text-align: center;">
+              <a href="https://www.amazon.com/dp/B0H4WPKRBR?spcref=PRINT_LISTING" class="btn-secondary"  >Adquirir el Libro</a>
+            </div>  
+          </div>
+        </article>
+         
+        <article class="philx-card image-column">
+          <img src="libro-impreso-tapa-dura.png" alt="CounterZero Space"/> 
+        </article>
+      </div>
+    </div>
    
 
-   
-      <article class="philx-card textx-column">
-        <div>
-          <div class="sep" aria-hidden="true" id="reserva"></div>
-          <p class="philx-label" style="text-align:left;">CONSULTORIA</p>
-          <h3 class="philx-title">Retorno al Origen</h3>
-          <p class="philx-body">
-            Un espacio reservado de 60 minutos diseñado exclusivamente para quienes eligen acelerar su proceso, limpiar su posición en el tablero y reconfigurar su realidad desde el Ser.
-          </p>
-          <p class="philx-body">Es una consultoría estratégica directa, cien por ciento orgánica y espiritual, libre de terapias holísticos o dogmas. No constituye un espacio médico, terapéutico ni psicológico.</p>
-          
-          <div class="cta-container" style="text-align: center; margin-bottom: 20px;">
-            <!-- Cambié el enlace por un botón con un ID para controlar el clic con JavaScript -->
-            <button id="btn-mostrar-calendario" class="btn-secondary">Reservar Sesión</button>
+     <div style="background:rgb(23, 23, 23)">
+      
+      <div class="diagnosticox-grid reveal"> 
+        <article class="philx-card textx-column" style="padding-left:  0.8rem; padding-right:  0.8rem;">
+          <div>
+            <div class="sep" aria-hidden="true" id="reserva"></div>
+            <p class="philx-label" style="text-align:left;">CONSULTORIA</p>
+            <h3 class="philx-title">Retorno al Origen</h3>
+            <p class="philx-body">
+              Un espacio reservado de 60 minutos diseñado exclusivamente para quienes eligen acelerar su proceso, limpiar su posición en el tablero y reconfigurar su realidad desde el Ser.
+            </p>
+            <p class="philx-body">Es una consultoría estratégica directa, cien por ciento orgánica y espiritual, libre de terapias holísticos o dogmas. No constituye un espacio médico, terapéutico ni psicológico.</p>
+            <div class="cta-container" style="text-align: center; margin-bottom: 20px;">
+              <button id="btn-mostrar-calendario" class="btn-secondary">Reservar Sesión</button>
           </div>           
         </div>
       </article>
@@ -1764,7 +1787,8 @@
         <!-- Contenedor del calendario (Inicia escondido) -->
         <div id="contenedor-calendario" style="display: none; width: 100%;">
           <!-- Principio del widget integrado de Calendly -->
-          <div class="calendly-inline-widget" data-url="https://calendly.com/counterzero-space/60" style="min-width:320px;height:700px;"></div>
+          <div class="calendly-inline-widget" data-url="https://calendly.com/counterzero-space/60" style="min-width:320px;height:700px;">
+          </div>
           <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
           <!-- Final del widget integrado de Calendly -->
         </div>
@@ -1773,46 +1797,8 @@
   </div>
 </section>
 
-<!-- S3: QUÉ OBTIENES -->
-<section class="s-obtienes" id="obtienes" aria-label="¿Qué obtienes?">
-  <div class="wrapx">
-    <div class="obtienes-wrap">
-      <div class="obtienes-left reveal">
-        <span class="section-label">¿Qué obtienes?</span>
-        <h2 class="obtienes-headline">Una nueva forma<br/>de CREAR.</h2>
-      </div>
 
-      <div class="obtienes-right reveal">
-        <div class="obtiene-card">
-          <span class="obtiene-icon" aria-hidden="true">▲</span>
-          <p class="obtiene-title">Capacidad de Dirección Consciente</p>
-          <p class="obtiene-body">Aprendes a tomar decisiones alineadas con tu propósito y visión más alta.</p>
-        </div>
-        <div class="obtiene-card">
-          <span class="obtiene-icon" aria-hidden="true">⟰</span>
-          <p class="obtiene-title">Marco Aplicable Para Toda la Vida</p>
-          <p class="obtiene-body">Un sistema que puedes usar en cualquier momento, en cualquier área de tu vida.</p>
-        </div>
-        <div class="obtiene-card">
-          <span class="obtiene-icon" aria-hidden="true">◉</span>
-          <p class="obtiene-title">Claridad Estratégica</p>
-          <p class="obtiene-body">Comprendes lo que antes parecía confuso.</p>
-        </div>
-        <div class="obtiene-card">
-          <span class="obtiene-icon" aria-hidden="true">⊚</span>
-          <p class="obtiene-title">Soberanía</p>
-          <p class="obtiene-body">Gestionas tus estados. Comienzas a diseñar tu realidad.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<!-- METHOD MAP -->
+<!--  MAP -->
 <section class="s-method" aria-label="Mapa estrategico de la  Alineación" id="alineacion">
   <div class="wrap">
     <div class="method-wrap">
@@ -1869,6 +1855,45 @@
     </div>
   </div>
 </section>
+
+
+
+
+<!-- S3: QUÉ OBTIENES -->
+<section class="s-obtienes" id="obtienes" aria-label="¿Qué obtienes?">
+  <div class="wrapx">
+    <div class="obtienes-wrap">
+      <div class="obtienes-left reveal">
+        <span class="section-label">¿Qué obtienes?</span>
+        <h2 class="obtienes-headline">Una nueva forma<br/>de CREAR.</h2>
+      </div>
+
+      <div class="obtienes-right reveal">
+        <div class="obtiene-card">
+          <span class="obtiene-icon" aria-hidden="true">▲</span>
+          <p class="obtiene-title">Capacidad de Dirección Consciente</p>
+          <p class="obtiene-body">Aprendes a tomar decisiones alineadas con tu propósito y visión más alta.</p>
+        </div>
+        <div class="obtiene-card">
+          <span class="obtiene-icon" aria-hidden="true">⟰</span>
+          <p class="obtiene-title">Marco Aplicable Para Toda la Vida</p>
+          <p class="obtiene-body">Un sistema que puedes usar en cualquier momento, en cualquier área de tu vida.</p>
+        </div>
+        <div class="obtiene-card">
+          <span class="obtiene-icon" aria-hidden="true">◉</span>
+          <p class="obtiene-title">Claridad Estratégica</p>
+          <p class="obtiene-body">Comprendes lo que antes parecía confuso.</p>
+        </div>
+        <div class="obtiene-card">
+          <span class="obtiene-icon" aria-hidden="true">⊚</span>
+          <p class="obtiene-title">Soberanía</p>
+          <p class="obtiene-body">Gestionas tus estados. Comienzas a diseñar tu realidad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 <!-- MANIFESTO -->
