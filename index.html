@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="CounterZeroSpace Es una plataforma de acompañamiento espiritual orientada a la desprogramación mental y al retorno al diseño original. A través del libro El Ajedrez Interior y de sesiones de consultoría privada 100% orgánicas (libres de dogmas o métodos holísticos), ofrezco un espacio de orden y claridad para que ejecutes, por cuenta propia, tu movimiento de regreso al Origen, con absoluta consciencia, responsabilidad y dirección"/>
+  <meta name="description" content="CounterZeroSpace Es una plataforma de acompañamiento espiritual orientada a la desprogramación mental y al retorno al diseño original. A través del libro El Ajedrez Interior y de sesiones de consultoría privada 100% orgánicas (libres de dogmas o métodos holísticos), ofrece un espacio de orden y claridad para que ejecutes, por cuenta propia, tu movimiento de regreso al Origen, con absoluta consciencia, responsabilidad y dirección"/>
   <meta property="og:title" content="Descubre el lenguaje oculto de la realidad. Conoce el Ajedrez Interior"/>
   <meta property="og:description" content="Comprende el tablero, tus jugadas y a ti como jugador a través del 'Ajedrez Interior'"/>
   <meta property="og:type" content="website"/>
@@ -90,7 +90,7 @@
       z-index: 1000;
       display: flex; align-items: center; justify-content: space-between;
       padding: 1.4rem 5vw;
-      background: rgba(30, 30, 30, 0.155);
+      background: rgba(99, 99, 99, 0.155);
       backdrop-filter: blur(32px) saturate(180%);
       -webkit-backdrop-filter: blur(32px) saturate(180%);
       border-bottom: 1px solid rgba(255, 255, 255, 0.178);
@@ -165,7 +165,7 @@
       background-repeat: no-repeat;     
       background-position: 320% center; 
       background-size: 91% ;
-      border-top: 2px solid greenyellow;
+      border-top: 1px solid rgb(30, 30, 30);
     }
 
     /* Radial vignette over everything */
@@ -315,9 +315,10 @@
       font-weight: 600;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      background: #01ef80;
+      background: transparent;
       color: black;
-      border: 1px solid rgba(255, 255, 255, 0.405);
+      border: 2px solid rgba(0, 0, 0, 0.405);
+      box-shadow: 0 0 20px rgba(3, 255, 45, 0.32);
       padding: 1.1rem 2.8rem;
       cursor: pointer;
       text-decoration: none;
@@ -325,9 +326,8 @@
     }
     .btn-proceso:hover {
       border-color: rgb(36, 36, 36);
-      box-shadow: 0 0 20px rgba(3, 255, 45, 0.32);
-      background: transparent;
-      color:white
+      background: black;
+      color:rgb(65, 255, 71)
     }
 
     .btn-ghost {
@@ -454,6 +454,18 @@
       margin-bottom: 1.2rem;
       display: flex; align-items: center; gap: 1rem;
     }
+
+       .section-label2 {
+      font-family: var(--ff-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 1.2rem;
+      display: flex; align-items: center; gap: 1rem;
+    }
+
     .section-label::before {
       content: '';
       width: 30px; height: 1px;
@@ -638,15 +650,21 @@
       margin: 0 auto;
     }
 
+    .diagnostcox-text {
+      padding-left: 3rem ;
+    }
+
 
     /* Estilos base para las tarjetas */
     .philx-card {
       background: transparent;
       box-sizing: border-box;
       padding: 3.5rem 3rem;
-      position: relative;
+      position: center; /*relative*/
       transition: all 0.4s ease;
     }
+
+
 
     .textx-column {
       padding-bottom: 2rem;
@@ -902,7 +920,7 @@
       }
     }
 
-    .method-left .section-label { margin-bottom: 2rem; }
+    .method-left, .section-label { margin-bottom: 2rem; }
 
     .method-title {
       font-family: var(--titular);
@@ -1163,10 +1181,10 @@
     /* ── FAQ SECTION ── */
     .s-faq {
       padding: 8rem 0;
-      background: var(--obsidian);
+      background: rgb(0, 0, 0);
       width: 100%;
       box-sizing: border-box;
-      border: 5rem solid  #00D97A;
+      border: 5rem solid  #ecffed; /* #00D97A;*/
     }
 
     .faq-header {
@@ -1182,7 +1200,7 @@
       text-transform: uppercase;
       color: var(--white-tech);
       margin-top: 3rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
     }
 
     .faq-title span {
@@ -1511,7 +1529,7 @@
       padding: 1.3rem; cursor: pointer; transition: all 0.35s ease;
       box-shadow: 0 0 30px rgba(0,255,136,0.3);
     }
-    .btn-form-submit:hover { background: #fff; box-shadow: 0 0 50px rgba(0,255,136,0.5); transform: translateY(-2px); }
+    .btn-form-submit:hover { color:#050505; background: #fff; box-shadow: 0 0 50px rgba(133, 148, 141, 0.5); transform: translateY(-2px); }
     .form-note-txt { font-family: var(--ff-mono); font-size: 0.55rem; letter-spacing: 0.18em; color: rgba(244,245,247,0.18); text-align: center; margin-top: 1.2rem; line-height: 1.7; }
     .form-success { display: none; text-align: center; padding: 3rem 0; }
     .form-success-icon { font-size: 2.5rem; color: var(--green); text-shadow: 0 0 20px var(--green); display: block; margin-bottom: 1.5rem; }
@@ -1574,6 +1592,10 @@
       position: relative;
       transition: all 0.4s ease;
     }
+
+    .diagnostcox-text {
+      padding-left: 0;
+    }
     }
       
   </style>
@@ -1592,7 +1614,7 @@
     <li><a href="#soluciones">Soluciones</a></li>
     <li><a href="https://tally.so/r/D4a8qN">Contacto</a></li>
   </ul>
-  <a href="https://tally.so/r/D4a8qN" class="btn-nav-cta">Solicitar Acceso</a>
+  <a href="#soluciones" class="btn-nav-cta">Soluciones</a>
 </nav>
 
 <!-- HERO -->
@@ -1728,7 +1750,7 @@
 
 
 <!-- SOLUCIONES -->
-<section class="s-diagnostico" style="background:rgb(26, 26, 26); border:0;" id="soluciones" aria-label="Filosofía de la Estrategia">
+<section class="s-diagnostico" style="background: linear-gradient(135deg, #000000 0%, #292929 100%);; border:0;" id="soluciones" aria-label="Filosofía de la Estrategia">
   <div class="wrapx">
     <div class="philosophy-header reveal">
       <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">Los Recursos</span>
@@ -1737,10 +1759,11 @@
 
 
 
-    <div style="background:rgba(37, 37, 37, 0.544)">
+    <div style="background: rgba(255, 255, 255, 0.043); backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);">
       <div class="diagnosticox-grid reveal"> 
         <article class="philx-card textx-column" style="padding-left:  0.8rem; padding-right:  0.8rem;">
-          <div>
+          <div class="diagnostcox-text">
             <div class="sep" aria-hidden="true"></div>
             <p class="philx-label">Automaestría</p>
             <h3 class="philx-title">Conocimiento</h3>
@@ -1763,11 +1786,11 @@
     </div>
    
 
-     <div style="background:rgb(23, 23, 23)">
+    <div style="background:rgb(23, 23, 23)">
       
       <div class="diagnosticox-grid reveal"> 
         <article class="philx-card textx-column" style="padding-left:  0.8rem; padding-right:  0.8rem;">
-          <div>
+          <div class="diagnostcox-text">
             <div class="sep" aria-hidden="true" id="reserva"></div>
             <p class="philx-label" style="text-align:left;">CONSULTORIA</p>
             <h3 class="philx-title">Retorno al Origen</h3>
@@ -1799,7 +1822,73 @@
 </section>
 
 
-<!--  MAP -->
+<!-- Alineacion -->
+<section class="s-diagnostico" style="background: radial-gradient(ellipse at 50% 50%, rgba(98, 98, 98, 0.394)  0%, black 65%); border:0;" id="alineacion" aria-label="Filosofía de la Alineación">
+  <div class="wrapx">
+    <div class="philosophy-header reveal">
+      <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">La Alineación</span>
+      <h2 class="diagnostico-title" style="color: #ffffff;">Un Proceso<br/>Orgánico</h2>
+    </div>
+
+    <div style="background:rgba(38, 38, 38, 0.313)">
+      <div class="diagnosticox-grid reveal"> 
+        <article class="philx-card textx-column" style="padding-left:  0.8rem; padding-right:  0.8rem;">
+          <div class="diagnostcox-text">
+            <span class="section-label2">Sin Intermediarios</span>
+            <h3 class="philx-title">Conexión Directa</h3>
+            <p class="philx-body"> A través del Sistema de El Ajedrez Interior mostramos como alinearse en cada nodo representando una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero desde tu autonomia.</p>
+            
+            <div class="cta-container">
+              <a href="#alineacion" class="btn-secondary">Iniciar Estrategia</a>
+            </div>    
+          </div>
+        </article>
+
+        <div class="method-map reveal"  role="list" aria-label="Etapas del proceso CounterZero">
+          <div class="map-node" role="listitem">
+            <span class="map-node-idx">01</span>
+            <span class="map-node-name">Realidad</span>
+            <div class="map-node-dot"></div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-node" role="listitem">
+            <span class="map-node-idx">02</span>
+            <span class="map-node-name">Observación</span>
+            <div class="map-node-dot"></div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-node" role="listitem">
+            <span class="map-node-idx">03</span>
+            <span class="map-node-name">Decodificación</span>
+            <div class="map-node-dot"></div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-node highlight" role="listitem">
+            <span class="map-node-idx">04</span>
+            <span class="map-node-name">Punto Cero ●</span>
+            <div class="map-node-dot"></div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-node" role="listitem">
+            <span class="map-node-idx">05</span>
+            <span class="map-node-name">Reconfiguración</span>
+            <div class="map-node-dot"></div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-node" role="listitem">
+            <span class="map-node-idx">06</span>
+            <span class="map-node-name">Expansión</span>
+            <div class="map-node-dot"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--  MAP 
 <section class="s-method" aria-label="Mapa estrategico de la  Alineación" id="alineacion">
   <div class="wrapx">
     <div class="method-wrap"> 
@@ -1854,7 +1943,7 @@
       </div>
      </div>
   </div>
-</section>
+</section>-->
 
 
 
@@ -1894,6 +1983,23 @@
   </div>
 </section>
 
+<!-- SINTESIS -->
+<section class="s-manifesto" style="background: #effff4;" id="alineacion" aria-label="Manifiesto CounterZero">
+  <div class="manifesto-bg" aria-hidden="true"></div>
+  <div class="manifesto-lines" aria-hidden="true"></div>
+
+  <div class="manifesto-content reveal" style="max-width: 900px ;">
+    <h2 class="diagnostico-title opuesto" style="background: transparent;padding-bottom: 2rem;">El Ajedrez Interior </h2>
+    <p class="manifesto-text" style="color: black; font-size: 2rem ;">
+    Las Reglas del Juego y las Claves de Soberanía para tu Evolución</strong>
+    </p>
+    <p class="manifesto-text" style="color: black; font-size: 3rem ; padding-top:2rem;">♔♕♖♗♘♙</p>
+    <div class="cta-container" style="text-align: center;">
+      <a href="https://www.amazon.com/dp/B0H4WPKRBR?spcref=PRINT_LISTING" class="btn-proceso" >Adquirir el Libro</a>
+    </div>  
+  </div>
+      
+</section>
 
 
 <!-- MANIFESTO -->
@@ -1908,7 +2014,7 @@
       <span class="line-green">Los maestros diseñan el tablero.</span>
     </p>
     <p class="manifesto-sig" style="padding-bottom: 3rem;">— CounterZero Space</p>
-     <a href="#reserva" class="btn-nav-cta"  >Agendar una Sesión</a>
+     <a href="#reserva" class="btn-primary"  >Agendar una Sesión</a>
   </div>
       
 </section>
@@ -1921,9 +2027,9 @@
 <section class="s-faq" aria-label="Preguntas Frecuentes" id="faq">
   <div class="wrap">
     <div class="faq-header">
-      <span class="section-label">Resolución de Dudas</span>
+      <!--<span class="section-label">Resolución de Dudas</span>-->
       <h2 class="faq-title">Preguntas <span>Frecuentes</span></h2>
-      <p class="faq-subtitle">Todo lo que necesitas saber sobre las sesiones de liderazgo estratégico y la adquisición del libro.</p>
+      <!--<p class="faq-subtitle">Todo lo que necesitas saber sobre las sesiones de liderazgo estratégico y la adquisición del libro.</p>-->
     </div>
 
     <div class="faq-container">
