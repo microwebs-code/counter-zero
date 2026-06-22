@@ -41,7 +41,7 @@
       --green-dim:  rgba(255, 238, 0, 0.12);
       --green-glow: rgba(0,255,136,0.06);
       --white-tech: #F4F5F7;
-      --muted:      rgba(244,245,247,0.35);
+      --muted:      rgba(244, 245, 247, 0.814);
       --muted2:     rgba(244,245,247,0.18);
       --ff-display: 'Syne', sans-serif;
       /*--ff-body:    'Playfair Display', serif;*/
@@ -248,7 +248,7 @@
       font-family: var(--ff-body);
       font-weight: 300;
       font-size: clamp(1.1rem, 0.2vw, 0.1rem);
-      color: rgb(192, 192, 192);
+      color: rgb(231, 230, 230);
       max-width: 600px;
       line-height: 1.5;
       margin-bottom: 3.5rem;
@@ -292,8 +292,10 @@
       font-weight: 600;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      background: #01ef80;
-      color: black;
+      color: var(--obsidian);
+      background: var(--green);
+      transition: all 0.35s ease;
+      box-shadow: 0 0 30px rgba(246, 255, 0, 0.35), 0 0 60px rgba(0,255,136,0.1);
       border: 1px solid rgba(255, 255, 255, 0.405);
       padding: 1.1rem 2.8rem;
       cursor: pointer;
@@ -890,7 +892,7 @@
         font-size: 2.5rem ;
       }
       .para-ti-item2 {
-        max-width:280px ; padding-bottom: 0.5rem;
+        max-width:340px ; padding-bottom: 0.5rem;
       }
     }
 
@@ -1185,7 +1187,7 @@
     .faq-subtitle {
       font-family: var(--ff-body);
       font-size: 0.95rem;
-      color: #8d8d8d;
+      color: #c8c8c8;
       max-width: 600px;
       margin: 0 auto;
       line-height: 1.6;
@@ -1660,7 +1662,7 @@
         <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Aprende a co-crear en unión con la Fuente</p> 
       </div> 
       <div class="para-ti-item2 fade-in">
-        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Conviértete en el jugador que domina el tablero de su propia vida</p>
+        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Domina el tablero y la estrategia</p>
       </div>   
     </div>
 
@@ -1750,7 +1752,7 @@
           
           <div class="cta-container" style="text-align: center; margin-bottom: 20px;">
             <!-- Cambié el enlace por un botón con un ID para controlar el clic con JavaScript -->
-            <button id="btn-mostrar-calendario" class="btn-secondary" style="cursor: pointer; border: none;">Reservar Sesión</button>
+            <button id="btn-mostrar-calendario" class="btn-secondary">Reservar Sesión</button>
           </div>           
         </div>
       </article>
@@ -1881,7 +1883,7 @@
       <span class="line-green">Los maestros diseñan el tablero.</span>
     </p>
     <p class="manifesto-sig" style="padding-bottom: 3rem;">— CounterZero Space</p>
-     <a href="#reserva" class="btn-ghost"  >Agendar una Sesión</a>
+     <a href="#reserva" class="btn-nav-cta"  >Agendar una Sesión</a>
   </div>
       
 </section>
