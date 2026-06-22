@@ -713,20 +713,29 @@
     .philx-title {
       color: rgb(225, 225, 225);
       margin-top: 0;
-      margin-bottom: 12px;
       font-family: var(--ff-display);
       font-size: 1.3rem;
       font-weight: 700;
       letter-spacing: 0.02em;
-      margin-bottom: 1rem;
+      text-transform: uppercase;
+      margin-bottom: 0.1rem;
+    }
+
+    .philx-subtitle {
+      font-family: var(--ff-mono);
+      font-size: 0.8rem;
+      font-weight: 300;
+      letter-spacing: 0em;
+      color:rgb(180, 180, 180);
       text-transform: uppercase;
     }
 
     .philx-body {
       text-align: justify; 
-      color: #c8c8c8;
+      color: #dbdbdb;
       line-height: 1.6;
       margin-bottom: 20px;
+      margin-top:1rem;
       font-size: 0.92rem;
       line-height: 1.75;
       font-family: var(--ff-body);
@@ -1317,7 +1326,7 @@
       padding: 0 2rem;
     }
 
-    .faq-answer p {
+    .faq-answer p, li{
       font-family: var(--ff-body);
       font-size: 0.9rem;
       color: #dadada;
@@ -1326,6 +1335,11 @@
       margin: 0;
       text-align: justify;
     }
+
+    .faq-answer ul{
+      padding-left: 2.5rem;
+    }
+
 
     /* Ajustes para móviles */
     @media (max-width: 640px) {
@@ -1707,7 +1721,7 @@
     </h1>
     <h2 class="hero-sub">Aprende a co-crear en armonía con la Unidad.</h2>
     <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
-      <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio de alta reserva espiritual diseñado para ofrecer dirección, guía y entendimiento para vivir una vida alineada al crecimiento y desarrollo del Espíritu y del Alma.</p> 
+      <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio de alta reserva espiritual diseñado para ofrecer dirección, guía y entendimiento para sostener una vida alineada al crecimiento y desarrollo del Espíritu y del Alma.</p> 
       <p class="hero-desc" style="text-align: justify;">
       Activa tu <strong style="font-weight: bold;">Arquetipo Interno</strong> y comunícate directo con la Fuente sin intermediarios. A través del <strong style="font-weight: bold;">Ajedrez Interior</strong>, accedes a una estrategia única que no requiere de fórmulas, magia ni codependencia. Es estrategia pura y libre de dogmas para ordenar tu realidad a partir de la sabiduría transmitida al autor, la cual hoy comparte a través de su consultoría y recurso literario.
     </p>
@@ -1745,7 +1759,7 @@
 
     <div>
       <p class="philx-body" style="color: black; font-size: 1.2rem; font-weight: 600;">Haz una pausa táctica.</p>
-      <p class="philx-body" style="color: black; font-size: 1rem;">Gana claridad y ventaja recorriendo un camino libre de dogmas junto a un experto. <strong style="color:#00842a; font-weight: 600 ;"> Esto es consultoría estratégica directa</strong>: un proceso    100% orgánico y exclusivo, diseñado para transformar tu realidad actual y guiarte hacia una vida en auténtica armonía.
+      <p class="philx-body" style="color: black; font-size: 1rem;">Gana claridad y ventaja recorriendo un camino libre de dogmas junto a un experto. <strong style="color:#00842a; font-weight: 600 ;"> Esto es consultoría estratégica directa</strong>: un proceso    100% orgánico y exclusivo, diseñado para transformar tu realidad actual y guiarte hacia una vida en auténtica armonía con la creación.
       
       <p class="philx-body" style="color: black; font-size: 1rem;">
 
@@ -1800,11 +1814,11 @@
             <h3 class="philx-title">Conocimiento</h3>
             <p class="philx-body"><strong>
               Un viaje literario  e iniciático que te revela lo oculto en las dinámicas de la realidad y los puntos claves para tu soberanía. Realizado por Johely Franco en co-creación con la Divinidad </p></strong>
-            <p class="philx-body">Esta obra transmite una sabiduría didáctica mediante la analogía del ajedrez. Muestra cómo interactúan las piezas, los oponentes y los personajes, ofreciendo una guía táctica para entender lo que revela la Matrix y gestionar el control de tu propio cuadrante.
+            <p class="philx-body" style="padding-bottom: 3rem;">Esta obra transmite una sabiduría didáctica mediante la analogía del ajedrez. Muestra cómo interactúan las piezas, los oponentes y los personajes, ofreciendo una guía táctica para entender lo que revela la Matrix y gestionar el control de tu propio cuadrante.
             </p>
             <p class="philx-body"></p>
             
-            <div class="cta-container" style="text-align: center;">
+            <div class="cta-container"  style="text-align: center; margin-bottom: 20px;">
               <a href="https://www.amazon.com/dp/B0H4WPKRBR?spcref=PRINT_LISTING" class="btn-secondary"  >Adquirir el Libro</a>
             </div>  
           </div>
@@ -1822,32 +1836,39 @@
       <div class="diagnosticox-grid reveal"> 
         <article class="philx-card textx-column" style="padding-left:  0.8rem; padding-right:  0.8rem;">
           <div class="diagnostcox-text">
-            <div class="sep" aria-hidden="true" id="reserva"></div>
+            <div class="sep" aria-hidden="true" id="reserva"></div>            
             <p class="philx-label" style="text-align:left;">CONSULTORIA</p>
-            <h3 class="philx-title">Retorno al Origen</h3>
+            <h2 class="philx-title">Retorno al Origen</h2>
+            <h3 class="philx-subtitle" style="margin-bottom: 0.5rem;font-size: 1.1rem;">Juega como un Maestro y hackea tu Ajedrez Interno</h3>
+            <p class="philx-subtitle">Duración: 60 minutos | Online</p>
+
             <p class="philx-body">
-              Un espacio reservado de 60 minutos diseñado exclusivamente para quienes eligen acelerar su proceso, limpiar su posición en el tablero y reconfigurar su realidad desde el Ser.
+              Un espacio reservado de 60 minutos diseñado exclusivamente para quienes eligen acelerar su proceso, limpiar su posición en el tablero bajo el método de <strong>El Ajedrez Interno</strong>. El objetivo es volver al Origen: recordar las reglas maestras de tu diseño original y recuperar tu soberanía.
             </p>
-            <p class="philx-body">Es una consultoría estratégica directa, cien por ciento orgánica y espiritual, libre de terapias holísticos o dogmas. No constituye un espacio médico, terapéutico ni psicológico.</p>
+            <p class="philx-body" style="padding-bottom: 3rem;">Es una consultoría estratégica directa, cien por ciento orgánica y espiritual, libre de interferencias o dogmas. No constituye un espacio médico, terapéutico ni psicológico.</p>
+
+
             <div class="cta-container" style="text-align: center; margin-bottom: 20px;">
               <button id="btn-mostrar-calendario" class="btn-secondary">Reservar Sesión</button>
-          </div>           
-        </div>
-      </article>
-
-      <article class="philx-card image-column">
-        <!-- Añadimos un id a la imagen para  esconderla -->
-        <img id="imagen-mentoria" src="imagen-de-fondo-servicio-mentoria.png" alt="CounterZero Space"/> 
-        
-        <!-- Contenedor del calendario (Inicia escondido) -->
-        <div id="contenedor-calendario" style="display: none; width: 100%;">
-          <!-- Principio del widget integrado de Calendly -->
-          <div class="calendly-inline-widget" data-url="https://calendly.com/counterzero-space/60" style="min-width:320px;height:700px;">
+            </div>           
           </div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          <!-- Final del widget integrado de Calendly -->
-        </div>
-      </article>
+        </article>
+      
+
+        <article class="philx-card image-column">
+          <!-- Añadimos un id a la imagen para  esconderla -->
+          <img id="imagen-mentoria" src="imagen-de-fondo-servicio-mentoria.png" alt="CounterZero Space"/> 
+          
+          <!-- Contenedor del calendario (Inicia escondido) -->
+          <div id="contenedor-calendario" style="display: none; width: 100%;">
+            <!-- Principio del widget integrado de Calendly -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/counterzero-space/60" style="min-width:320px;height:700px;">
+            </div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Final del widget integrado de Calendly -->
+          </div>
+        </article>
+      </div>
     </div>
   </div>
 </section>
@@ -2073,7 +2094,7 @@
         </button>
 
         <div class="faq-answer">
-          <p>Es una plataforma de acompañamiento espiritual orientada a la desprogramación mental y al retorno al diseño original. A través de la obra El Ajedrez Interior y de sesiones de consultoría privada cien por ciento orgánicas —libres de dogmas o terapias holísticos—, te ofrezco el orden y la claridad que necesitas para que ejecutes, por tu propia cuenta, tu movimiento de regreso al Origen.</p>
+          <p>Es una plataforma de acompañamiento espiritual orientada a la desprogramación mental y al retorno del diseño original. A través de la obra El Ajedrez Interior y de sesiones de consultoría privada cien por ciento orgánicas —libres de dogmas—, se ofrece establecer orden y claridad para que la persona "el jugador" <strong>ejecute su rol </strong>en la creación. Libre de interveciones y de fuentes externas distorcionadas.</p>
         </div>
       </div>
       
@@ -2085,6 +2106,24 @@
         </button>
         <div class="faq-answer">
           <p>Están dirigidas a todo aquel que siente que ha perdido el control estratégico de su entorno y de su propio propósito. Si sientes que eres una pieza movida por las circunstancias en lugar de ser el jugador que dirige el tablero, entonces esta Estrategia es para ti.</p>
+        </div>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>¿Qué abordaremos en este encuentro de 60 minutos?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>En esta sesión realizamos una intervención directa sobre tu tablero en dos fases estratégicas:</p>
+          <ul>
+            <li><strong>Lectura del Tablero:</strong> Analizamos las dinámicas actuales para identificar interferencias sutiles y desprogramar los patrones inconscientes que operan en tu tablero.</li>
+            <li><strong>El Movimiento Maestro:</strong> Proyectamos la estrategia clave basada en tu diseño original para que dejes de operar a la inversa y consolides tu propio camino desde el Ser.</li>
+          </ul>
+          <p>El objetivo final de este encuentro es: <br><br>◎ <strong>Volver al Origen:</strong> Reconectar con tu esencia original y que te conviertas en un Jugador Maestro.<br>
+             ◎ <strong>Claridad Estratégica:</strong> Elevar tu conciencia para ver la estrategia completa del juego.<br>
+             ◎ <strong>Soberanía:</strong> Despertar tu liderazgo personal y gobernanza sobre tu tablero.</p>
         </div>
       </div>
 
