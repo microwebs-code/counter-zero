@@ -90,10 +90,10 @@
       z-index: 1000;
       display: flex; align-items: center; justify-content: space-between;
       padding: 1.4rem 5vw;
-      background: rgba(5, 5, 5, 0.122);
+      background: rgba(30, 30, 30, 0.155);
       backdrop-filter: blur(32px) saturate(180%);
       -webkit-backdrop-filter: blur(32px) saturate(180%);
-      border-bottom: 1px solid rgba(0,255,136,0.07);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.178);
       transition: background 0.5s ease;
     }
 
@@ -164,7 +164,8 @@
       background-image: url(pieza-del-tablero-imagen-central.png);
       background-repeat: no-repeat;     
       background-position: 320% center; 
-      background-size: 91% 
+      background-size: 91% ;
+      border-top: 2px solid greenyellow;
     }
 
     /* Radial vignette over everything */
@@ -194,7 +195,7 @@
       position: relative; z-index: 3;
       display: flex; flex-direction: column;
       align-items: left; text-align: left;
-      padding: 8rem 5vw 6rem;
+      padding: 4rem 5vw 8rem;
       max-width: 900px;
     }
 
@@ -531,8 +532,8 @@
     /* ── SEPARATOR ── */
     .sep {
       width: 100%;
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgb(0, 203, 27), transparent);
+      height: 2px;
+      background: linear-gradient(to right, rgb(0, 130, 9), rgb(166, 255, 0), rgb(0, 146, 56));
       margin-bottom: 2rem;
       animation: fadeUp 0.8s ease 0.2s both;
     }
@@ -543,7 +544,7 @@
     .s-philosophy {
       padding: 15rem 0;
       background: radial-gradient(ellipse at 50% 0%, var(--carbon) 0%, var(--obsidian) 70%);
-      border-top: 1px solid rgba(0,255,136,0.07);
+      border-top: 2px solid greenyellow;
     }
 
     .philosophy-header {
@@ -713,7 +714,7 @@
 
   .para-ti-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3.5rem;text-align: center;padding: 1rem 0;}
   .para-ti-item{display:flex;flex-direction:column;align-items:center;gap:1rem;}
-  .para-ti-icon{width:70px;height:64px;border-radius:50%;border:2px solid black;display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green);background: black;}
+  .para-ti-icon{width:70px;height:64px;border-radius:50%;border:2px solid rgb(128, 255, 0);display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green);background: black;}
   .para-ti-item p{font-size:0.88rem;line-height:1.7;color:black;}
   .para-ti-item2{display:flex;flex-direction:row;align-items:center;}
   .para-ti-icon2{width:50px;height:44px;border-radius:50%;border:2px solid black;display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green-holo);background: black;}
@@ -883,6 +884,13 @@
       .map-node {
         padding: 1rem 1.2rem;
         gap: 1rem;
+      }
+
+      #main-title {
+        font-size: 2.5rem ;
+      }
+      .para-ti-item2 {
+        max-width:260px ;
       }
     }
 
@@ -1534,7 +1542,7 @@
       nav { padding: 1.2rem 5vw; }
       .nav-links { display: none; }
       .philosophy-grid { grid-template-columns: 1fr; gap: 1px; }
-      .diagnosticox-grid { grid-template-columns: 1fr; gap: 1px; padding: 0; }
+      .diagnosticox-grid { grid-template-columns: 1fr; gap: 1px; padding: 0; padding-top: 3rem;}
       
       .excl-grid { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr; gap: 3rem; }
@@ -1543,8 +1551,10 @@
       .excl-grid { grid-template-columns: 1fr; }
       .hero-ctas, .cta-container { flex-direction: column; align-items: stretch; text-align: center; }
       .btn-primary, .btn-secondary, .btn-ghost, .btn-proceso { text-align: center; }
-      .hero-headline {      font-family: var(--titular);       font-size: 3.3rem;     }
+      .hero-headline {      font-family: var(--titular);       font-size: 3rem;  text-align: center;   }
+      .hero-sub {font-size: 1.2rem; text-align: center; padding-top: 1rem;}
       .s-philosophy, .s-acompanamiento {padding: 8rem 0; }
+      .para-ti-p2 {font-size: 0.9rem; text-align: left;}
       
       .hero-desc {background: #0707073c;}
       .s-faq {border:0; border-top: 2rem solid  #00D97A;border-bottom: 2rem solid  #00D97A;}
@@ -1570,7 +1580,7 @@
   </a>
   <ul class="nav-links">
     <li><a href="#estrategia">Estrategia</a></li>
-    <li><a href="#evaluacion">Alineación</a></li>
+    <li><a href="#alineacion">Alineación</a></li>
     <li><a href="https://tally.so/r/D4a8qN">Contacto</a></li>
   </ul>
   <a href="https://tally.so/r/D4a8qN" class="btn-nav-cta">Solicitar Acceso</a>
@@ -1594,7 +1604,7 @@
 <section class="s-philosophy" id="diagnostico" aria-label="Filosofía de la Estrategia">
   <div class="wrap">
     <div class="philosophy-header reveal">
-      <span class="section-label" style="justify-content:center; margin-bottom:1.5rem;">El Diagnóstico</span>
+      <!--<span class="section-label" style="justify-content:center; margin-bottom:1.5rem;">El Diagnóstico</span>-->
       <h2 class="diagnostico-title">¿Estás en Jaque?</h2>
     </div>
 
@@ -1640,7 +1650,7 @@
     <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
       <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio de alta reserva espiritual diseñado para ofrecer dirección, guía y entendimiento para vivir una vida alineada al crecimiento y desarrollo del Espíritu y del Alma.</p> 
       <p class="hero-desc" style="text-align: justify;">
-      Activa tu <strong style="font-weight: bold;">Arquetipo Interno</strong> y comunícate directo con la Fuente sin intermediarios. A través del <strong style="font-weight: bold;">Ajedrez Interior</strong>, accedes a una estrategia única que no requiere de fórmulas, magia, ni retiros. Es estrategia pura y libre de dogmas para ordenar tu realidad a través de nuestras consultorías de alto impacto y herramientas de autor.
+      Activa tu <strong style="font-weight: bold;">Arquetipo Interno</strong> y comunícate directo con la Fuente sin intermediarios. A través del <strong style="font-weight: bold;">Ajedrez Interior</strong>, accedes a una estrategia única que no requiere de fórmulas, magia, ni retiros. Es estrategia pura y libre de dogmas para ordenar tu realidad a través de nuestras herramientas de autor y consultorías de alto impacto.
     </p>
     <div style="padding-bottom: 5rem;">
       <div class="para-ti-item2 fade-in">
@@ -1667,10 +1677,10 @@
 
 
 <!-- PHILOSOPHY 2 -->
-<section class="s-diagnostico" style="background:white;" id="evaluacion" aria-label="Filosofía de la Estrategia">
+<section class="s-diagnostico" style="background:white;" id="estrategia" aria-label="Filosofía de la Estrategia">
   <div class="wrapx">
     <div class="philosophy-header reveal">
-      <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">Estratégia</span>
+      <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">La Estrategia</span>
       <h2 class="diagnostico-title opuesto">Es hora de Alinear</h2>
     </div>
 
@@ -1801,18 +1811,18 @@
 
 
 <!-- METHOD MAP -->
-<section class="s-method" aria-label="Mapa estrategico de la  Estrategia" id="estrategia">
+<section class="s-method" aria-label="Mapa estrategico de la  Alineación" id="alineacion">
   <div class="wrap">
     <div class="method-wrap">
       <div class="method-left reveal">
-        <span class="section-label">La Estrategia</span>
+        <span class="section-label">La Alineación</span>
         <!--<h2 class="method-title">Un <span>Proceso</span><br/>Estratégico</h2>-->
         <h2 class="method-title">Un Proceso<br/>Orgánico</h2>
         <p class="method-desc">
-          A través del Sistema de El Ajedrez Interior, te demuestra como cada nodo representa una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero desde tu autonomia.
+          A través del Sistema de El Ajedrez Interior mostramos como alinearse en cada nodo representando una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero desde tu autonomia.
         </p>
         <div class="cta-container">
-          <a href="#evaluacion" class="btn-proceso "  >Iniciar Estrategia</a>
+          <a href="#alineacion" class="btn-proceso "  >Iniciar Estrategia</a>
         </div>    
 
       </div>
@@ -1860,7 +1870,7 @@
 
 
 <!-- MANIFESTO -->
-<section class="s-manifesto" id="evaluacion" aria-label="Manifiesto CounterZero">
+<section class="s-manifesto" id="alineacion" aria-label="Manifiesto CounterZero">
   <div class="manifesto-bg" aria-hidden="true"></div>
   <div class="manifesto-lines" aria-hidden="true"></div>
 
@@ -1871,7 +1881,7 @@
       <span class="line-green">Los maestros diseñan el tablero.</span>
     </p>
     <p class="manifesto-sig" style="padding-bottom: 3rem;">— CounterZero Space</p>
-     <a href="https://tally.so/r/D4a8qN" class="btn-ghost"  >Agendar una Sesión</a>
+     <a href="#reserva" class="btn-ghost"  >Agendar una Sesión</a>
   </div>
       
 </section>
