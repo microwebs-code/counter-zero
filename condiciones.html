@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
+
+<!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2471046');
+  </script>
+  <!-- End MailerLite Universal -->
+
+
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,7 +59,7 @@
       --ff-display: 'Syne', sans-serif;
       /*--ff-body:    'Playfair Display', serif;*/
       /*--ff-body:    'Outfit', sans-serif;*/
-      --ff-body:    'Roboto Serif', serif;
+      --ff-body:    'Outfit', sans-serif;
       --ff-mono:    'Syne Mono', monospace;
       --ff-title:   'Inter', sans-serif;
       --titular:   'Cinzel', serif;
@@ -189,7 +202,8 @@
     }
     .footer-inner {
       position: relative; z-index: 1;
-      display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 4rem;
+      /*display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 4rem;*/
+      display: grid; grid-template-columns: 2fr 2fr; gap: 4rem;
       margin-bottom: 5rem; align-items: start;
     }
     .footer-brand-name {
@@ -202,15 +216,17 @@
       letter-spacing: 0.3em; text-transform: uppercase; color: var(--green); opacity: 0.6;
       margin-bottom: 1.5rem;
     }
+    
     .footer-brand-quote {
-      font-family: var(--ff-body); font-style: italic; font-size: 0.88rem;
-      color: rgba(244,245,247,0.35); line-height: 1.7; max-width: 280px;
-      margin-bottom: 1.5rem;
+      font-family: var(--ff-body); font-size: 0.9rem;
+      color: rgb(135, 250, 173); line-height: 1.7; max-width: 280px;
+      margin-bottom: 1.5rem; 
     }
     .footer-tagline {
-      font-family: var(--ff-mono); font-size: 0.56rem;
-      letter-spacing: 0.25em; text-transform: uppercase; color: rgba(244,245,247,0.25);
-    }
+      font-family: var(--ff-body); font-size: 0.8rem; font-weight: 300;
+      text-transform: uppercase; color:rgb(162, 162, 162); padding-bottom: 2rem; text-align: justify;
+      align-self: end;}
+
     .footer-col-title {
       font-family: var(--ff-mono); font-size: 0.58rem; letter-spacing: 0.4em;
       text-transform: uppercase; color: rgba(244,245,247,0.25); margin-bottom: 1.8rem;
@@ -236,6 +252,31 @@
     .social-links a:hover { color: var(--green); }
     .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5vw; box-sizing: border-box;}
     .footer-legal a:hover { color: var(--green-holo) }
+
+    .btn-ghost {
+      font-family: var(--ff-display);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: white;
+      background: rgba(98, 98, 98, 0.195);
+      border: 1px solid rgba(255, 255, 255, 0.405);
+      padding: 1.1rem 2.4rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.35s ease;
+      display: inline-block;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .btn-ghost:hover {
+      color: black;
+      border-color: rgba(251, 255, 0, 0.3);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.32);
+      background: var(--green);
+      
+    }
 
 
 
@@ -387,7 +428,7 @@
   </a>
   <ul class="nav-links">
     <li><a href="https://counterzero.space">Inicio</a></li>
-    <li><a href="https://tally.so/r/D4a8qN">Contacto</a></li>
+    <li><a href="https://tally.so/r/D4a8qN" target="_blank">Contacto</a></li>
   </ul>
   <a href="#soluciones" class="btn-nav-cta">Soluciones</a>
 </nav>
@@ -421,7 +462,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer id="contacto" role="contentinfo">
     <div class="footer-watermark" aria-hidden="true">COUNTER ZERO</div>
     <div class="wrap">
       <div class="footer-inner">
@@ -432,15 +473,22 @@
             Es el momento en que decides cómo jugarlo.
           </p>
         </div>
+        
+        <div>
+          <h2 class="footer-brand-quote" style="padding-top: 1rem;">♔ Da tu Primer Movimiento</h2>
+          <h3 class="footer-tagline">Comienza tu recorrido con <strong>El Despertar del Peón</strong>, una guía introductoria para descubrir el tablero y comprender las primeras reglas del juego.</h3>
+          <button class="ml-onclick-form btn-ghost" onclick="ml('show', 'Im92zq', true)"  onmouseover="this.style.backgroundColor='#1a1a1a'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#e0e0e0';">DESCARGAR LA GUÍA
+        
+          </button>
+        </div>
+
       </div>
-
-
       <div class="footer-legal" style="margin-top: 2rem; text-align: left; font-size: 0.7rem; opacity: 0.6;">
         <a href="https://counterzero.space/politica.html" style="color: var(--white-tech);padding-right: 1rem;;">Política de Privacidad </a>
-        <a href="#" style="color: var(--white-tech);">Términos y Condiciones</a>
+        <a href="https://counterzero.space/condiciones.html" style="color: var(--white-tech);">Términos y Condiciones</a>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copy">© 2026 Johely Franco | CounterZeroSpace — Todos los derechos reservados</p>
+        <p class="footer-copy">© 2026 Johely Franco | CounterZeroSpace — Todos los derechos reservados.</p>
         <div class="footer-dot" aria-hidden="true"></div>
       </div>
     </div>

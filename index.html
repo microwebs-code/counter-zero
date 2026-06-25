@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+<!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2471046');
+  </script>
+<!-- End MailerLite Universal -->
+
+
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="CounterZeroSpace Es una plataforma de acompañamiento espiritual orientada a la desprogramación mental y al retorno al diseño original. A través del libro El Ajedrez Interior y de sesiones de consultoría privada 100% orgánicas (libres de dogmas o métodos holísticos), ofrece un espacio de orden y claridad para que ejecutes, por cuenta propia, tu movimiento de regreso al Origen, con absoluta consciencia, responsabilidad y dirección"/>
-  <meta property="og:title" content="Descubre el lenguaje oculto de la realidad. Conoce el Ajedrez Interior"/>
+  <meta name="description" content="CounterZeroSpace Es una plataforma de acompañamiento espiritual orientada a la desprogramación mental y al retorno al diseño original. A través del libro El Ajedrez Interior y de sesiones de consultoría privada 100% orgánicas (libres de dogmas o codependencia), ofrece un espacio de orden y claridad para que ejecutes, por cuenta propia, tu movimiento de regreso al Origen, con absoluta consciencia, responsabilidad y dirección"/>
+  <meta property="og:title" content="Descubre el lenguaje oculto y el ancla única. Conoce el Ajedrez Interior"/>
   <meta property="og:description" content="Comprende el tablero, tus jugadas y a ti como jugador a través del 'Ajedrez Interior'"/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://counterzero.space/portada.png" />
@@ -23,6 +34,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lancelot&family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Syne+Mono&family=Playfair+Display:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet"/>
+  
+  
+  
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -46,8 +60,8 @@
       --muted2:     rgba(244,245,247,0.18);
       --ff-display: 'Syne', sans-serif;
       /*--ff-body:    'Playfair Display', serif;*/
-      /*--ff-body:    'Outfit', sans-serif;*/
-      --ff-body:    'Roboto Serif', serif;
+      --ff-body:    'Outfit', sans-serif;
+      /*--ff-body:    'Roboto Serif', serif;*/
       --ff-mono:    'Syne Mono', monospace;
       --ff-title:   'Inter', sans-serif;
       --titular:   'Cinzel', serif;
@@ -248,7 +262,7 @@
     .hero-desc {
       font-family: var(--ff-body);
       font-weight: 300;
-      font-size: clamp(1.1rem, 0.2vw, 0.1rem);
+      font-size: clamp(1.2rem, 0.2vw, 0.1rem);
       color: rgb(231, 230, 230);
       max-width: 600px;
       line-height: 1.5;
@@ -261,7 +275,7 @@
       opacity: 0; animation: fadeUp 0.9s ease 0.75s forwards;
     }
 
-    .cta-container {margin-top: 2.5rem; text-align: center;}
+    .cta-container {margin-top: 1rem; text-align: center;}
 
     .btn-primary {
       font-family: var(--ff-display);
@@ -370,6 +384,9 @@
       cursor: pointer;
       text-decoration: none;
       transition: all 0.35s ease;
+      display: inline-block;
+      text-align: center;
+      box-sizing: border-box;
     }
     .btn-ghost:hover {
       color: black;
@@ -661,7 +678,7 @@
       text-transform: uppercase;
     }
     .phil-body {
-      font-size: 0.92rem;
+      font-size: 1rem;
       color: rgb(175, 175, 175);
       line-height: 1.75;
       font-family: var(--ff-body);
@@ -741,8 +758,8 @@
       line-height: 1.6;
       margin-bottom: 20px;
       margin-top:1rem;
-      font-size: 0.92rem;
-      line-height: 1.75;
+      font-size: 1rem;
+      line-height: 1.5;
       font-family: var(--ff-body);
       font-weight: 300;
     }
@@ -778,7 +795,7 @@
 
   .para-ti-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3.5rem;text-align: center;padding: 1rem 0;}
   .para-ti-item{display:flex;flex-direction:column;align-items:center;gap:1rem;background: #f2f2f2;padding: 1rem;}
-  .para-ti-icon{width:70px;height:64px;border-radius:50%;border:2px solid rgb(128, 255, 0);display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green);background: black;}
+  .para-ti-icon{width:70px;height:64px;border-radius:50%;border:2px solid var(--green);display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green);background: black;}
   .para-ti-item p{font-size:0.88rem;line-height:1.7;color:black;}
   .para-ti-item2{display:flex;flex-direction:row;align-items:center;}
   .para-ti-icon2{width:50px;height:44px;border-radius:50%;border:2px solid black;display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green-holo);background: black;}
@@ -919,6 +936,48 @@
     .acomp-icon { font-size: 1.5rem; color: var(--green); margin-bottom: 1.2rem; display: block; text-shadow: 0 0 12px rgba(0,255,136,0.5); }
     .acomp-body { font-family: var(--ff-body);  font-size: 0.82rem; color: var(--muted); line-height: 1.65; }
 
+
+
+    /* ── Experiencia Soluciones ── */
+    .experiencias-container {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .experiencias-container .btn-ghost {
+      width: 100%;       /* Ocupan todo el ancho de su tarjeta */
+      max-width: 250px;  /* Límite para que no se vean gigantes en móviles grandes */
+    }
+
+    .experiencias-container .cta-container {padding:0;}
+    .experiencias-container .philx-subtitle p{
+      padding-bottom: 0;
+    }
+    .experiencia-card{
+      flex: 1; border: 1px solid #333; padding: 1rem 0.5rem; border-radius: 8px; text-align: center;
+    }
+
+     
+
+    @media (max-width: 768px) {
+      .experiencias-container {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos verticalmente */
+        gap: 1.5rem;           /* Aumenta el espacio para facilitar el toque con el dedo */
+        margin-top: 1.5rem;  /* Reduce márgenes para aprovechar el espacio */
+        padding-bottom: 1.5rem;
+      }
+
+      .experiencias-container .experiencia-card {
+        width: 100%;       /* Ocupan todo el ancho del contenedor */
+        max-width: 380px;  /* Evita que se estiren demasiado en pantallas anchas 320*/
+        box-sizing: border-box; /* Evita que el padding rompa el diseño */
+      }
+
+    }
 
 
     /* ── METHOD ── */
@@ -1373,9 +1432,12 @@
     }
     .footer-inner {
       position: relative; z-index: 1;
-      display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 4rem;
+      /*display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 4rem;*/
+      display: grid; grid-template-columns: 2fr 2fr; gap: 4rem;
       margin-bottom: 5rem; align-items: start;
     }
+
+
     .footer-brand-name {
       font-family: var(--ff-display); font-size: 0.85rem; font-weight: 700;
       letter-spacing: 0.15em; text-transform: uppercase; color: var(--white-tech);
@@ -1387,13 +1449,14 @@
       margin-bottom: 1.5rem;
     }
     .footer-brand-quote {
-      font-family: var(--ff-body); font-style: italic; font-size: 0.88rem;
-      color: rgba(244,245,247,0.35); line-height: 1.7; max-width: 280px;
+      font-family: var(--ff-body); font-size: 0.9rem;
+      color: rgb(135, 250, 173); line-height: 1.7; max-width: 280px;
       margin-bottom: 1.5rem;
     }
     .footer-tagline {
-      font-family: var(--ff-mono); font-size: 0.56rem;
-      letter-spacing: 0.25em; text-transform: uppercase; color: rgba(244,245,247,0.25);
+      font-family: var(--ff-body); font-size: 0.8rem; font-weight: 300;
+      text-transform: uppercase; color:rgb(162, 162, 162); padding-bottom: 2rem; text-align: justify;
+      align-self: end;
     }
     .footer-col-title {
       font-family: var(--ff-mono); font-size: 0.58rem; letter-spacing: 0.4em;
@@ -1587,7 +1650,9 @@
     .form-success-h { font-family: var(--ff-display); font-size: 1.8rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1rem; }
     .form-success-p { font-family: var(--ff-body);  color: var(--muted); font-size: 0.95rem; line-height: 1.75; }
    
-   /* ── RESPONSIVE ── */
+
+
+/* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
       nav { padding: 1.2rem 5vw; }
       .nav-links { display: none; }
@@ -1689,7 +1754,7 @@
     <li><a href="#estrategia">Estrategia</a></li>
     <li><a href="#alineacion">Alineación</a></li>
     <li><a href="#soluciones">Soluciones</a></li>
-    <li><a href="https://tally.so/r/D4a8qN">Contacto</a></li>
+    <li><a href="https://tally.so/r/D4a8qN" target="_blank">Contacto</a></li>
   </ul>
   <a href="#soluciones" class="btn-nav-cta">Soluciones</a>
 </nav>
@@ -1752,7 +1817,7 @@
     <p class="hero-access-tag"></p>
     <h2 class="hero-headline">
       Liderazgo y
-      <br>Soberanía <strong>Espiritual</strong>
+      <br>Soberanía <strong>Interior</strong>
     </h2>
     <h3 class="hero-sub">Aprende a co-crear en armonía con la Unidad.</h3>
     <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
@@ -1768,7 +1833,7 @@
         <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Aprende a co-crear en unión con la Unidad</p> 
       </div> 
       <div class="para-ti-item2 fade-in">
-        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Activa tu ancla clave consagrada</p>
+        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Activa tu <strong>ancla clave</strong> consagrada</p>
       </div>   
     </div>
 
@@ -1844,10 +1909,10 @@
             <p class="philx-label" style="text-align:left;">Automaestría</p>
             <h2 class="philx-title">Conocimiento</h2>
             <p class="philx-body">
-             <strong>Un viaje iniciático y práctico en dos formatos, diseñado para que selecciones la experiencia que te brinde mayor entrega y conexión. Esta automaestría tiene por objetivo revelarte el secreto mejor guardado para consagrarte, permitiéndote operar en el tablero y en tu realidad desde el ancla clave, convirtiéndote en soberano y artífice de tu juego en la Matrix.</strong>
+             <strong>Un viaje iniciático y práctico en dos formatos, diseñado para que selecciones la experiencia que te brinde mayor entrega y conexión. Esta automaestría tiene por objetivo revelarte el secreto mejor guardado para consagrarte, permitiéndote operar en el tablero y en tu realidad desde el <strong>ancla clave</strong>, convirtiéndote en soberano y artífice de tu juego en la Matrix.</strong>
             </p>
             <p class="philx-body" >
-              Esta obra ha sido producida por Johely Franco en co-creación con la Divinidad, y transmite una sabiduría didáctica y profunda mediante la analogía del ajedrez. Cada capítulo actúa como un módulo puente y un portal evolutivo que se te muestra a través de cómo interactúan las piezas, los oponentes y las leyes universales, ofreciéndote una guía clara y sin condicionamientos para sostener tus cambios internos y reclamar el control total de tu propio cuadrante hacia la gran revelación final.
+              Esta obra ha sido producida por Johely Franco en co-creación con la Divinidad, y transmite una sabiduría didáctica y profunda mediante la analogía del ajedrez. Cada capítulo actúa como un módulo puente y un portal evolutivo mostrando cómo interactúan las piezas, los oponentes y las leyes universales, ofreciéndote una guía clara y sin condicionamientos para sostener tus cambios internos y reclamar el control total de tu propio cuadrante hacia la gran revelación final.
             </p>
             <p class="philx-body"></p>
             
@@ -1855,31 +1920,27 @@
             
 
 
-            <div class="experiencias-container" style="display: flex; gap: 0.5rem; justify-content: center; margin-top: 3rem;padding-bottom: 3rem;">
+            <div class="experiencias-container">
 
               <!-- OPCIÓN 1: ANALÓGICA -->
-              <article class="experiencia-card" style="flex: 1; border: 1px solid #333; padding: 0.5rem; border-radius: 8px; text-align: center;">
+              <article class="experiencia-card">
                 <h3 class="philx-title" style="font-size: 0.8rem;">Experiencia Analógica</h3>
-                <p class="philx-subtitle" style="margin-top: 0.5rem;text-align:  center; color: white;"><strong>Formato Impreso</strong></p>
-                <div class="cta-container"  style="text-align: center; margin-bottom: 20px;">
-                  <a href="https://www.amazon.com/dp/B0H4WPKRBR?spcref=PRINT_LISTING" class="btn-secondary"  >Adquirir</a>
+                <p class="philx-subtitle" style="text-align:center; color: #bbbbbb;"><strong>Formato Impreso</strong></p>
+                <div class="cta-container">
+                  <a href="https://www.amazon.com/dp/B0H4WPKRBR?spcref=PRINT_LISTING" class="btn-ghost"  >Adquirir </a>
                 </div>  
               </article>
 
               <!-- OPCIÓN 2: DIGITAL -->
-              <article class="experiencia-card" style="flex: 1; border: 1px solid #333; padding: 0.5rem; border-radius: 8px; text-align: center;">
+              <article class="experiencia-card" >
                 <h3 class="philx-title" style="font-size: 0.8rem;">Experiencia Digital</h3>
-                <p class="philx-subtitle" style="margin-top: 0.5rem;text-align:center; color:white;"><strong>Taller Guiado en Video</strong></p>
-                <div class="cta-container"  style="text-align: center; margin-bottom: 20px;">
-                  <a href="https://tally.so/r/D4a8qN" class="btn-ghost">Inscripción</a>
+                <p class="philx-subtitle" style="text-align:center;color: #bbbbbb;"><strong>Formato en Video</strong></p>
+                <div class="cta-container">
+                  <a href="https://tally.so/r/7RjGqZ" target="_blank" class="btn-ghost">Solicitar Ingreso</a>
                 </div>  
               </article>
 
-            </div>
-
-
-
-            
+            </div>            
           </div>
         </article>
          
@@ -1955,7 +2016,7 @@
           </div>
         </article>
 
-        <div class="method-map reveal"  role="list" aria-label="Etapas del proceso CounterZeroSpace">
+        <div class="method-map reveal" role="list" aria-label="Etapas del proceso CounterZeroSpace">
           <div class="map-node" role="listitem">
             <span class="map-node-idx">01</span>
             <span class="map-node-name">Realidad</span>
@@ -1997,65 +2058,6 @@
     </div>
   </div>
 </section>
-
-
-<!--  MAP 
-<section class="s-method" aria-label="Mapa estrategico de la  Alineación" id="alineacion">
-  <div class="wrapx">
-    <div class="method-wrap"> 
-      <div class="method-left reveal" style="  padding-bottom:3rem;">
-        <span class="section-label">La Alineación</span>
-        <h2 class="method-title">Un Proceso<br/>Orgánico</h2>
-        <p class="method-desc">
-          A través del Sistema de El Ajedrez Interior mostramos como alinearse en cada nodo representando una transición de estado. El circuito está diseñado para el proceso de toma de decisiones con estrategia y dirección, reestableciendo tu posición como el jugador que dirige el tablero desde tu autonomia.
-        </p>
-        <div class="cta-container">
-          <a href="#alineacion" class="btn-proceso ">Iniciar Estrategia</a>
-        </div>    
-
-      </div>
-
-      <div class="method-map reveal"  role="list" aria-label="Etapas del proceso CounterZero">
-        <div class="map-node" role="listitem">
-          <span class="map-node-idx">01</span>
-          <span class="map-node-name">Realidad</span>
-          <div class="map-node-dot"></div>
-        </div>
-        <div class="map-connector" aria-hidden="true"></div>
-        <div class="map-node" role="listitem">
-          <span class="map-node-idx">02</span>
-          <span class="map-node-name">Observación</span>
-          <div class="map-node-dot"></div>
-        </div>
-        <div class="map-connector" aria-hidden="true"></div>
-        <div class="map-node" role="listitem">
-          <span class="map-node-idx">03</span>
-          <span class="map-node-name">Decodificación</span>
-          <div class="map-node-dot"></div>
-        </div>
-        <div class="map-connector" aria-hidden="true"></div>
-        <div class="map-node highlight" role="listitem">
-          <span class="map-node-idx">04</span>
-          <span class="map-node-name">Punto Cero ●</span>
-          <div class="map-node-dot"></div>
-        </div>
-        <div class="map-connector" aria-hidden="true"></div>
-        <div class="map-node" role="listitem">
-          <span class="map-node-idx">05</span>
-          <span class="map-node-name">Reconfiguración</span>
-          <div class="map-node-dot"></div>
-        </div>
-        <div class="map-connector" aria-hidden="true"></div>
-        <div class="map-node" role="listitem">
-          <span class="map-node-idx">06</span>
-          <span class="map-node-name">Expansión</span>
-          <div class="map-node-dot"></div>
-        </div>
-      </div>
-     </div>
-  </div>
-</section>-->
-
 
 
 
@@ -2135,15 +2137,14 @@
 
 
 <!-- ── SECTION FAQ ── -->
-<section class="s-faq" aria-label="Preguntas Frecuentes" id="faq">
+<section class="s-faq"  aria-label="Preguntas Frecuentes" id="faq">
   <div class="wrap">
     <div class="faq-header">
-      <!--<span class="section-label">Resolución de Dudas</span>-->
       <h2 class="faq-title">Preguntas <span>Frecuentes</span></h2>
       <!--<p class="faq-subtitle">Todo lo que necesitas saber sobre las sesiones de liderazgo estratégico y la adquisición del libro.</p>-->
     </div>
 
-    <div class="faq-container">
+    <div class="faq-container" style="padding-bottom: 3rem;">
 
       <!-- Pregunta -->
       <div class="faq-item">
@@ -2244,7 +2245,7 @@
     </div>
   </div>
   <div class="cta-container" style="text-align: center;padding-top: 3rem;padding-bottom: 5rem;">
-      <a href="#soluciones" class="btn-secondary">Iniciar Maestría </a>
+      <a href="#soluciones" class="btn-secondary">Iniciar Proceso</a>
     </div>  
 </section>
 
@@ -2262,12 +2263,20 @@
           Es el momento en que decides cómo jugarlo.
         </p>
       </div>
-     
+      
+      <div>
+        <h2 class="footer-brand-quote" style="padding-top: 1rem;">♔ Da tu Primer Movimiento</h2>
+        <h3 class="footer-tagline">Comienza tu recorrido con <strong>El Despertar del Peón</strong>, una guía introductoria para descubrir el tablero y comprender las primeras reglas del juego.</h3>
+        <button class="ml-onclick-form btn-ghost" onclick="ml('show', 'Im92zq', true)"  onmouseover="this.style.backgroundColor='#1a1a1a'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#e0e0e0';">DESCARGAR LA GUÍA
+      
+        </button>
+      </div>
+
     </div>
     <div class="footer-legal" style="margin-top: 2rem; text-align: left; font-size: 0.7rem; opacity: 0.6;">
-    <a href="https://counterzero.space/politica.html" style="color: var(--white-tech);padding-right: 1rem;;">Política de Privacidad </a>
-    <a href="https://counterzero.space/condiciones.html" style="color: var(--white-tech);">Términos y Condiciones</a>
-</div>
+      <a href="https://counterzero.space/politica.html" style="color: var(--white-tech);padding-right: 1rem;;">Política de Privacidad </a>
+      <a href="https://counterzero.space/condiciones.html" style="color: var(--white-tech);">Términos y Condiciones</a>
+    </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 Johely Franco | CounterZeroSpace — Todos los derechos reservados.</p>
       <div class="footer-dot" aria-hidden="true"></div>
@@ -2279,7 +2288,9 @@
 
 
 <script>
-  // Scroll reveal
+
+  
+// Scroll reveal
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
