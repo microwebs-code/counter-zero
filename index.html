@@ -14,13 +14,29 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="CounterZeroSpace Es una plataforma de acompañamiento espiritual orientada a la desprogramación mental y al retorno al diseño original. A través del libro El Ajedrez Interior y de sesiones de consultoría privada 100% orgánicas (libres de dogmas o codependencia), ofrece un espacio de orden y claridad para que ejecutes, por cuenta propia, tu movimiento de regreso al Origen, con absoluta consciencia, responsabilidad y dirección"/>
-  <meta property="og:title" content="Descubre el lenguaje oculto y el ancla única. Conoce el Ajedrez Interior"/>
-  <meta property="og:description" content="Comprende el tablero, tus jugadas y a ti como jugador a través del 'Ajedrez Interior'"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:image" content="https://counterzero.space/portada.png" />
-  <meta property="og:image:type" content="image/png" />
+
+
+  <!-- Título de la pestaña del navegador (Esencial para Google) -->
+  <title>CounterZeroSpace | Alta Reserva Espiritual y Liderazgo Interior</title>
+
+  <!-- Meta etiquetas principales para Google -->
+  <meta name="description" content="El Ajedrez Interior es el mapa para el retorno al diseño original. A través de este libro y consultoría privada, se ofrece una guía pura y libre de dogmas." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Etiquetas Open Graph (Para que se vea perfecto al compartir en WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Descubre el lenguaje oculto y el ancla única. El Ajedrez Interior." />
+  <meta property="og:description" content="Comprende el tablero, tus jugadas y a ti como jugador a través del Ajedrez Interior. Una estrategia pura, libre de dogmas y codependencia" />
   <meta property="og:url" content="https://counterzero.space" />
+  <meta property="og:image" content="https://counterzero.space/portada.png" /> <!-- REEMPLAZA CON LA URL DE LA IMAGEN DE LA PORTADA DE TU LIBRO O LOGO -->
+  <meta property="og:image:type" content="image/png" />
+
+  <!-- Etiquetas para Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Descubre el lenguaje oculto y el ancla única. El Ajedrez Interior." />
+  <meta name="twitter:description" content="Comprende el tablero, tus jugadas y a ti como jugador a través del Ajedrez Interior. Sin dogmas ni codependencia." />
+  <meta name="twitter:image" content="https://counterzero.space/portada.png" />  
+
   <title>CounterZero Space</title>
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -266,7 +282,7 @@
       color: rgb(231, 230, 230);
       max-width: 600px;
       line-height: 1.5;
-      margin-bottom: 3.5rem;
+      
       opacity: 0; animation: fadeUp 0.9s ease 0.6s forwards;
     }
 
@@ -443,10 +459,10 @@
     #subtitle-line {
       display: block;
       margin-top: 14px;
-      font-family: 'Georgia', serif;
+      font-family: var(--ff-body);
       font-size: clamp(0.7rem, 1.8vw, 1rem);
-      letter-spacing: 0.55em;
-      color: rgba(198, 252, 198, 0.839);
+      letter-spacing: 0.48em;
+      color: rgba(226, 255, 226, 0.839);
       text-transform: uppercase;
       animation: subtitleFade 2.3s ease forwards;
       opacity: 0;
@@ -797,9 +813,9 @@
   .para-ti-item{display:flex;flex-direction:column;align-items:center;gap:1rem;background: #f2f2f2;padding: 1rem;}
   .para-ti-icon{width:70px;height:64px;border-radius:50%;border:2px solid var(--green);display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green);background: black;}
   .para-ti-item p{font-size:0.88rem;line-height:1.7;color:black;}
-  .para-ti-item2{display:flex;flex-direction:row;align-items:center;}
-  .para-ti-icon2{width:50px;height:44px;border-radius:50%;border:2px solid black;display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green-holo);background: black;}
-  .para-ti-p2 {font-family: var(--ff-display);font-size: clamp(0.7rem, 1.8vw, 1.1rem);color: rgba(255, 255, 255, 0.77);}
+  .para-ti-item2{display:flex;flex-direction:row;align-items:center;padding-bottom: 0.5rem;}
+  .para-ti-icon2{width:70px;height:70px;border-radius:50%;border:2px solid black;display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green-holo);background: black; }
+  .para-ti-p2 {font-family: var(--ff-body);font-size: clamp(0.5rem, 1.8vw, 1rem);color: rgba(255, 255, 255, 0.77);text-align: justify;}
   
   /* For Small Laptops and Large Tablets (Landscape) */
   @media (max-width: 1024px) {
@@ -1767,7 +1783,7 @@
   <canvas id="hero-canvas"></canvas>
   <div id="title-container">
     <h1 id="main-title">El Ajedrez Interior</h1>
-    <span id="subtitle-line">Estrategia · Mente · Alma</span>
+    <span id="subtitle-line">Maestría · Misterio Original · Liderazgo</span>
     <span id="subtitle-line2">JOHELY FRANCO</span>
   </div>  
 </section>
@@ -1821,19 +1837,19 @@
     </h2>
     <h3 class="hero-sub">Aprende a co-crear en armonía con la Unidad.</h3>
     <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
-      <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio de alta reserva espiritual diseñado para ofrecer dirección, guía y entendimiento para sostener una vida alineada al crecimiento y desarrollo del Espíritu y del Alma.</p> 
-      <p class="hero-desc" style="text-align: justify;">
-      Activa tu <strong style="font-weight: bold;">Arquetipo Interno</strong> y comunícate directo con la Fuente sin intermediarios. A través del <strong style="font-weight: bold;">Ajedrez Interior</strong>, accedes a una estrategia única que no requiere de fórmulas, magia ni codependencia. Es estrategia pura y libre de dogmas para ordenar tu realidad. Conecta con la sabiduría transmitida al autor, la cual hoy comparte a través de su consultoría y recursos de maestría iniciática.
+      <strong style="font-weight: bold;">CounterZeroSpace</strong>  es un espacio de alta reserva espiritual diseñado para promover, guiar, orientar y acercar el rescate de la alta tecnología interior original que conecta directamente con la Fuente.</p> 
+      <p class="hero-desc" style="text-align: justify;padding-top: 1.8rem;padding-bottom: 3rem;">
+      A través del <strong style="font-weight: bold;">Ajedrez Interior</strong>, accedes a una estrategia única: el inicio de una práctica pura, exenta de dogmas y codependencias, que conecta con la sabiduría ancestral que fue  transmitida al autor, la cual hoy comparte a través de su consultoría y recursos de maestría de Liderazgo Interior.
     </p>
-    <div style="padding-bottom: 5rem;">
+    <div style="padding-bottom: 5rem;max-width:360px ;">
       <div class="para-ti-item2 fade-in">
-        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Sube de nivel y experimenta el salto cuántico.</p> 
+        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Ordena tu realidad mediante un movimiento estratégico de regreso al Origen.</p> 
       </div>  
       <div class="para-ti-item2 fade-in">
-        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Aprende a co-crear en unión con la Unidad</p> 
+        <span class="para-ti-icon2">♔</span><p class="para-ti-p2"> Restaura tu soberanía energética y opera de forma directa con la Fuente</p> 
       </div> 
       <div class="para-ti-item2 fade-in">
-        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Activa tu <strong>ancla clave</strong> consagrada</p>
+        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Activa tu ancla clave original para ejecutar tus jugadas con absoluta dirección.</p>
       </div>   
     </div>
 
@@ -1859,7 +1875,7 @@
 
     <div>
       <p class="philx-body" style="color: black; font-size: 1.2rem; font-weight: 600;">Haz una pausa táctica.</p>
-      <p class="philx-body" style="color: black; font-size: 1rem;">Gana claridad y ventaja recorriendo un camino libre de dogmas junto a un experto. <strong style="color:#00842a; font-weight: 600 ;"> Esto es consultoría estratégica directa</strong>: un proceso    100% orgánico y exclusivo, diseñado para transformar tu realidad actual y guiarte hacia una vida en auténtica armonía con la creación.
+      <p class="philx-body" style="color: black; font-size: 1rem;">Gana claridad y ventaja recorriendo un camino libre de dogmas junto a un experto. Esto es un proceso 100% orgánico  diseñado para transformar tu realidad actual y guiarte hacia una vida en auténtica armonía con la creación.</p>
       
       <p class="philx-body" style="color: black; font-size: 1rem;">
 
@@ -1883,7 +1899,7 @@
       </div>
 
       <p class="philx-body" style="color: black; font-size: 1rem; margin-top: 1.5rem;padding-bottom: 3rem;">
-        Accede a las herramientas de <strong style="color:#00892c; font-weight: 600;">El Ajedrez Interior</strong> junto a un mentor que experimentó ese recorrido en la vida real. Descubre el camino al origen y ejecuta tu movimiento definitivo de regreso al Padre.
+        Accede a las herramientas de <strong style="color:#00892c; font-weight: 600;">El Ajedrez Interior</strong> junto a un mentor que experimentó ese recorrido en la vida real. Descubre el camino al origen ejecuntado un movimiento definitivo de regreso al Padre con el mismo diseño con el que fuiste creado.
       </p>
       <div class="cta-container">
         <a href="#soluciones" class="btn-triple" style="box-shadow: none; ">Iniciar Maestría</a>
