@@ -848,6 +848,22 @@
       font-family: var(--titular); font-weight: 300; font-style: normal;
       font-size: clamp(1.8rem, 3.5vw, 3rem); color: var(--white-tech); line-height: 1.2;
     }
+
+    .autor-wrap {
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 7rem; align-items: start;
+    }
+
+
+    .autor-headline {
+      font-family: var(--titular); font-weight: 300; font-style: normal;
+      font-size: clamp(1.8rem, 3.5vw, 2rem); color: var(--white-tech); line-height: 1.2;
+    } 
+
+    
+
+
+
+
     .obtienes-right {
       display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
       background: rgba(0,255,136,0.06);
@@ -985,6 +1001,7 @@
         gap: 1.5rem;           /* Aumenta el espacio para facilitar el toque con el dedo */
         margin-top: 1.5rem;  /* Reduce márgenes para aprovechar el espacio */
         padding-bottom: 1.5rem;
+        
       }
 
       .experiencias-container .experiencia-card {
@@ -992,6 +1009,17 @@
         max-width: 380px;  /* Evita que se estiren demasiado en pantallas anchas 320*/
         box-sizing: border-box; /* Evita que el padding rompa el diseño */
       }
+
+      .s-manifesto .image-column {display: none;}
+      .autor-wrap {
+        background-image: url(johely-tablero-ajedrez.png);
+        background-repeat: no-repeat;
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      .s-manifesto .obtienes-left  {background: #21212155;}
+    
 
     }
 
@@ -1233,7 +1261,7 @@
     /* ── MANIFESTO ── */
     .s-manifesto {
       position: relative;
-      padding: 14rem 0;
+      padding: 6rem 0;
       background: var(--obsidian);
       overflow: hidden;
     }
@@ -1674,6 +1702,7 @@
       .nav-links { display: none; }
       .pillars-5 { grid-template-columns: 1fr 1fr; }
       .obtienes-wrap { grid-template-columns: 1fr; gap: 3rem; }
+      .autor-wrap { grid-template-columns: 1fr; gap: 3rem; flex-direction: column-reverse; }
       .obtienes-left { position: static; }
       .obtienes-right { grid-template-columns: 1fr; }
       .iniciacion-wrap { grid-template-columns: 1fr; }
@@ -1839,7 +1868,7 @@
     <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
       <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio dedicado al desarrollo del Liderazgo Interior. Aquí exploramos la conciencia como una práctica de gobierno personal, responsabilidad y coherencia, para que cada persona pueda recuperar la dirección de su propia vida desde su diseño original.</p> 
       <p class="hero-desc" style="text-align: justify;padding-top: 1.8rem;padding-bottom: 3rem;">
-      A través de la metafora <strong style="font-weight: bold;">Ajedrez Interior</strong>, se accede a una estrategia única: una práctica pura, libre de dogmas y codependencias. Esta conecta con la sabiduría ancestral transmitida al autor, la cual hoy comparte mediante su consultoría y recursos de Maestría y Liderazgo Interior.
+      <strong style="font-weight: bold;">El Ajedrez Interior</strong> utiliza el tablero como una metáfora para comprender cómo operan nuestras decisiones, nuestros hábitos y nuestra conciencia. Desde esa perspectiva, el liderazgo deja de ser una habilidad para dirigir a otros y se convierte en la capacidad de gobernarse primero a uno mismo.
     </p>
     <div style="padding-bottom: 5rem;max-width:360px ;">
       <div class="para-ti-item2 fade-in">
@@ -2132,20 +2161,32 @@
 
 
 <!-- MANIFESTO -->
-<section class="s-manifesto" id="alineacion" aria-label="Manifiesto CounterZero">
-  <div class="manifesto-bg" aria-hidden="true"></div>
-  <div class="manifesto-lines" aria-hidden="true"></div>
+<section class="s-manifesto" id="autor" aria-label="Manifiesto CounterZero">
+<div class="manifesto-lines" aria-hidden="true"></div>
+  
+  <section class="s-obtienes" aria-label="Acerca del Autor">
+    <div class="wrapx">
+      <div class="autor-wrap">
+        <div class="obtienes-left reveal">
+          <span class="section-label" margin-bottom: 0;>Sobre Johely Franco</span>
+          <h2 class="autor-headline"><br/>De la Ciencia<br> a la Conciencia</h2>
+          <p class="philx-body">Ingeniero de profesión. <br>Investigadora del Liderazgo Interior. <br>Autora de El Ajedrez Interior. <br>Fundadora de CounterZeroSpace. </p>
+          <p class="philx-body" style="padding-top: 0.5rem;">Su trabajo consiste en traducir principios profundos de conciencia y responsabilidad personal a un lenguaje claro y aplicable para la vida cotidiana. Enseña a que cada persona aprenda a gobernarse desde su propio centro.</p>
+          <p class="philx-body" style="padding-top: 0.5rem;">A través de la metafora <strong style="font-weight: bold;">Ajedrez Interior</strong>, accede a una práctica pura, libre de dogmas y codependencias que busca conectar con la sabiduría ancestral, la cual hoy comparte mediante su consultoría y recursos de Maestría y Liderazgo Interior.
+        </div>
 
-  <div class="manifesto-content reveal">
-    <p class="manifesto-text">
-      La mayoría intenta cambiar las piezas.<br/>
-      <strong>Los estrategas aprenden las reglas.</strong>
-      <span class="line-green">Los maestros diseñan el tablero.</span>
-    </p>
-    <p class="manifesto-sig" style="padding-bottom: 3rem;">— CounterZero Space</p>
-     <a href="#reserva" class="btn-primary"  >Agendar una Sesión</a>
-  </div>
-      
+        <div class="obtienes-right reveal" style="grid-template-columns: 1fr ;">
+          <article class="image-column">
+            <img src="johely-tablero-ajedrez.png" alt="CounterZero Space"/> 
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="cta-container" style="text-align: center;padding-top: 6rem;">
+      <a href="#reserva" class="btn-primary">Agendar una Sesión</a>
+    </div>
+  </section> 
+   
 </section>
 
 
