@@ -554,9 +554,8 @@
     .diagnostico-title {
       font-family: var(--titular);
       font-size: clamp(2.2rem, 4vw, 3.5rem);
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 0.05em;
-      text-transform: uppercase;
       color: var(--white-tech);
       line-height: 1;
     }
@@ -1012,7 +1011,7 @@
 
       .s-manifesto .image-column {display: none;}
       .autor-wrap {
-        background-image: url(johely-tablero-ajedrez.png);
+        background-image: url(autor-sentado-silla-con-ajedrez.png);
         background-repeat: no-repeat;
         padding-top: 5rem;
         padding-bottom: 2.5rem;
@@ -1134,6 +1133,16 @@
       color: var(--green);
       opacity: 0.6;
       min-width: 28px;
+    }
+
+      .map-node-idxx {
+      font-family: var(--ff-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      color: white;
+      opacity: 0.6;
+      min-width: 28px;
+      font-weight: 300;
     }
     .map-node-name {
       font-family: var(--ff-display);
@@ -1333,7 +1342,7 @@
       background: rgb(0, 0, 0);
       width: 100%;
       box-sizing: border-box;
-      border: 5rem solid  #eeeeee; /* #00D97A;*/
+      border: 5rem solid  #1e1e1e; /* #00D97A;*/
     }
 
     .faq-header {
@@ -1462,7 +1471,21 @@
     }
 
 
-    /* ── FOOTER ── */
+    .img-movil { background-image: url('fondo-movil.jpg');
+      background-size: cover;
+      background-position: center; 
+      background-image: url(tablero-completo.png);
+    }
+
+
+    @media (min-width: 768px) {
+    .mi-seccion {
+      background-image: url(tablero-completo-desk.png);
+    }
+    }
+
+
+/* ── FOOTER ── */
     footer {
       position: relative; padding: 6rem 0 3rem;
       background: var(--carbon); border-top: 1px solid rgba(255,255,255,0.05); overflow: hidden;
@@ -1694,8 +1717,43 @@
     .form-success-h { font-family: var(--ff-display); font-size: 1.8rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1rem; }
     .form-success-p { font-family: var(--ff-body);  color: var(--muted); font-size: 0.95rem; line-height: 1.75; }
    
+   /*barra vibracion*/
+    .contenedor-barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px; /* Ajusta este tamaño al ancho de tu sección */
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 10px; /* Tamaño del texto pequeño */
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 4rem;
+  }
+  
+  .barra-degradada {
+    flex-grow: 1;
+    height: 12px; /* Grosor delgado de la barra */
+    border-radius: 6px;
+    /* Degradado de rojo a azul */
+    background: linear-gradient(to right, #ff0000 0%, #a200ff 50%, #0066ff 100%);
+  }
 
-
+  .texto-extremo {
+    white-space: nowrap;
+    color: black;
+  }
+  
+  /* Ajuste para móviles para que el texto quede en dos líneas si es muy estrecho */
+  @media (max-width: 600px) {
+    .contenedor-barra {
+      flex-direction: column;
+      text-align: center;
+      gap: 5px;
+    }
+  }
 /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
       nav { padding: 1.2rem 5vw; }
@@ -1832,19 +1890,19 @@
       <article class="diagnostico-card">
        <div class="contenedor-diagnostico">
           <div class="icono-verde">📗</div>
-          <div><h3 class="diagnostico-sub">¿Te mueves siguiendo expectativas que nunca elegiste?</h3></div>
+          <div><h3 class="diagnostico-sub">¿Te mueves <br>como pieza ajena en tu propio tablero?</h3></div>
         </div>
       </article>
       <article class="diagnostico-card">
         <div class="contenedor-diagnostico">
           <div class="icono-verde">📗</div>
-          <div><h3 class="diagnostico-sub">¿Sientes que haces mucho esfuerzo pero avanzas muy poco?</h3></div>
+          <div><h3 class="diagnostico-sub">¿Persistes <br>en la misma casilla sin poder avanzar?</h3></div>
         </div>
       </article>
       <article class="diagnostico-card">
         <div class="contenedor-diagnostico">
           <div class="icono-verde">📗</div>
-          <div><h3 class="diagnostico-sub">¿Hay una parte de ti que sabe que viniste para algo más?</h3></div>
+          <div><h3 class="diagnostico-sub">¿Sigues en la misma diagonal sabiendo que viniste para algo más?</h3></div>
         </div>
       </article>
     </div>
@@ -1861,10 +1919,10 @@
   <div class="hero-content">
     <p class="hero-access-tag"></p>
     <h2 class="hero-headline">
-      Liderazgo y
-      <br>Soberanía <strong>Interior</strong>
+      Soberanía y
+      <br>Liderazgo <strong>Interior</strong>
     </h2>
-    <h3 class="hero-sub">La estrategia para gobernar tu realidad desde la conciencia.</h3>
+    <h3 class="hero-sub">Crea tu realidad desde la conciencia.</h3>
     <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
       <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio dedicado al desarrollo del Liderazgo Interior. Aquí exploramos la conciencia como una práctica de gobierno personal, responsabilidad y coherencia, para que cada persona pueda recuperar la dirección de su propia vida desde su diseño original.</p> 
       <p class="hero-desc" style="text-align: justify;padding-top: 1.8rem;padding-bottom: 3rem;">
@@ -1899,42 +1957,159 @@
   <div class="wrapx">
     <div class="philosophy-header reveal">
       <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">La Estrategia</span>
-      <h2 class="diagnostico-title opuesto">Es hora de Alinear</h2>
+      <h2 class="diagnostico-title opuesto">Recuperar tu posición.</h2>
     </div>
 
-    <div>
-      <p class="philx-body" style="color: black; font-size: 1.2rem; font-weight: 600;">Haz una pausa táctica.</p>
-      <p class="philx-body" style="color: black; font-size: 1rem;">Gana claridad y ventaja recorriendo un camino libre de dogmas junto a un experto. Esto es un proceso 100% orgánico  diseñado para transformar tu realidad actual y guiarte hacia una vida en auténtica armonía con la creación.</p>
-      
+    <div style="margin-top: 0;">
+      <p class="philx-body" style="color: black; font-size: 1rem;">Antes de mover una pieza, observa el tablero. Antes de cambiar tu realidad, recupera claridad sobre quién está dirigiendo realmente tus movimientos. El Ajedrez Interior propone un recorrido de orden, discernimiento y liderazgo personal. <strong>Un proceso libre de dogmas</strong>, diseñado para ayudarte a recuperar el gobierno de tu mundo interno y volver a operar en armonía con el diseño con el que fuiste creado.</p>
+          
       <p class="philx-body" style="color: black; font-size: 1rem;">
 
       <div class="para-ti-grid">
         <div class="para-ti-item fade-in">
           <div class="para-ti-icon">♞</div>
-          <p><strong>Frena</strong><br>El desgaste de operar desde la fuerza bruta</p>
+          <p><strong>DETENTE</strong><br>Antes de seguir reaccionando.</p>
         </div>
         <div class="para-ti-item fade-in d1">
           <div class="para-ti-icon">♟</div>
-          <p><strong>Supera</strong><br>Los movimientos automáticos en un tablero ajeno.</p>
+          <p><strong>OBSERVA</strong><br>Quién está moviendo realmente tus decisiones.</p>
         </div>
         <div class="para-ti-item fade-in d2">
           <div class="para-ti-icon">♝</div>
-          <p><strong>Ordena</strong><br>Tus movimientos hacia tu diseño original divino.</p>
+          <p><strong>ORDENA</strong><br>Tu estructura interior desde el Diseño Original.</p>
         </div>
         <div class="para-ti-item fade-in d3">
           <div class="para-ti-icon">♕</div>
-          <p><strong>Lidera</strong> <br>Desde una base sólida y recta en lo sagrado.</p>
+          <p><strong>GOBIERNA</strong> <br>Tu realidad desde la Conciencia.</p>
         </div>
       </div>
 
-      <p class="philx-body" style="color: black; font-size: 1rem; margin-top: 1.5rem;padding-bottom: 3rem;">
-        Accede a las herramientas de <strong style="color:#00892c; font-weight: 600;">El Ajedrez Interior</strong> junto a un mentor que experimentó ese recorrido en la vida real. Descubre el camino al origen ejecuntado un movimiento definitivo de regreso al Padre con el mismo diseño con el que fuiste creado.
+      <p class="philx-body" style="color: black; font-size: 1rem; margin-top: 1.5rem;padding-bottom: 3rem;">No necesitas incorporar más información. Solo necesitas <strong>volver al diseño</strong> con el que siempre fuiste creado. Las herramientas de El Ajedrez Interior nacen de un recorrido real y de una comprensión profunda sobre la naturaleza del liderazgo interior. No buscan que dependas de un mentor, sino ayudarte a recordar la inteligencia con la que fuiste diseñado para caminar con <strong>claridad, discernimiento y responsabilidad</strong> . La  maestría consistirá en <strong>aprender a conectarte con la Fuente sin intermediarios y bajar la antropia interior volviendo al orden en el que fuiste creado</strong>.
       </p>
       <div class="cta-container">
-        <a href="#soluciones" class="btn-triple" style="box-shadow: none; ">Iniciar Maestría</a>
+        <a href="#alineacion" class="btn-triple" style="box-shadow: none; ">Inicia recorrido</a>
       </div>    
     </div>
 
+  </div>
+</section>
+
+<!-- BANNER -->
+<section class="s-obtienes" style="background-image: url(el-rey-enel-tablero.png);" aria-label="Todo Cambia cuando cambias">
+  <div class="wrapx">
+    
+      <div class="obtienes-left reveal" style="text-align: right;height: 20rem;">
+        <h2 class="obtienes-headline">Todo cambia <br>cuando cambia <br>tu movimiento</h2>
+      </div>     
+      
+    </div>
+  </div>
+</section>
+
+
+<!--QUÉ OBTIENES -->
+<section class="s-obtienes" id="obtienes" aria-label="¿Qué obtienes?">
+  <div class="wrapx">
+    <div class="obtienes-wrap">
+      <div class="obtienes-left reveal">
+        <span class="section-label">¿Qué obtienes?</span>
+        <h2 class="obtienes-headline">Una nueva forma<br/>de CREAR.</h2>
+      </div>
+
+      <div class="obtienes-right reveal">
+        <div class="obtiene-card">
+          <span class="obtiene-icon" aria-hidden="true">▲</span>
+          <p class="obtiene-title">Capacidad de Dirección Consciente</p>
+          <p class="obtiene-body">Aprendes a tomar decisiones alineadas con tu propósito y visión más alta.</p>
+        </div>
+        <div class="obtiene-card">
+          <span class="obtiene-icon" aria-hidden="true">⟰</span>
+          <p class="obtiene-title">Marco Aplicable Para Toda la Vida</p>
+          <p class="obtiene-body">Un sistema que puedes usar en cualquier momento, en cualquier área de tu vida.</p>
+        </div>
+        <div class="obtiene-card">
+          <span class="obtiene-icon" aria-hidden="true">◉</span>
+          <p class="obtiene-title">Claridad Estratégica</p>
+          <p class="obtiene-body">Comprendes lo que antes parecía confuso.</p>
+        </div>
+        <div class="obtiene-card">
+          <span class="obtiene-icon" aria-hidden="true">⊚</span>
+          <p class="obtiene-title">Soberanía</p>
+          <p class="obtiene-body">Gestionas tus estados. Comienzas a diseñar tu realidad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Alineacion -->
+<section class="s-diagnostico" style="background: rgb(241, 241, 241); border:0; border-bottom: 1px solid rgb(43, 43, 43);" id="alineacion" aria-label="Filosofía de la Alineación">
+  <div class="wrapx">
+    <div class="philosophy-header reveal">
+      <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">El Recorrido</span>
+      <h2 class="diagnostico-title" style="color: #000000;">Comienza en tu interior</h2>
+    </div>
+<div>
+</div>
+    <div style="background:rgba(255, 255, 255, 0.993)">
+      <div class="diagnosticox-grid reveal"> 
+        <article class="philx-card textx-column" style="padding-left:  0.8rem; padding-right:  0.8rem;">
+          <div class="diagnostcox-text">
+            <span class="section-label2">Sin Intermediarios</span>
+            <h3 class="philx-title" style="color: black;">Conexión Directa</h3>
+            <p class="philx-body" style="color: black; padding-bottom: 2rem;"> No existe transformación auténtica sin participación consciente. El Ajedrez Interior no pretende decirte qué pensar, qué creer o qué camino seguir. Su propósito es ayudarte a observar tu posición actual, comprender las dinámicas que gobiernan tu realidad y recuperar la capacidad de mover tu propia pieza con claridad. Cada etapa representa un cambio de estado. No un destino. Porque antes de cambiar una circunstancia, primero cambia el lugar desde el cual decides responder a ella.</p>
+            <div class="contenedor-barra">
+              <div class="texto-extremo">BAJA VIBRACIÓN <br> IRA, RENCOR, CELOS..</div>
+              <div class="barra-degradada"></div>
+              <div class="texto-extremo">ALTA VIBRACIÓN <br> ..NEUTRO, PAZ, AMOR</div>
+            </div>
+              
+            <div class="cta-container">
+              <a href="#soluciones" class="btn-triple" style="box-shadow: none;">Inicia Estrategia</a>
+            </div>    
+          </div>
+        </article>
+
+        <div class="method-map reveal" role="list" aria-label="Etapas del proceso CounterZeroSpace">
+          <div class="map-node" role="listitem">
+            <span class="map-node-idx">01</span>
+            <span class="map-node-name">Realidad<span class="map-node-idxx"><br>Reconocer dónde estás</span></span>
+            <div class="map-node-dot"></div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-node" role="listitem">
+            <span class="map-node-idx">02</span>
+            <span class="map-node-name">Observación <span class="map-node-idxx"><br>Comprender el patrón</span></span>
+            <div class="map-node-dot"></div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-node" role="listitem">
+            <span class="map-node-idx">03</span>
+            <span class="map-node-name">Decodificación <span class="map-node-idxx"><br>Ver sin reaccionar</span></span>
+            <div class="map-node-dot"></div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-node highlight" role="listitem">
+            <span class="map-node-idx">04</span>
+            <span class="map-node-name">Punto Cero ●<span class="map-node-idx"><br>Recordar quién eres</span></span>
+            <div class="map-node-dot"></div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-node" role="listitem">
+            <span class="map-node-idx">05</span>
+            <span class="map-node-name">Reconfiguración <span class="map-node-idxx"><br>Elegir un nuevo movimiento</span></span>
+            <div class="map-node-dot"></div>
+          </div>
+          <div class="map-connector" aria-hidden="true"></div>
+          <div class="map-node" role="listitem">
+            <span class="map-node-idx">06</span>
+            <span class="map-node-name">Expansión <span class="map-node-idxx"><br>Habitar una nueva realidad</span></span>
+            <div class="map-node-dot"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
   </div>
 </section>
 
@@ -2039,121 +2214,32 @@
 </section>
 
 
-<!-- Alineacion -->
-<section class="s-diagnostico" style="background: rgb(241, 241, 241); border:0; border-bottom: 1px solid rgb(43, 43, 43);" id="alineacion" aria-label="Filosofía de la Alineación">
+
+
+
+
+
+<!-- BANNER -->
+<section class="s-obtienes img-movil" aria-label="xx">
+   
   <div class="wrapx">
-    <div class="philosophy-header reveal">
-      <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">La Alineación</span>
-      <h2 class="diagnostico-title" style="color: #000000;">Un Proceso<br/>Orgánico</h2>
-    </div>
-
-    <div style="background:rgba(255, 255, 255, 0.993)">
-      <div class="diagnosticox-grid reveal"> 
-        <article class="philx-card textx-column" style="padding-left:  0.8rem; padding-right:  0.8rem;">
-          <div class="diagnostcox-text">
-            <span class="section-label2">Sin Intermediarios</span>
-            <h3 class="philx-title" style="color: black;">Conexión Directa</h3>
-            <p class="philx-body" style="color: black; padding-bottom: 2rem;"> A través del sistema de El Ajedrez Interior, mostramos cómo alinearse en cada nodo representando una transición de estado. El circuito está diseñado para ordenar tus movimientos con estrategia y dirección real, restableciendo tu posición como el jugador que dirige el tablero desde tu soberanía.</p>
-            
-            <div class="cta-container">
-              <a href="#soluciones" class="btn-triple" style="box-shadow: none;">Iniciar Estrategia</a>
-            </div>    
-          </div>
-        </article>
-
-        <div class="method-map reveal" role="list" aria-label="Etapas del proceso CounterZeroSpace">
-          <div class="map-node" role="listitem">
-            <span class="map-node-idx">01</span>
-            <span class="map-node-name">Realidad</span>
-            <div class="map-node-dot"></div>
-          </div>
-          <div class="map-connector" aria-hidden="true"></div>
-          <div class="map-node" role="listitem">
-            <span class="map-node-idx">02</span>
-            <span class="map-node-name">Observación</span>
-            <div class="map-node-dot"></div>
-          </div>
-          <div class="map-connector" aria-hidden="true"></div>
-          <div class="map-node" role="listitem">
-            <span class="map-node-idx">03</span>
-            <span class="map-node-name">Decodificación</span>
-            <div class="map-node-dot"></div>
-          </div>
-          <div class="map-connector" aria-hidden="true"></div>
-          <div class="map-node highlight" role="listitem">
-            <span class="map-node-idx">04</span>
-            <span class="map-node-name">Punto Cero ●</span>
-            <div class="map-node-dot"></div>
-          </div>
-          <div class="map-connector" aria-hidden="true"></div>
-          <div class="map-node" role="listitem">
-            <span class="map-node-idx">05</span>
-            <span class="map-node-name">Reconfiguración</span>
-            <div class="map-node-dot"></div>
-          </div>
-          <div class="map-connector" aria-hidden="true"></div>
-          <div class="map-node" role="listitem">
-            <span class="map-node-idx">06</span>
-            <span class="map-node-name">Expansión</span>
-            <div class="map-node-dot"></div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- S3: QUÉ OBTIENES -->
-<section class="s-obtienes" id="obtienes" aria-label="¿Qué obtienes?">
-  <div class="wrapx">
-    <div class="obtienes-wrap">
-      <div class="obtienes-left reveal">
-        <span class="section-label">¿Qué obtienes?</span>
-        <h2 class="obtienes-headline">Una nueva forma<br/>de CREAR.</h2>
-      </div>
-
-      <div class="obtienes-right reveal">
-        <div class="obtiene-card">
-          <span class="obtiene-icon" aria-hidden="true">▲</span>
-          <p class="obtiene-title">Capacidad de Dirección Consciente</p>
-          <p class="obtiene-body">Aprendes a tomar decisiones alineadas con tu propósito y visión más alta.</p>
-        </div>
-        <div class="obtiene-card">
-          <span class="obtiene-icon" aria-hidden="true">⟰</span>
-          <p class="obtiene-title">Marco Aplicable Para Toda la Vida</p>
-          <p class="obtiene-body">Un sistema que puedes usar en cualquier momento, en cualquier área de tu vida.</p>
-        </div>
-        <div class="obtiene-card">
-          <span class="obtiene-icon" aria-hidden="true">◉</span>
-          <p class="obtiene-title">Claridad Estratégica</p>
-          <p class="obtiene-body">Comprendes lo que antes parecía confuso.</p>
-        </div>
-        <div class="obtiene-card">
-          <span class="obtiene-icon" aria-hidden="true">⊚</span>
-          <p class="obtiene-title">Soberanía</p>
-          <p class="obtiene-body">Gestionas tus estados. Comienzas a diseñar tu realidad.</p>
-        </div>
-      </div>
-    </div>
+  
   </div>
 </section>
 
 <!-- SINTESIS -->
-<section class="s-manifesto" style="background: #f4fef7;" id="alineacion" aria-label="Manifiesto CounterZero">
+<section class="s-manifesto" style="background: #f4fef7;"  aria-label="Manifiesto CounterZero">
   <div class="manifesto-bg" aria-hidden="true"></div>
   <div class="manifesto-lines" aria-hidden="true"></div>
 
   <div class="manifesto-content reveal" style="max-width: 900px ;">
     <h2 class="diagnostico-title opuesto" style="background: transparent;padding-bottom: 2rem;">El Ajedrez Interior </h2>
-    <p class="manifesto-text" style="color: black; font-size: 2rem ;">
+    <p class="manifesto-text" style="color: black; font-size: 2rem ; font-family: var(--ff-title) ;">
     Las Reglas del Juego y las Claves de Soberanía para tu Evolución</strong>
     </p>
     <p class="manifesto-text" style="color: black; font-size: 3rem ; padding-top:2rem;padding-bottom: 3rem;">♔♕♖♗♘♙</p>
     <div class="cta-container" style="text-align: center;">
-      <a href="#soluciones" class="btn-proceso" >Iniciar Maestría</a>
+      <a href="#soluciones" class="btn-proceso" >Descubre la Maestría</a>
     </div>  
   </div>
       
@@ -2169,21 +2255,21 @@
       <div class="autor-wrap">
         <div class="obtienes-left reveal">
           <span class="section-label" margin-bottom: 0;>Sobre Johely Franco</span>
-          <h2 class="autor-headline"><br/>De la Ciencia<br> a la Conciencia</h2>
-          <p class="philx-body">Ingeniero de profesión. <br>Investigadora del Liderazgo Interior. <br>Autora de El Ajedrez Interior. <br>Fundadora de CounterZeroSpace. </p>
-          <p class="philx-body" style="padding-top: 0.5rem;">Su trabajo consiste en traducir principios profundos de conciencia y responsabilidad personal a un lenguaje claro y aplicable para la vida cotidiana. Enseña a que cada persona aprenda a gobernarse desde su propio centro.</p>
-          <p class="philx-body" style="padding-top: 0.5rem;">A través de la metafora <strong style="font-weight: bold;">Ajedrez Interior</strong>, accede a una práctica pura, libre de dogmas y codependencias que busca conectar con la sabiduría ancestral, la cual hoy comparte mediante su consultoría y recursos de Maestría y Liderazgo Interior.
+          <h2 class="autor-headline"><br/>La Ingeniería del Ser</h2>
+          <p class="philx-body">Ingeniero de profesión. <br>Autora de El Ajedrez Interior. <br>Fundadora de CounterZeroSpace. </p>
+          <p class="philx-body" style="padding-top: 0.5rem;">Comprendí el mundo binario y la lógica desde muy pequeña. El universo virtual, el campo cuántico y la ciencia me impulsaron a descifrar los principios de la conciencia. Hoy comparto esta visión a través de CounterZeroSpace, un espacio dedicado a guiar a las personas hacia su Liderazgo Interior para que puedan avanzar desde su Diseño Original.</p>
+          <p class="philx-body" style="padding-top: 0.5rem;">Eres un jugador y estás aquí para recordar cómo jugar tu propia partida. Nadie más la puede jugar por ti. <br><br>Cada movimiento consciente que hagas te acerca a tu Diseño Original.</p>
         </div>
-
+        
         <div class="obtienes-right reveal" style="grid-template-columns: 1fr ;">
           <article class="image-column">
-            <img src="johely-tablero-ajedrez.png" alt="CounterZero Space"/> 
+            <img src="autor-sentado-silla-con-ajedrez.png" alt="CounterZero Space"/> 
           </article>
         </div>
       </div>
     </div>
     <div class="cta-container" style="text-align: center;padding-top: 6rem;">
-      <a href="#reserva" class="btn-primary">Agendar una Sesión</a>
+      <a href="#reserva" class="btn-primary">Agendar Alineación</a>
     </div>
   </section> 
    
@@ -2324,7 +2410,7 @@
       <div>
         <h2 class="footer-brand-quote" style="padding-top: 1rem;">♔ Haz tu Primer Movimiento</h2>
         <h3 class="footer-tagline">Comienza tu recorrido con <strong>El Despertar del Peón</strong>, una guía introductoria para descubrir el tablero y comprender las primeras reglas del juego.</h3>
-        <button class="ml-onclick-form btn-ghost" onclick="ml('show', 'Im92zq', true)"  onmouseover="this.style.backgroundColor='#1a1a1a'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#e0e0e0';">DESCARGAR LA GUÍA
+        <button class="ml-onclick-form btn-ghost" onclick="ml('show', 'Im92zq', true)"  onmouseover="this.style.backgroundColor='#1a1a1a'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#e0e0e0';">ACCEDER A LA GUÍA
       
         </button>
       </div>
