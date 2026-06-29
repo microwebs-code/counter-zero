@@ -327,9 +327,9 @@
       font-weight: 700;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--obsidian);
+      color: black;
       /*background: var(--green);*/
-      background: var(--gree-mint);
+      background: rgb(1, 202, 132);
       border: none;
       padding: 1.1rem 3.8rem;
       cursor: pointer;
@@ -786,13 +786,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      align-self: center;
+      
     }
 
-    /* Control de la imagen para que no se desborde y mantenga calidad */
+    /* Control de la imagen para que no se desborde y mantenga calidad (de la columna) */
     .image-column img {
       width: 100%;
       max-width: 350px; /* Evita que la portada se pixelee si la pantalla es muy grande */
       height: auto;
+      object-fit: contain;
+      margin: auto;
+    }
+
+    /* Control de la imagen para que no se desborde y mantenga calidad (de la columna) */
+    .image-column-autor img {
+       height: auto;
       object-fit: contain;
       margin: auto;
     
@@ -805,9 +814,6 @@
         gap: 32px;
       }
       
-      .image-column img {
-        max-width: 250px; /* Tamaño más moderado en móviles */
-      }
     }
 
   .para-ti-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3.5rem;text-align: center;padding: 1rem 0;}
@@ -1049,16 +1055,21 @@
 
       .s-manifesto .image-column {display: none;}
       .autor-wrap {
-        background-image: url(johely-tablero-ajedrez-movil.jpg);
+        
         background-repeat: no-repeat;
-        padding-top: 5rem;
-        padding-bottom: 2.5rem;
+        background-position: right; 
+        background-size:10%;
+        padding:0;
       }
+
+      
 
       .s-manifesto .obtienes-left  {background: #21212155;}
     
 
     }
+
+    
 
 
     /* ── METHOD ── */
@@ -1812,6 +1823,12 @@
       gap: 5px;
     }
   }
+
+
+
+
+
+
 /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
       nav { padding: 1.2rem 5vw; }
@@ -1827,6 +1844,7 @@
       .s-manifesto { grid-template-columns: 1fr; }
       .manifesto-right { display: none; }
       .footer-inner { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+   
     }
     @media (max-width: 640px) {
       .pillars-5 { grid-template-columns: 1fr; }
@@ -1835,9 +1853,28 @@
       .form-shell { padding: 2.5rem 1.5rem; }
       .field-row { grid-template-columns: 1fr; }
       .modal-panel { padding: 3rem 2rem; }
+      .oculto-a{ display: block; }
+      .oculto-b {display:none;}
+      
     }
-   
-   
+    
+    @media (min-width:641px){.oculto-b{ display: block; }.oculto-a {display:none;}}
+
+  .oculto-a img{
+  width: 100%;           /* Or any specific width, e.g., 400px */
+  /*height: 300px;         /* Define a fixed height for the area */
+  display: flex;         /* Activates Flexbox */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center;   /* Centers the image vertically */
+  overflow: hidden; 
+  object-fit:fill;     /* Forces the image to cover the box without distorting */
+  object-position: center;
+ }
+
+ .auto-2col {padding-top:2rem; display: grid; grid-template-columns: 1.3fr 0.7fr;
+
+
+    }
    
     @media (max-width: 700px) { .form-shell { padding: 2.5rem 1.5rem; } .field-row { grid-template-columns: 1fr; } }
 
@@ -1990,30 +2027,34 @@
    
     <div class="hero-medio">
       <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
-        <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio dedicado a <strong>arquetipar jugadas</strong> que desarrollen el Liderazgo Interior. Aquí exploramos desde la conciencia, el gobierno personal, la responsabilidad y la coherencia, para que cada persona pueda recuperar el mando de su juego desde su Diseño Original.
+        <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio dedicado a <strong>arquetipar movidas</strong> que desarrollen el Liderazgo Interior. Aquí exploramos desde la conciencia, el gobierno personal, la responsabilidad y la coherencia, para que cada persona pueda recuperar el mando de su jugada desde su Diseño Original.
       </p> 
       <p class="hero-desc" style="text-align: justify; padding-top: 1.8rem; padding-bottom: 1rem; margin-bottom: 2rem;">
-        <strong style="font-weight: bold;">El Ajedrez Interior</strong> utiliza el tablero como una metáfora para comprender cómo operan decisiones, hábitos y conciencia. Desde esta perspectiva, el juego deja de ser una distracción y se convierte en la herramienta para <strong>gobernarse asi mismo, dominar su casilla y movimientos</strong>.
+        <strong style="font-weight: bold;">El Ajedrez Interior</strong> utiliza el tablero como una metáfora para comprender cómo operan decisiones, hábitos y conciencia. Desde esta perspectiva, el juego, tu realidad,  deja de ser una distracción y se convierte en la herramienta para <strong>gobernarse asi mismo, dominar las casilla y movimientos</strong>.
       </p>
     </div>
-    <div class="para-ti-item2 fade-in">
-      <span class="para-ti-icon2">♔</span>
-      <p class="para-ti-p2">Ordena tu juego mediante un movimiento estratégico, no del azar.</p> 
-    </div>  
-    <div class="para-ti-item2 fade-in">
-      <span class="para-ti-icon2">♔</span>
-      <p class="para-ti-p2">Recupera tu posición en el tablero con orden y sin desgaste.</p> 
-    </div> 
-    <div class="para-ti-item2 fade-in">
-      <span class="para-ti-icon2">♔</span>
-      <p class="para-ti-p2">Saca ventaja en el juego conociendo las reglas y sus dinámicas.</p> 
-    </div> 
-    <div class="para-ti-item2 fade-in">
-      <span class="para-ti-icon2">♔</span>
-      <p class="para-ti-p2">Resuelve el impedimento que frena tu avance y corona en la octava fila.</p> 
+    <div>
+      <div class="para-ti-item2 fade-in">
+        <span class="para-ti-icon2">♔</span>
+        <p class="para-ti-p2">Ordena tu juego mediante un movimiento estratégico, no del azar.</p> 
+      </div>  
+      <div class="para-ti-item2 fade-in">
+        <span class="para-ti-icon2">♔</span>
+        <p class="para-ti-p2">Recupera tu posición en el tablero con orden y sin desgaste.</p> 
+      </div> 
+      <div class="para-ti-item2 fade-in">
+        <span class="para-ti-icon2">♔</span>
+        <p class="para-ti-p2">Saca ventaja en el juego conociendo las reglas y sus dinámicas.</p> 
+      </div> 
+      <div class="para-ti-item2 fade-in">
+        <span class="para-ti-icon2">♔</span>
+        <p class="para-ti-p2">Resuelve el impedimento que frena tu avance y corona en la octava fila.</p> 
+      </div>
+      <div class="cta-container" style= "padding-top: 6rem;">
+        <a href="#estrategia" class="btn-secondary" style="box-shadow: none;">Conoce la Estrategia</a>
+      </div>
     </div>
 
-  </div>
 </section>
 
 
@@ -2139,7 +2180,7 @@
               <div class="texto-extremo">ALTA VIBRACIÓN <br> ..NEUTRO, PAZ, AMOR</div>
             </div>
               
-            <div class="cta-container">
+            <div class="cta-container" style="padding-bottom: 3rem;">
               <a href="#soluciones" class="btn-triple" style="box-shadow: none;">Elige tu Estrategia</a>
             </div>    
           </div>
@@ -2332,28 +2373,40 @@
             <span class="section-label" style="margin-bottom: 0;">Sobre Johely Franco</span>
             <h2 class="autor-headline"><br/>La Ingeniería del Ser</h2>
             
-            <p class="philx-body">
-              Ingeniero de profesión. <br>
-              Autora de <em>El Ajedrez Interior</em>. <br>
-              Fundadora de CounterZeroSpace.
-            </p>
+            <div class="auto-2col">
+              <div>
+                <p class="philx-body">
+                Ingeniero de profesión. <br>
+                Autora de <em>El Ajedrez Interior</em>. <br>
+                Fundadora de CounterZeroSpace.
+                </p>   
+                <p p class="philx-body" style="font-style: italic; font-size: 0.9rem;">-Somos nodos de una Gran Conciencia <br>en esta invisible red.</p> 
+              </div>
+              <div class="oculto-a">
+                <img src="johely-tablero-ajedrez-movil.png" alt="Johely Franco, autora de El Ajedrez Interior, junto a un tablero de ajedrez"/> 
+              </div>
+            </div>
+
             <p class="philx-body" style="padding-top: 0.5rem;">
-              Comprendí el mundo binario y la lógica desde muy pequeña. Mi trasfondo en ingeniería, combinado con el estudio del campo cuántico y la ciencia, me impulsó a descifrar la estructura lógica de la conciencia. Hoy comparto esta visión en CounterZeroSpace: un mapa de autogobierno diseñado para que cada persona recupere la dirección de su vida.
+              Comprendí el mundo binario y la lógica desde muy pequeña. Mi trasfondo en ingeniería, combinado con la ciberseguridad y el estudio del campo cuántico, me impulsó a descifrar patrones y la estructura lógica de la conciencia. Hoy comparto esta visión en CounterZeroSpace: un mapa de autogobierno diseñado para que cada persona recupere la dirección de su vida.
             </p>
             <p class="philx-body" style="padding-top: 0.5rem;">
               Eres el jugador de tu propia partida y estás aquí para recordar cómo jugarla. Nadie más puede mover las piezas por ti. Cada movimiento consciente que elijas te devuelve a tu estado original de soberanía.
             </p>
           </div>
           
-          <div class="obtienes-right reveal" style="grid-template-columns: 1fr;">
-            <article class="image-column">
-              <img src="johely-tablero-ajedrez-movil.jpg" alt="Johely Franco, autora de El Ajedrez Interior, junto a un tablero de ajedrez"/> 
-            </article>
+          <div class="oculto-b">
+            <div class="obtienes-right reveal" style="grid-template-columns: 1fr; background: transparent;">
+              <article class="image-column-autor">
+                <img src="johely-tablero-ajedrez-movil.png"  style="border-left: 3rem solid rgba(0,255,136,0.06);border-right: 3rem solid rgba(0,255,136,0.06);"  alt="Johely Franco, autora de El Ajedrez Interior, junto a un tablero de ajedrez"/> 
+              </article>
+            </div>
           </div>
+
         </div>
       </div>
       <div class="cta-container" style="text-align: center; padding-top: 6rem;">
-        <a href="#reserva" class="btn-primary">Agendar Alineación</a>
+        <a href="#reserva" class="btn-triple" style="box-shadow: none;">Contacta a Johely</a>
       </div>
     </section> 
   </div>
@@ -2475,7 +2528,7 @@
   </div>
   
   <div class="cta-container" style="text-align: center; padding-top: 3rem; padding-bottom: 5rem;">
-    <a href="#soluciones" class="btn-secondary">Iniciar Proceso</a>
+    <a href="#soluciones" class="btn-secondary">Inicia Proceso</a>
   </div>  
 </section>
 
@@ -2497,16 +2550,17 @@
       
       <div>
         <h2 class="footer-brand-quote" style="padding-top: 1rem;">♔ Haz tu Primer Movimiento</h2>
-        <h3 class="footer-tagline">Comienza tu recorrido con <strong>El Despertar del Peón</strong>, una guía introductoria para descubrir el tablero y comprender las primeras reglas del juego.</h3>
-        <button class="ml-onclick-form btn-ghost" onclick="ml('show', 'Im92zq', true)"  onmouseover="this.style.backgroundColor='#1a1a1a'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#000000'; this.style.color='#e0e0e0';">ACCEDER A LA GUÍA
+        <h3 class="footer-tagline">Comienza tu recorrido con <strong>El Despertar del Peón</strong>, una guía introductoria a las configuraciones y reglas maestras del juego.</h3>
+        <button class="ml-onclick-form btn-ghost" onclick="ml('show', 'Im92zq', true)"  onmouseover="this.style.backgroundColor='#1a1a1a'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e0e0e0';">PREPARA TU TABLERO 
       
         </button>
       </div>
 
     </div>
-    <div class="footer-legal" style="margin-top: 2rem; text-align: left; font-size: 0.7rem; opacity: 0.6;">
-      <a href="https://counterzero.space/politica.html" style="color: var(--white-tech);padding-right: 1rem;;">Política de Privacidad </a>
+    <div class="footer-legal" style="margin-top: 2rem; text-align: left; font-size: 0.7rem; opacity: 0.6; display: flex; align-items: center; justify-content: space-between;">
+      <a href="https://counterzero.space/politica.html" style="color: var(--white-tech); ">Política de Privacidad </a>
       <a href="https://counterzero.space/condiciones.html" style="color: var(--white-tech);">Términos y Condiciones</a>
+      <a href="https://tally.so/r/D4a8qN" style="color: var(--white-tech); ">Contacto</a>
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 Johely Franco | CounterZeroSpace — Todos los derechos reservados.</p>
