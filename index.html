@@ -16,26 +16,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
-  <!-- Título de la pestaña del navegador (Esencial para Google) -->
-  <title>CounterZeroSpace | Alta Reserva Espiritual y Liderazgo Interior</title>
+  <!-- Título de la pestaña del navegador (Máximo 60 caracteres para SEO en Google) -->
+  <title>CounterZeroSpace | Liderazgo Interior Estratégico</title>
 
-  <!-- Meta etiquetas principales para Google -->
-  <meta name="description" content="El Ajedrez Interior es el mapa para el retorno al diseño original. A través de este libro y consultoría privada, se ofrece una guía pura y libre de dogmas." />
+  <!-- Meta etiquetas principales para Google (Ataca el dolor del jugador estancado) -->
+  <meta name="description" content="Descubre el método de El Ajedrez Interior. Un sistema lógico y estratégico para eliminar el caos diario, frenar las decisiones automáticas y juegues tu partida como un Maestro." />
   <meta name="robots" content="index, follow" />
 
-  <!-- Etiquetas Open Graph (Para que se vea perfecto al compartir en WhatsApp, Facebook, LinkedIn) -->
+  <!-- Etiquetas Open Graph (Lo que se lee al compartir tu enlace en WhatsApp, Facebook, LinkedIn) -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Descubre el lenguaje oculto y el ancla única. El Ajedrez Interior." />
-  <meta property="og:description" content="Comprende el tablero, tus jugadas y a ti como jugador a través del Ajedrez Interior. Una estrategia pura, libre de dogmas y codependencia" />
+  <meta property="og:title" content="Deja de reaccionar al caos y empieza a dirigir tu juego." />
+  <meta property="og:description" content="Comprende tu posición actual en el tablero, descifra tus patrones de decisión y domina tu entorno. Un mapa práctico, libre de dogmas e improvisación." />
   <meta property="og:url" content="https://counterzero.space" />
-  <meta property="og:image" content="https://counterzero.space/portada.png" /> <!-- REEMPLAZA CON LA URL DE LA IMAGEN DE LA PORTADA DE TU LIBRO O LOGO -->
+  <meta property="og:image" content="https://counterzero.space/portada.png" /> 
   <meta property="og:image:type" content="image/png" />
 
   <!-- Etiquetas para Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Descubre el lenguaje oculto y el ancla única. El Ajedrez Interior." />
-  <meta name="twitter:description" content="Comprende el tablero, tus jugadas y a ti como jugador a través del Ajedrez Interior. Sin dogmas ni codependencia." />
-  <meta name="twitter:image" content="https://counterzero.space/portada.png" />  
+  <meta name="twitter:title" content="Deja de reaccionar al caos y empieza a dirigir tu juego." />
+  <meta name="twitter:description" content="Descifra tus patrones de decisión y recupera tu posición en el tablero sin desgaste con el método de El Ajedrez Interior." />
+  <meta name="twitter:image" content="https://counterzero.space/portada.png" />
+
+
 
   <title>CounterZero Space</title>
 
@@ -553,8 +555,8 @@
 
     .diagnostico-title {
       font-family: var(--titular);
-      font-size: clamp(2.2rem, 4vw, 3.5rem);
-      font-weight: 400;
+      font-size: clamp(2.2rem, 4vw, 3.8rem);
+      font-weight: 500;
       letter-spacing: 0.05em;
       color: var(--white-tech);
       line-height: 1;
@@ -812,9 +814,37 @@
   .para-ti-item{display:flex;flex-direction:column;align-items:center;gap:1rem;background: #f2f2f2;padding: 1rem;}
   .para-ti-icon{width:70px;height:64px;border-radius:50%;border:2px solid var(--green);display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green);background: black;}
   .para-ti-item p{font-size:0.88rem;line-height:1.7;color:black;}
-  .para-ti-item2{display:flex;flex-direction:row;align-items:center;padding-bottom: 0.5rem;}
-  .para-ti-icon2{width:70px;height:70px;border-radius:50%;border:2px solid black;display:flex;align-items:center;justify-content:center;font-size:2.3rem;color:var(--green-holo);background: black; }
-  .para-ti-p2 {font-family: var(--ff-body);font-size: clamp(0.5rem, 1.8vw, 1rem);color: rgba(255, 255, 255, 0.77);text-align: justify;}
+
+ .para-ti-item2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinea verticalmente el ícono y el texto al centro */
+  justify-content: flex-start; /* Alinea todo al inicio izquierdo de forma válida */
+  padding-bottom: 0.4rem;
+  gap: 1rem; /* Crea una separación exacta y uniforme entre el ícono y el texto */
+}
+
+.para-ti-icon2 {
+  width: 40px; /* Reducido para que no empuje el texto en cajas de 360px */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: var(--green-holo);
+  background: transparent;
+  flex-shrink: 0; /* Evita que el ícono se encoja si el texto es muy largo */
+}
+
+.para-ti-p2 {
+  font-family: var(--ff-body);
+  font-size: clamp(0.8rem, 1.8vw, 1rem); /* Ajustado el mínimo para legibilidad */
+  color: rgba(255, 255, 255, 0.77);
+  text-align: left; 
+  margin: 0; /* Elimina márgenes por defecto del navegador que causan desajustes */
+}
+
+
   
   /* For Small Laptops and Large Tablets (Landscape) */
   @media (max-width: 1024px) {
@@ -830,6 +860,8 @@
       grid-template-columns: repeat(2, 1fr); /* 2 items per row, cleanly split */
       margin-top: 2rem;
     }
+
+
   }
 
 
@@ -839,6 +871,12 @@
       padding: 15rem 0;
       background: radial-gradient(ellipse at 30% 50%, var(--titanium) 0%, var(--obsidian) 65%);
     }
+
+    .s-banner {
+      padding: 15rem 0;
+      background: radial-gradient(ellipse at 30% 50%, var(--titanium) 0%, var(--obsidian) 65%);
+    }
+
     .obtienes-wrap {
       display: grid; grid-template-columns: 1fr 1.6fr; gap: 7rem; align-items: start;
     }
@@ -1011,7 +1049,7 @@
 
       .s-manifesto .image-column {display: none;}
       .autor-wrap {
-        background-image: url(autor-sentado-silla-con-ajedrez.png);
+        background-image: url(johely-tablero-ajedrez-movil.jpg);
         background-repeat: no-repeat;
         padding-top: 5rem;
         padding-bottom: 2.5rem;
@@ -1471,18 +1509,38 @@
     }
 
 
-    .img-movil { background-image: url('fondo-movil.jpg');
+
+
+
+    /* BANNERS*/
+    
+    .img-movil { 
       background-size: cover;
       background-position: center; 
-      background-image: url(tablero-completo.png);
+      background-image: url(tablero-completo-movil.png);
     }
 
+    .img-movil-banner {
+      background-size:cover;
+      background-repeat: no-repeat; 
+      background-position: center; 
+      background-image: url(el-rey-enel-tablero-movil.png);
+    }
 
     @media (min-width: 768px) {
-    .mi-seccion {
+    .img-movil {
       background-image: url(tablero-completo-desk.png);
     }
+
+    .img-movil-banner {
+      background: url(el-rey-enel-tablero-desk.png) ;
     }
+    }
+    /* END BANNERS */
+
+
+
+    
 
 
 /* ── FOOTER ── */
@@ -1706,11 +1764,11 @@
       width: 100%; margin-top: 2.5rem;
       font-family: var(--ff-display); font-size: 0.7rem; font-weight: 700;
       letter-spacing: 0.25em; text-transform: uppercase;
-      color: #050505; background: var(--green); border: none;
+      color: #050505; background: transparent; border: 1px solid black;
       padding: 1.3rem; cursor: pointer; transition: all 0.35s ease;
-      box-shadow: 0 0 30px rgba(0,255,136,0.3);
+       
     }
-    .btn-form-submit:hover { color:#050505; background: #fff; box-shadow: 0 0 50px rgba(133, 148, 141, 0.5); transform: translateY(-2px); }
+    .btn-form-submit:hover { color:#050505; background: rgb(0, 178, 116); border:none; box-shadow: 0 0 50px rgba(133, 148, 141, 0.5); transform: translateY(-2px); }
     .form-note-txt { font-family: var(--ff-mono); font-size: 0.55rem; letter-spacing: 0.18em; color: rgba(244,245,247,0.18); text-align: center; margin-top: 1.2rem; line-height: 1.7; }
     .form-success { display: none; text-align: center; padding: 3rem 0; }
     .form-success-icon { font-size: 2.5rem; color: var(--green); text-shadow: 0 0 20px var(--green); display: block; margin-bottom: 1.5rem; }
@@ -1738,7 +1796,7 @@
     height: 12px; /* Grosor delgado de la barra */
     border-radius: 6px;
     /* Degradado de rojo a azul */
-    background: linear-gradient(to right, #ff0000 0%, #a200ff 50%, #0066ff 100%);
+    background: linear-gradient(to right, #ff6f00 0%, #00a608 50%, #fbff00 100%);
   }
 
   .texto-extremo {
@@ -1830,6 +1888,12 @@
       .hero-desc {background: #0707073c;}
       .s-faq {border:0; border-top: 2rem solid  #00D97A;border-bottom: 2rem solid  #00D97A;}
       .s-diagnostico {border:0; padding-top:8rem;}
+      .hero {background-image: url(pieza-del-tablero-imagen-central.png);
+        background-repeat: no-repeat;     
+        background-position:center;
+        background-size:cover;
+       }
+      .hero-content .hero-medio {background: #36363655;}
        
       .philx-card {
       padding: 0;
@@ -1902,7 +1966,7 @@
       <article class="diagnostico-card">
         <div class="contenedor-diagnostico">
           <div class="icono-verde">📗</div>
-          <div><h3 class="diagnostico-sub">¿Sigues en la misma diagonal sabiendo que viniste para algo más?</h3></div>
+          <div><h3 class="diagnostico-sub">¿Sufres <br>la misma diagonal limitando tu potencial? </h3></div>
         </div>
       </article>
     </div>
@@ -1922,27 +1986,31 @@
       Soberanía y
       <br>Liderazgo <strong>Interior</strong>
     </h2>
-    <h3 class="hero-sub">Crea tu realidad desde la conciencia.</h3>
-    <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
-      <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio dedicado al desarrollo del Liderazgo Interior. Aquí exploramos la conciencia como una práctica de gobierno personal, responsabilidad y coherencia, para que cada persona pueda recuperar la dirección de su propia vida desde su diseño original.</p> 
-      <p class="hero-desc" style="text-align: justify;padding-top: 1.8rem;padding-bottom: 3rem;">
-      <strong style="font-weight: bold;">El Ajedrez Interior</strong> utiliza el tablero como una metáfora para comprender cómo operan nuestras decisiones, nuestros hábitos y nuestra conciencia. Desde esa perspectiva, el liderazgo deja de ser una habilidad para dirigir a otros y se convierte en la capacidad de gobernarse primero a uno mismo.
-    </p>
-    <div style="padding-bottom: 5rem;max-width:360px ;">
-      <div class="para-ti-item2 fade-in">
-        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Ordena tu realidad mediante un movimiento consciente.</p> 
-      </div>  
-      <div class="para-ti-item2 fade-in">
-        <span class="para-ti-icon2">♔</span><p class="para-ti-p2">Recupera la responsabilidad sobre tu energía y tus decisiones.</p> 
-      </div> 
-      <div class="para-ti-item2 fade-in">
-        <span class="para-ti-icon2">♔</span><p class="para-ti-p2"> Construye una estructura interior capaz de sostener claridad incluso en medio del caos.</p>
-      </div>   
+    <h3 class="hero-sub" style="margin-bottom: 4rem;">Conviértete en el Maestro de tu Tablero</h3>
+   
+    <div class="hero-medio">
+      <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
+        <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio dedicado a <strong>arquetipar jugadas</strong> que desarrollen el Liderazgo Interior. Aquí exploramos desde la conciencia, el gobierno personal, la responsabilidad y la coherencia, para que cada persona pueda recuperar el mando de su juego desde su Diseño Original.
+      </p> 
+      <p class="hero-desc" style="text-align: justify; padding-top: 1.8rem; padding-bottom: 1rem; margin-bottom: 2rem;">
+        <strong style="font-weight: bold;">El Ajedrez Interior</strong> utiliza el tablero como una metáfora para comprender cómo operan decisiones, hábitos y conciencia. Desde esta perspectiva, el juego deja de ser una distracción y se convierte en la herramienta para <strong>gobernarse asi mismo, dominar su casilla y movimientos</strong>.
+      </p>
     </div>
-
-
-    <div class="hero-ctas">
-      <a href="#estrategia" class="btn-primary">Conoce la Estrategia</a>
+    <div class="para-ti-item2 fade-in">
+      <span class="para-ti-icon2">♔</span>
+      <p class="para-ti-p2">Ordena tu juego mediante un movimiento estratégico, no del azar.</p> 
+    </div>  
+    <div class="para-ti-item2 fade-in">
+      <span class="para-ti-icon2">♔</span>
+      <p class="para-ti-p2">Recupera tu posición en el tablero con orden y sin desgaste.</p> 
+    </div> 
+    <div class="para-ti-item2 fade-in">
+      <span class="para-ti-icon2">♔</span>
+      <p class="para-ti-p2">Saca ventaja en el juego conociendo las reglas y sus dinámicas.</p> 
+    </div> 
+    <div class="para-ti-item2 fade-in">
+      <span class="para-ti-icon2">♔</span>
+      <p class="para-ti-p2">Resuelve el impedimento que frena tu avance y corona en la octava fila.</p> 
     </div>
 
   </div>
@@ -1961,7 +2029,7 @@
     </div>
 
     <div style="margin-top: 0;">
-      <p class="philx-body" style="color: black; font-size: 1rem;">Antes de mover una pieza, observa el tablero. Antes de cambiar tu realidad, recupera claridad sobre quién está dirigiendo realmente tus movimientos. El Ajedrez Interior propone un recorrido de orden, discernimiento y liderazgo personal. <strong>Un proceso libre de dogmas</strong>, diseñado para ayudarte a recuperar el gobierno de tu mundo interno y volver a operar en armonía con el diseño con el que fuiste creado.</p>
+      <p class="philx-body" style="color: black; font-size: 1rem;">Antes de mover una pieza, observa el tablero. Antes de cambiar tu realidad, recupera claridad sobre quién está dirigiendo realmente tus movimientos. El Ajedrez Interior propone un recorrido de orden, discernimiento y liderazgo personal. <strong>Un proceso libre de dogmas</strong>, diseñado para ayudarte a recuperar el gobierno de tu mundo interno y volver a operar en armonía con el Diseño con el que fuiste creado.</p>
           
       <p class="philx-body" style="color: black; font-size: 1rem;">
 
@@ -1995,11 +2063,15 @@
 </section>
 
 <!-- BANNER -->
-<section class="s-obtienes" style="background-image: url(el-rey-enel-tablero.png);" aria-label="Todo Cambia cuando cambias">
+<section class="s-banner img-movil-banner"  aria-label="Todo Cambia cuando haces una pausa">
   <div class="wrapx">
     
       <div class="obtienes-left reveal" style="text-align: right;height: 20rem;">
-        <h2 class="obtienes-headline">Todo cambia <br>cuando cambia <br>tu movimiento</h2>
+        <h2 class="obtienes-headline">Todo cambia<br> cuando haces una pausa</h2>
+        <p>Observa el tablero y la imagen sin condicionarte.</p>
+        <p>Neutraliza y lleva a 0 toda reacción.</p>
+        <p>Elije tu  proximo movimiento</p>
+        <p>con Autonomía y Control.</p>
       </div>     
       
     </div>
@@ -2035,7 +2107,7 @@
         <div class="obtiene-card">
           <span class="obtiene-icon" aria-hidden="true">⊚</span>
           <p class="obtiene-title">Soberanía</p>
-          <p class="obtiene-body">Gestionas tus estados. Comienzas a diseñar tu realidad.</p>
+          <p class="obtiene-body">Gestionas tus Estados. Comienzas a diseñar tu realidad.</p>
         </div>
       </div>
     </div>
@@ -2049,15 +2121,18 @@
       <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">El Recorrido</span>
       <h2 class="diagnostico-title" style="color: #000000;">Comienza en tu interior</h2>
     </div>
-<div>
-</div>
+
     <div style="background:rgba(255, 255, 255, 0.993)">
       <div class="diagnosticox-grid reveal"> 
         <article class="philx-card textx-column" style="padding-left:  0.8rem; padding-right:  0.8rem;">
           <div class="diagnostcox-text">
             <span class="section-label2">Sin Intermediarios</span>
-            <h3 class="philx-title" style="color: black;">Conexión Directa</h3>
-            <p class="philx-body" style="color: black; padding-bottom: 2rem;"> No existe transformación auténtica sin participación consciente. El Ajedrez Interior no pretende decirte qué pensar, qué creer o qué camino seguir. Su propósito es ayudarte a observar tu posición actual, comprender las dinámicas que gobiernan tu realidad y recuperar la capacidad de mover tu propia pieza con claridad. Cada etapa representa un cambio de estado. No un destino. Porque antes de cambiar una circunstancia, primero cambia el lugar desde el cual decides responder a ella.</p>
+            <h3 class="philx-title" style="color: black;">En Silencio</h3>
+            <p class="philx-body" style="color: black; padding-bottom: 2rem;">
+              No existe transformación auténtica sin participación consciente. El Ajedrez Interior no te dice qué camino seguir, sino que te entrena para diseñar tu propia estrategia. Todo movimiento certero nace de una pausa: un espacio de observación en silencio donde dejas de reaccionar al tablero externo para escuchar tu diseño original. 
+              <br><br>
+              A partir de ese silencio, cada etapa del recorrido representa un cambio de estado en tu conciencia, no un destino. Porque antes de cambiar una circunstancia, primero cambia el lugar desde el cual decides responder a ella.
+            </p>
             <div class="contenedor-barra">
               <div class="texto-extremo">BAJA VIBRACIÓN <br> IRA, RENCOR, CELOS..</div>
               <div class="barra-degradada"></div>
@@ -2065,7 +2140,7 @@
             </div>
               
             <div class="cta-container">
-              <a href="#soluciones" class="btn-triple" style="box-shadow: none;">Inicia Estrategia</a>
+              <a href="#soluciones" class="btn-triple" style="box-shadow: none;">Elige tu Estrategia</a>
             </div>    
           </div>
         </article>
@@ -2115,7 +2190,7 @@
 
 
 <!-- SOLUCIONES -->
-<section class="s-diagnostico" style="background: linear-gradient(135deg, #000000 0%, #292929 100%);; border:0;" id="soluciones" aria-label="Filosofía de la Estrategia">
+<section class="s-diagnostico" style="background: linear-gradient(135deg, #000000 0%, #292929 100%); border:0;" id="soluciones" aria-label="Filosofía de la Estrategia">
   <div class="wrapx">
     <div class="philosophy-header reveal">
       <span class="section-label" style="justify-content:center; margin-bottom:1.5rem; color: rgb(7, 157, 7);">Los Recursos</span>
@@ -2129,10 +2204,10 @@
             <p class="philx-label" style="text-align:left;">Automaestría</p>
             <h2 class="philx-title">Conocimiento</h2>
             <p class="philx-body">
-             <strong>Un viaje iniciático y práctico en dos formatos, diseñado para que selecciones la experiencia que te brinde mayor entrega y conexión. Esta automaestría tiene por objetivo revelarte el secreto mejor guardado para consagrarte, permitiéndote operar en el tablero y en tu realidad desde el <strong>ancla clave</strong>, convirtiéndote en soberano y artífice de tu juego en la Matrix.</strong>
+              Un proceso de autodescubrimiento en dos formatos, diseñado para profundizar a tu propio ritmo. El propósito de esta automaestría es enseñarte a operar en tu realidad desde un ancla interna inquebrantable, devolviéndote la capacidad de gobernar cada movimiento en tu tablero con total claridad.
             </p>
             <p class="philx-body" >
-              Esta obra ha sido producida por Johely Franco en co-creación con la Divinidad, y transmite una sabiduría didáctica y profunda mediante la analogía del ajedrez. Cada capítulo actúa como un módulo puente y un portal evolutivo mostrando cómo interactúan las piezas, los oponentes y las leyes universales, ofreciéndote una guía clara y sin condicionamientos para sostener tus cambios internos y reclamar el control total de tu propio cuadrante hacia la gran revelación final.
+              Esta obra, nacida desde una profunda conexión con el Orden Superior, transmite una sabiduría práctica mediante la analogía del ajedrez. Cada capítulo actúa como un módulo estratégico para comprender cómo interactúan tus decisiones, el entorno y las leyes universales, ofreciéndote un mapa claro para sostener tus cambios internos y reclamar la soberanía total de tu propio cuadrante en el tablero.
             </p>
             <p class="philx-body"></p>
             
@@ -2179,15 +2254,17 @@
             <div class="sep" aria-hidden="true" id="reserva"></div>            
             <p class="philx-label" style="text-align:left;">CONSULTORIA</p>
             <h2 class="philx-title">Retorno al Origen</h2>
-            <h3 class="philx-subtitle" style="margin-bottom: 0.5rem;font-size: 1.1rem;">Juega como un Maestro y hackea tu Ajedrez Interno</h3>
-            <p class="philx-subtitle">Duración: 60 minutos | Online</p>
+            <h3 class="philx-subtitle" style="margin-bottom: 0.5rem;font-size: 1.1rem;">Dirige tu vida con maestría desde tu Ajedrez Interior</h3>
+            <p class="philx-subtitle">Duración: 60 minutos | Sesión Online</p>
 
             <p class="philx-body">
-              Un espacio reservado de 60 minutos diseñado exclusivamente para quienes eligen acelerar su proceso, limpiar su posición en el tablero bajo el método de <strong>El Ajedrez Interno</strong>. El objetivo es volver al Origen: recordar las reglas maestras de tu diseño original y recuperar tu soberanía.
+              Un espacio reservado exclusivamente para quienes eligen acelerar su proceso y clarificar su posición actual en el tablero. El objetivo de este encuentro es volver al Origen: recordar las reglas maestras de tu Diseño Original y recuperar la soberanía absoluta sobre tu energía.
             </p>
-            <p class="philx-body" style="padding-bottom: 3rem;">Es una consultoría estratégica directa, cien por ciento orgánica y espiritual, libre de interferencias o dogmas. No constituye un espacio médico, terapéutico ni psicológico.</p>
-
-
+            <p class="philx-body" style="padding-bottom: 3rem;">
+              Esta es una mentoría estratégica directa, completamente orgánica y enfocada en tu sintonía interior, libre de interferencias o dogmas. 
+              <br><br>
+              <small style="opacity: 0.7; font-size: 0.85rem;">*Nota: Este servicio no constituye un espacio médico, terapéutico ni psicológico.*</small>
+            </p>
             <div class="cta-container" style="text-align: center; margin-bottom: 20px;">
               <button id="btn-mostrar-calendario" class="btn-secondary">Reservar Sesión</button>
             </div>           
@@ -2220,11 +2297,8 @@
 
 
 <!-- BANNER -->
-<section class="s-obtienes img-movil" aria-label="xx">
-   
-  <div class="wrapx">
-  
-  </div>
+<section class="s-obtienes img-movil"  aria-label="Frase de Empoderamiento">
+  <div class="wrapx" style="height: 12rem;"></div>
 </section>
 
 <!-- SINTESIS -->
@@ -2234,44 +2308,56 @@
 
   <div class="manifesto-content reveal" style="max-width: 900px ;">
     <h2 class="diagnostico-title opuesto" style="background: transparent;padding-bottom: 2rem;">El Ajedrez Interior </h2>
-    <p class="manifesto-text" style="color: black; font-size: 2rem ; font-family: var(--ff-title) ;">
+    <p class="manifesto-text" style="color: black; font-size: 1.3rem ; font-family: var(--ff-title) ;">
     Las Reglas del Juego y las Claves de Soberanía para tu Evolución</strong>
     </p>
     <p class="manifesto-text" style="color: black; font-size: 3rem ; padding-top:2rem;padding-bottom: 3rem;">♔♕♖♗♘♙</p>
     <div class="cta-container" style="text-align: center;">
-      <a href="#soluciones" class="btn-proceso" >Descubre la Maestría</a>
+      <a href="#soluciones" class="btn-form-submit" >Descubre la Maestría</a>
     </div>  
   </div>
       
 </section>
 
 
-<!-- MANIFESTO -->
+<!-- AUTOR -->
 <section class="s-manifesto" id="autor" aria-label="Manifiesto CounterZero">
-<div class="manifesto-lines" aria-hidden="true"></div>
-  
-  <section class="s-obtienes" aria-label="Acerca del Autor">
-    <div class="wrapx">
-      <div class="autor-wrap">
-        <div class="obtienes-left reveal">
-          <span class="section-label" margin-bottom: 0;>Sobre Johely Franco</span>
-          <h2 class="autor-headline"><br/>La Ingeniería del Ser</h2>
-          <p class="philx-body">Ingeniero de profesión. <br>Autora de El Ajedrez Interior. <br>Fundadora de CounterZeroSpace. </p>
-          <p class="philx-body" style="padding-top: 0.5rem;">Comprendí el mundo binario y la lógica desde muy pequeña. El universo virtual, el campo cuántico y la ciencia me impulsaron a descifrar los principios de la conciencia. Hoy comparto esta visión a través de CounterZeroSpace, un espacio dedicado a guiar a las personas hacia su Liderazgo Interior para que puedan avanzar desde su Diseño Original.</p>
-          <p class="philx-body" style="padding-top: 0.5rem;">Eres un jugador y estás aquí para recordar cómo jugar tu propia partida. Nadie más la puede jugar por ti. <br><br>Cada movimiento consciente que hagas te acerca a tu Diseño Original.</p>
-        </div>
-        
-        <div class="obtienes-right reveal" style="grid-template-columns: 1fr ;">
-          <article class="image-column">
-            <img src="autor-sentado-silla-con-ajedrez.png" alt="CounterZero Space"/> 
-          </article>
+  <div class="s-manifesto" id="autor" aria-label="Manifiesto CounterZero">
+    <div class="manifesto-lines" aria-hidden="true"></div>
+    
+    <section class="s-obtienes" aria-label="Acerca del Autor">
+      <div class="wrapx">
+        <div class="autor-wrap">
+          <div class="obtienes-left reveal">
+            <span class="section-label" style="margin-bottom: 0;">Sobre Johely Franco</span>
+            <h2 class="autor-headline"><br/>La Ingeniería del Ser</h2>
+            
+            <p class="philx-body">
+              Ingeniero de profesión. <br>
+              Autora de <em>El Ajedrez Interior</em>. <br>
+              Fundadora de CounterZeroSpace.
+            </p>
+            <p class="philx-body" style="padding-top: 0.5rem;">
+              Comprendí el mundo binario y la lógica desde muy pequeña. Mi trasfondo en ingeniería, combinado con el estudio del campo cuántico y la ciencia, me impulsó a descifrar la estructura lógica de la conciencia. Hoy comparto esta visión en CounterZeroSpace: un mapa de autogobierno diseñado para que cada persona recupere la dirección de su vida.
+            </p>
+            <p class="philx-body" style="padding-top: 0.5rem;">
+              Eres el jugador de tu propia partida y estás aquí para recordar cómo jugarla. Nadie más puede mover las piezas por ti. Cada movimiento consciente que elijas te devuelve a tu estado original de soberanía.
+            </p>
+          </div>
+          
+          <div class="obtienes-right reveal" style="grid-template-columns: 1fr;">
+            <article class="image-column">
+              <img src="johely-tablero-ajedrez-movil.jpg" alt="Johely Franco, autora de El Ajedrez Interior, junto a un tablero de ajedrez"/> 
+            </article>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="cta-container" style="text-align: center;padding-top: 6rem;">
-      <a href="#reserva" class="btn-primary">Agendar Alineación</a>
-    </div>
-  </section> 
+      <div class="cta-container" style="text-align: center; padding-top: 6rem;">
+        <a href="#reserva" class="btn-primary">Agendar Alineación</a>
+      </div>
+    </section> 
+  </div>
+ 
    
 </section>
 
@@ -2280,117 +2366,119 @@
 
 
 <!-- ── SECTION FAQ ── -->
-<section class="s-faq"  aria-label="Preguntas Frecuentes" id="faq">
+<!-- ── SECTION FAQ ── -->
+<section class="s-faq" aria-label="Preguntas Frecuentes" id="faq">
   <div class="wrap">
     <div class="faq-header">
       <h2 class="faq-title">Preguntas <span>Frecuentes</span></h2>
-      <!--<p class="faq-subtitle">Todo lo que necesitas saber sobre las sesiones de liderazgo estratégico y la adquisición del libro.</p>-->
     </div>
 
     <div class="faq-container" style="padding-bottom: 3rem;">
 
-      <!-- Pregunta -->
+      <!-- Pregunta 1 -->
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
           <span>¿Qué es CounterZeroSpace?</span>
           <span class="faq-icon">+</span>
         </button>
-
         <div class="faq-answer">
-          <p>Es una plataforma de acompañamiento espiritual orientada a la desprogramación mental y al retorno del diseño original. A través de la obra El Ajedrez Interior y de sesiones de consultoría privada cien por ciento orgánicas —libres de dogmas—, se ofrece establecer orden y claridad para que la persona "el jugador" <strong>ejecute su rol </strong>en la creación. Libre de interveciones y de fuentes externas distorcionadas.</p>
+          <p>Es un espacio de consultoría estratégica y entrenamiento enfocado en el desarrollo del Liderazgo Interior a través del método de <strong>El Ajedrez Interior</strong>. Nuestro objetivo es entregarte un sistema lógico y herramientas de autogobierno para que dejes de reaccionar al entorno en piloto automático, elimines interferencias y recuperes el mando absoluto de tus decisiones en tu tablero de realidad de forma directa e independiente.</p>
         </div>
       </div>
       
-      <!-- Pregunta 1 -->
+      <!-- Pregunta 2 -->
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
           <span>¿Para quién están diseñadas las sesiones de Liderazgo Interior?</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <p>Están dirigidas a todo aquel que siente que ha perdido el control estratégico de su entorno y de su propio propósito. Si sientes que eres una pieza movida por las circunstancias en lugar de ser el jugador que dirige el tablero, entonces esta Estrategia es para ti.</p>
-        </div>
-      </div>
-
-      <!-- Pregunta 2 -->
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span>¿Qué abordaremos en este encuentro de 60 minutos?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>En esta sesión realizamos una intervención directa sobre tu tablero en dos fases estratégicas:</p>
-          <ul>
-            <li><strong>Lectura del Tablero:</strong> Analizamos las dinámicas actuales para identificar interferencias sutiles y desprogramar los patrones inconscientes que operan en tu tablero.</li>
-            <li><strong>El Movimiento Maestro:</strong> Proyectamos la estrategia clave basada en tu diseño original para que dejes de operar a la inversa y consolides tu propio camino desde el Ser.</li>
-          </ul>
-          <p>El objetivo final de este encuentro es: <br><br>◎ <strong>Volver al Origen:</strong> Reconectar con tu esencia original y que te conviertas en un Jugador Maestro.<br>
-             ◎ <strong>Claridad Estratégica:</strong> Elevar tu conciencia para ver la estrategia completa del juego.<br>
-             ◎ <strong>Soberanía:</strong> Despertar tu liderazgo personal y gobernanza sobre tu tablero.</p>
-        </div>
-      </div>
-
-      <!-- Pregunta 2 -->
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span>¿Cómo se agendan y en qué formato se dictan las sesiones?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Una vez que completas la reserva de la sesión privada, te enviaremos un correo electrónico con el acceso a la pasarela de pago. El servicio es de carácter estrictamente confidencial y se imparte 100% online mediante salas de videollamada cifradas (Zoom o Google Meet).</p>
+          <p>Están dirigidas a personas decididas a dejar de ser piezas pasivas movidas por las circunstancias y las prisas del día a día. Si sientes que has perdido el control de tu entorno, que tus decisiones apuradas destruyen tus resultados o que te encuentras en un estancamiento que frena tus metas actuales, esta Estrategia es para ti.</p>
         </div>
       </div>
 
       <!-- Pregunta 3 -->
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>¿Dónde puedo adquirir el libro y en qué formatos está disponible?</span>
+          <span>¿Qué abordaremos en este encuentro de 60 minutos?</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <p>La distribución del libro se gestiona completamente a través de Amazon. Al hacer click en los enlaces de compra de nuestra web, serás redirigido de forma segura a su plataforma oficial, donde podrás adquirilo en versión impresa (Tapa blanda/dura según disponibilidad).</p>
+          <p>Realizamos un análisis directo sobre tu situación en dos fases de alta precisión:</p>
+          <ul>
+            <li><strong>Lectura del Tablero:</strong> Evaluamos tus dinámicas y hábitos actuales para identificar los patrones inconscientes que están bloqueando tus avances o generando desgaste.</li>
+            <li><strong>El Movimiento Maestro:</strong> Trazamos una estrategia clara y un nuevo mapa de juego que te permita reconfigurar tus acciones desde un eje de total claridad y orden personal.</li>
+          </ul>
+          <p>El objetivo final de este encuentro es darte:<br><br>
+             ◎ <strong>Estructura y Orden:</strong> Una posición sólida para responder al caos diario sin perder tu eje.<br>
+             ◎ <strong>Claridad Estratégica:</strong> Capacidad analítica para anticipar los movimientos de tu entorno.<br>
+             ◎ <strong>Autogobierno:</strong> El control definitivo de tu energía y de tus metas reales.</p>
         </div>
       </div>
 
       <!-- Pregunta 4 -->
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>¿Qué pasa si necesito reagendar o cancelar mi sesión?</span>
+          <span>¿Cómo se agendan y en qué formato se dictan las sesiones?</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <p>Entendemos que los imprevistos estratégicos ocurren. Puedes reagendar tu sesión sin costo adicional avisando con un mínimo de 48 horas de anticipación usando el mismo enlace del calendario privado. Las cancelaciones de última hora o inasistencias sin previo aviso no aplican para reembolso, ya que el espacio se reserva exclusivamente para ti.</p>
+          <p>Una vez que completas la reserva en nuestro calendario, recibirás un correo electrónico automático con las instrucciones y el acceso a la plataforma de pago. La sesión se maneja bajo estricta confidencialidad y se imparte 100% de forma online mediante videoconferencia privada.</p>
         </div>
       </div>
 
       <!-- Pregunta 5 -->
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
-          <span>¿Se requiere preparación previa para iniciar con la Estrategia?</span>
+          <span>¿Dónde puedo adquirir el libro y en qué formatos está disponible?</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <p>No necesitas conocimientos técnicos previos. El único requisito indispensable es la disposición absoluta para observar tu realidad actual con total honestidad y ejecutar las acciones de reconfiguración que se definan en el proceso.</p>
+          <p>La distribución oficial de la obra se gestiona a través de Amazon. Al presionar los enlaces correspondientes en nuestra sección de recursos, el sistema te redirigirá de manera segura para que puedas adquirirlo en su versión física impresa o en el formato digital disponible.</p>
         </div>
       </div>
 
       <!-- Pregunta 6 -->
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">
+          <span>¿Qué pasa si necesito reagendar o cancelar mi sesión?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Puedes reagendar tu espacio sin coste adicional notificándolo con un mínimo de 48 horas de anticipación a través del enlace que encontrarás en tu correo de confirmación. Debido a la exclusividad del tiempo reservado para tu análisis, las inasistencias o cancelaciones fuera de este plazo no aplican para reembolso.</p>
+        </div>
+      </div>
+
+      <!-- Pregunta 7 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>¿Se requiere preparación previa para iniciar con la Estrategia?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>No necesitas conocimientos técnicos ni experiencia previa. El único requisito indispensable es la disposición absoluta para observar tu realidad con total honestidad y el compromiso firme de ejecutar las acciones estratégicas que determinemos durante la sesión.</p>
+        </div>
+      </div>
+
+      <!-- Pregunta 8 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
           <span>¿Esta consultoría tiene un alcance terapéutico, médico o psicológico?</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <p>No. Esta consultoría estratégica directa y cien por ciento orgánica opera estrictamente en el plano del discernimiento sutil, espiritual y de la ingeniería interior. No constituye, no sustituye, ni reemplaza ningún tipo de tratamiento médico, clínico, psicológico o psiquiátrico. Aquí no se realizan diagnósticos de salud mental ni terapias clínicas. El propósito de este espacio seguro es ofrecerte la debida instrucción y dirección como mentor, para que detectes tus puntos de inflexión en el tablero y desmanteles el autoengaño de la Matrix. Si estás experimentando una condición de salud médica o psicológica, te recomendamos acudir con el profesional de la salud correspondiente. Este encuentro está destinado exclusivamente a jugadores soberanos que buscan ordenar su vida bajo el diseño original y en línea directa con el Padre.</p>
+          <p>No. Esta es una consultoría de enfoque estrictamente estratégico, de autogobierno y de ingeniería de toma de decisiones. No constituye, sustituye ni reemplaza ningún tipo de tratamiento médico, clínico, psicológico o psiquiátrico, ni se realizan en ella diagnósticos de salud mental. Si estás experimentando una condición de salud clínica o psicológica, te recomendamos acudir con el profesional certificado correspondiente. Este encuentro está destinado exclusivamente a personas que buscan asumir la responsabilidad absoluta de sus resultados y ordenar las reglas de su vida con criterio propio.</p>
         </div>
       </div>
 
     </div>
   </div>
-  <div class="cta-container" style="text-align: center;padding-top: 3rem;padding-bottom: 5rem;">
-      <a href="#soluciones" class="btn-secondary">Iniciar Proceso</a>
-    </div>  
+  
+  <div class="cta-container" style="text-align: center; padding-top: 3rem; padding-bottom: 5rem;">
+    <a href="#soluciones" class="btn-secondary">Iniciar Proceso</a>
+  </div>  
 </section>
+
 
 
 
