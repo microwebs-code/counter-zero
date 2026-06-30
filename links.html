@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
+
+
+<!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2471046');
+  </script>
+<!-- End MailerLite Universal -->
+
+
+
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -107,7 +122,7 @@
     }
 
     .brand-logo {
-      height: 90px;
+      height: 150px;
       width: auto;
       filter: drop-shadow(0 0 12px rgba(1,239,128,0.35)) brightness(1.05);
       margin-bottom: 1.2rem;
@@ -115,7 +130,7 @@
 
     .brand-tag {
       font-family: var(--ff-mono);
-      font-size: 0.52rem;
+      font-size: 0.7rem;
       letter-spacing: 0.5em;
       text-transform: uppercase;
       color: var(--green);
@@ -193,7 +208,7 @@
 
     .link-num {
       font-family: var(--ff-mono);
-      font-size: 0.5rem;
+      font-size: 1rem;
       letter-spacing: 0.2em;
       color: var(--green);
       opacity: 0.55;
@@ -216,7 +231,7 @@
 
     .link-label {
       font-family: var(--ff-mono);
-      font-size: 0.5rem;
+      font-size: 0.7rem;
       letter-spacing: 0.4em;
       text-transform: uppercase;
       color: var(--green);
@@ -236,17 +251,17 @@
     }
 
     .link-sub {
-      font-family: var(--ff-body);
-      font-size: 0.72rem;
+      font-family: var(--ff-display);
+      font-size: 0.8rem;
       font-weight: 300;
-      color: var(--muted);
+      color: rgb(199, 199, 199);
       margin-top: 0.25rem;
       line-height: 1.4;
     }
 
     .link-arrow {
       font-size: 1rem;
-      color: rgba(244,245,247,0.2);
+      color: rgba(248, 248, 248, 0.314);
       transition: all 0.3s ease;
       flex-shrink: 0;
       font-family: var(--ff-mono);
@@ -321,13 +336,35 @@
   <div class="brand-area">
     <img src="logo-counter-zero-blanco-esp.png" alt="CounterZero Space" class="brand-logo"/>
     <p class="brand-tag">Maestría · Liderazgo · Conciencia</p>
-    <p class="brand-headline">CounterZero Space</p>
+    <p class="brand-headline">Counter·Zero·Space</p>
   </div>
 
   <div class="sep" aria-hidden="true"></div>
 
+  <img src="johely-banner-links.jpg" alt="Johely Franco imagen" class="brand-logo" style="border-radius: 15px; border: 1px solid rgba(0, 0, 0, 0)"/>
+
   <!-- LINKS -->
   <nav class="links-list" aria-label="Enlaces principales">
+
+
+    <!-- Opción 0: Guia del Peon -->
+    <a
+      href="javascript:void(0);"
+      class="link-item ml-onclick-form"
+      onclick="ml('show', 'Im92zq', true)"
+      onmouseover="this.style.backgroundColor='#1a1a1a'; this.style.color='#ffffff';" 
+      onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e0e0e0';"
+      aria-label="Descargar Guía del Peón"
+    >
+      <span class="link-num">00</span>
+      <div class="link-dot" aria-hidden="true"></div>
+      <div class="link-text">
+        <span class="link-label">Guía Exclusiva</span>
+        <span class="link-title">🏆 PREPARA TU TABLERO</span><br>
+        <span class="link-sub">Descarga GRATIS.</span>
+      </div>
+      <span class="link-arrow" aria-hidden="true">›</span>
+    </a>
 
     <!-- Opción 1: Comprar libro -->
     <a
@@ -341,7 +378,7 @@
       <div class="link-dot" aria-hidden="true"></div>
       <div class="link-text">
         <span class="link-label">Amazon</span>
-        <span class="link-title">El Ajedrez Interior</span><br>
+        <span class="link-title">👑 El Ajedrez Interior</span><br>
         <span class="link-sub">Formato Impreso</span>
       </div>
       <span class="link-arrow" aria-hidden="true">›</span>
