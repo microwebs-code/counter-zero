@@ -268,7 +268,7 @@
       font-family: var(--ff-display);
       font-weight: 300;
       font-size: 1.3rem;
-      color: rgb(63, 170, 108);
+      color: rgb(96, 248, 160);
       max-width: 600px;
       line-height: 1.75;
       text-transform: uppercase;
@@ -1532,7 +1532,7 @@
     }
 
     .img-movil-banner {
-      background-size:cover;
+      background-size:contain;
       background-repeat: no-repeat; 
       background-position: center; 
       background-image: url(el-rey-enel-tablero-movil.png);
@@ -1546,6 +1546,7 @@
     .img-movil-banner {
       background: url(el-rey-enel-tablero-desk.png) ;
     }
+
     }
     /* END BANNERS */
 
@@ -1822,7 +1823,23 @@
       text-align: center;
       gap: 5px;
     }
-  }
+
+    .s-banner  {
+      padding:8rem  0rem 0rem 0rem;
+ 
+    }
+
+    .obtienes-headline {
+      font-size: 1.3rem ;
+    
+    }
+
+    .s-banner .obtienes-left p {
+      font-size: 0.8rem ;
+      font-weight: 300;
+    }
+
+}
 
 
 
@@ -1927,8 +1944,9 @@
       .s-diagnostico {border:0; padding-top:8rem;}
       .hero {background-image: url(pieza-del-tablero-imagen-central.png);
         background-repeat: no-repeat;     
-        background-position:center;
-        background-size:cover;
+        background-position:top;
+        background-size:contain;
+
        }
       .hero-content .hero-medio {background: #36363655;}
        
@@ -1937,6 +1955,15 @@
       padding-bottom: 3rem;
       position: relative;
       transition: all 0.4s ease;
+      
+    }
+
+    .hero .hero-headline {
+      font-size:2.3rem ;
+    }
+
+    .hero .hero-sub {
+      font-size: 1.2rem ;
     }
 
     .diagnostcox-text {
@@ -2023,17 +2050,17 @@
       Soberanía y
       <br>Liderazgo <strong>Interior</strong>
     </h2>
-    <h3 class="hero-sub" style="margin-bottom: 4rem;">Conviértete en el Maestro de tu Tablero</h3>
+    <h3 class="hero-sub" style="margin-bottom: 4rem;">Gana Maestría en tu Tablero</h3>
    
     <div class="hero-medio">
       <p class="hero-desc" style="text-align: justify; padding-top: 1rem;">
-        <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio dedicado a <strong>arquetipar movidas</strong> que desarrollen el Liderazgo Interior. Aquí exploramos desde la conciencia, el gobierno personal, la responsabilidad y la coherencia, para que cada persona pueda recuperar el mando de su jugada desde su Diseño Original.
+        <strong style="font-weight: bold;">CounterZeroSpace</strong> es un espacio dedicado a <strong>arquetipar movimientos</strong> que desarrollen el Liderazgo Interior. Aquí exploramos la conciencia, el gobierno personal, la responsabilidad y la coherencia, para que cada persona pueda recuperar el mando de su <strong style="font-weight: bold;">Diseño Original</strong>.
       </p> 
-      <p class="hero-desc" style="text-align: justify; padding-top: 1.8rem; padding-bottom: 1rem; margin-bottom: 2rem;">
-        <strong style="font-weight: bold;">El Ajedrez Interior</strong> utiliza el tablero como una metáfora para comprender cómo operan decisiones, hábitos y conciencia. Desde esta perspectiva, el juego, tu realidad,  deja de ser una distracción y se convierte en la herramienta para <strong>gobernarse asi mismo, dominar las casilla y movimientos</strong>.
+      <p class="hero-desc" style="text-align: justify; padding-top: 1.8rem; padding-bottom: 1rem; margin-bottom: 0.5rem;">
+        <strong style="font-weight: bold;">El Ajedrez Interior</strong> utiliza el tablero como una metáfora para comprender cómo operan las decisiones, los hábitos y la conciencia. Desde esta perspectiva, el juego es tu realidad, y usas la <strong style="font-weight: bold;">simbología</strong> para convertirlo en una herramienta de <strong style="font-weight:bold;">conocimiento</strong> y estrategia, con el fin de dominar las casillas y tus movimientos.
       </p>
     </div>
-    <div>
+    <div style="padding-top: 2rem;">
       <div class="para-ti-item2 fade-in">
         <span class="para-ti-icon2">♔</span>
         <p class="para-ti-p2">Ordena tu juego mediante un movimiento estratégico, no del azar.</p> 
@@ -2050,9 +2077,13 @@
         <span class="para-ti-icon2">♔</span>
         <p class="para-ti-p2">Resuelve el impedimento que frena tu avance y corona en la octava fila.</p> 
       </div>
-      <div class="cta-container" style= "padding-top: 6rem;">
-        <a href="#estrategia" class="btn-secondary" style="box-shadow: none;">Conoce la Estrategia</a>
+    
+
+      <div class="cta-container hero-desc" style="padding-top: 6rem; display: flex; justify-content: center;">
+       <a href="#estrategia" class="btn-secondary" style="box-shadow: none;">Conoce la Estrategia</a>
       </div>
+
+      <div class="hero-desc fade-in" style="opacity: 0.7; font-size: 0.85rem; padding-top: 4rem;"><p  style="text-align: justify;">**Nota: <strong>La vida no es</strong> un juego de entretenimiento; tiene consecuencias reales. Utilizamos este término estrictamente en su sentido técnico y dinámico: el "play", la jugada y la ejecución. Es una analogía estratégica para entender que cada movimiento que realizas genera un resultado o una consecuencia directa.* *</p></div>
     </div>
 
 </section>
@@ -2070,7 +2101,7 @@
     </div>
 
     <div style="margin-top: 0;">
-      <p class="philx-body" style="color: black; font-size: 1rem;">Antes de mover una pieza, observa el tablero. Antes de cambiar tu realidad, recupera claridad sobre quién está dirigiendo realmente tus movimientos. El Ajedrez Interior propone un recorrido de orden, discernimiento y liderazgo personal. <strong>Un proceso libre de dogmas</strong>, diseñado para ayudarte a recuperar el gobierno de tu mundo interno y volver a operar en armonía con el Diseño con el que fuiste creado.</p>
+      <p class="philx-body" style="color: black; font-size: 1rem;">Antes de mover una pieza, observa el tablero. Antes de cambiar tu realidad, recupera claridad sobre quién está dirigiendo realmente tus movimientos. El Ajedrez Interior propone un recorrido de orden, discernimiento y liderazgo personal. <strong style="font-weight: bold">Un proceso libre de dogmas</strong>, diseñado para ayudarte a recuperar el gobierno de tu mundo interno y volver a operar en armonía con el Diseño con el que fuiste creado.</p>
           
       <p class="philx-body" style="color: black; font-size: 1rem;">
 
@@ -2093,7 +2124,7 @@
         </div>
       </div>
 
-      <p class="philx-body" style="color: black; font-size: 1rem; margin-top: 1.5rem;padding-bottom: 3rem;">No necesitas incorporar más información. Solo necesitas <strong>volver al diseño</strong> con el que siempre fuiste creado. Las herramientas de El Ajedrez Interior nacen de un recorrido real y de una comprensión profunda sobre la naturaleza del liderazgo interior. No buscan que dependas de un mentor, sino ayudarte a recordar la inteligencia con la que fuiste diseñado para caminar con <strong>claridad, discernimiento y responsabilidad</strong> . La  maestría consistirá en <strong>aprender a conectarte con la Fuente sin intermediarios y bajar la antropia interior volviendo al orden en el que fuiste creado</strong>.
+      <p class="philx-body" style="color: black; font-size: 1rem; margin-top: 1.5rem;padding-bottom: 3rem;">No necesitas incorporar más información. Solo necesitas <strong style="font-weight: bold">volver al Diseño Oiginal</strong> con el que fuiste creado desde un principio. Las herramientas de El Ajedrez Interior nacen de un recorrido real y de una comprensión profunda sobre la naturaleza del Liderazgo Interior. No buscan que dependas de un mentor, sino ayudarte a recordar la inteligencia con la que fuiste diseñado para caminar con <strong style="font-weight: bold">claridad, discernimiento y responsabilidad</strong> . La  maestría consistirá en <strong style="font-weight: bold">aprender a conectarte Internamente sin intermediarios y bajar la antropia interior volviendo al orden en el que fuiste creado</strong>.
       </p>
       <div class="cta-container">
         <a href="#alineacion" class="btn-triple" style="box-shadow: none; ">Inicia recorrido</a>
@@ -2109,10 +2140,8 @@
     
       <div class="obtienes-left reveal" style="text-align: right;height: 20rem;">
         <h2 class="obtienes-headline">Todo cambia<br> cuando haces una pausa</h2>
-        <p>Observa el tablero y la imagen sin condicionarte.</p>
-        <p>Neutraliza y lleva a 0 toda reacción.</p>
         <p>Elije tu  proximo movimiento</p>
-        <p>con Autonomía y Control.</p>
+        <p>con Armonía y Control.</p>
       </div>     
       
     </div>
@@ -2181,7 +2210,7 @@
             </div>
               
             <div class="cta-container" style="padding-bottom: 3rem;">
-              <a href="#soluciones" class="btn-triple" style="box-shadow: none;">Elige tu Estrategia</a>
+              <a href="#soluciones" class="btn-triple" style="box-shadow: none;">Elige Estrategia</a>
             </div>    
           </div>
         </article>
@@ -2370,17 +2399,17 @@
       <div class="wrapx">
         <div class="autor-wrap">
           <div class="obtienes-left reveal">
-            <span class="section-label" style="margin-bottom: 0;">Sobre Johely Franco</span>
+            <span class="section-label" style="margin-bottom: 0;">Sobre Johely</span>
             <h2 class="autor-headline"><br/>La Ingeniería del Ser</h2>
             
             <div class="auto-2col">
-              <div>
+              <div style="text-align: left;">
                 <p class="philx-body">
                 Ingeniero de profesión. <br>
                 Autora de <em>El Ajedrez Interior</em>. <br>
                 Fundadora de CounterZeroSpace.
                 </p>   
-                <p p class="philx-body" style="font-style: italic; font-size: 0.9rem;">-Somos nodos de una Gran Conciencia <br>en esta invisible red.</p> 
+                <p p class="philx-body" style="font-style: italic; font-size: 0.9rem;">-Somos nodos de una Gran Conciencia <br>que habita en una invisible red.</p> 
               </div>
               <div class="oculto-a">
                 <img src="johely-tablero-ajedrez-movil.png" alt="Johely Franco, autora de El Ajedrez Interior, junto a un tablero de ajedrez"/> 
@@ -2388,10 +2417,10 @@
             </div>
 
             <p class="philx-body" style="padding-top: 0.5rem;">
-              Comprendí el mundo binario y la lógica desde muy pequeña. Mi trasfondo en ingeniería, combinado con la ciberseguridad y el estudio del campo cuántico, me impulsó a descifrar patrones y la estructura lógica de la conciencia. Hoy comparto esta visión en CounterZeroSpace: un mapa de autogobierno diseñado para que cada persona recupere la dirección de su vida.
+              Comprendí el mundo binario y la lógica desde muy pequeña. Mi trasfondo en ingeniería, combinado con la ciberseguridad y el estudio del campo cuántico, me impulsó a descifrar patrones y la estructura lógica de la conciencia. Hoy comparto esta visión en CounterZeroSpace: un mapa de autogobierno diseñado para que cada persona recupere la dirección de su Origen.
             </p>
             <p class="philx-body" style="padding-top: 0.5rem;">
-              Eres el jugador de tu propia partida y estás aquí para recordar cómo jugarla. Nadie más puede mover las piezas por ti. Cada movimiento consciente que elijas te devuelve a tu estado original de soberanía.
+              Eres el jugador de tu propia partida y estás aquí para recordar cómo jugarla. Nadie más puede mover las piezas por ti. <strong style="font-weight: bold;"> Cada movimiento consciente que elijas te devuelve a tu estado Original de Soberanía</strong>.
             </p>
           </div>
           
