@@ -1,0 +1,19 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--  Página principal  -->
+ <url>
+  <loc>https://counterzero.space/</loc>
+  <lastmod>2026-06-14T18:00:11+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://counterzero.space/politica</loc>
+  <lastmod>2026-06-14T18:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://counterzero.space/condiciones</loc>
+  <lastmod>2026-06-14T18:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+</urlset>
