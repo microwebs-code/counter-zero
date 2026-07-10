@@ -491,7 +491,7 @@
       display: block;
       margin-top: 50px;
       font-family: var(--ff-body);
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: rgba(222, 232, 222, 0.839);
       animation: subtitleFade 4.8s ease forwards;
       font-weight: 300;
@@ -592,12 +592,60 @@
       margin-bottom: 1rem;
     }
 
+    .prisma-sub{
+      font-family: var(--ff-body);
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: var(--white-tech);
+      margin-bottom: 1rem;
+      
+    }
+
     .diagnostico-card {
       background: radial-gradient(ellipse at 50% 0%, var(--titanium) 0%, var(--carbon) 100%);
       padding: 3.5rem 1.5rem;
       position: relative;
       transition: all 0.4s ease;
     }
+
+    .prisma-card {
+      background: radial-gradient(ellipse at 50% 0%, var(--titanium) 0%, var(--carbon) 100%);
+      padding: 3.5rem 1.5rem;
+      position: relative;
+      transition: all 0.4s ease;
+      text-align: left;
+    }
+
+          .contenido-card {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+          }
+
+          .lista-filosofia {
+            list-style: none; /* Quita los puntos negros por defecto */
+            padding: 0;
+            margin: 0;
+          }
+
+          .lista-filosofia li {
+            position: relative;
+            padding-left: 15px;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            color: #c3c3c3; /* Ajusta al color de tu fuente */
+          }
+
+          /* Viñeta sutil personalizada */
+          .lista-filosofia li::before {
+            content: "•"; 
+            color: #4CAF50; /* Usa el mismo tono de tu icono-verde */
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+          }
+
 
     .diagnostico-grid {
       display: grid;
@@ -2241,13 +2289,64 @@
 <section class="s-banner" style="padding: 8rem 0;" aria-label="Arquetipo Interno Prisma cuantico">
   <div class="wrapx">
     <div class="philosophy-header reveal">
-      <span class="section-label" style="justify-content:center;color: rgb(7, 157, 7);">geometría sagrada holográfica</span>
+      <span class="section-label" style="justify-content:center;color: rgb(7, 157, 7);">Geometría Sagrada Holográfica</span>
       <h2 class="diagnostico-title" style="color: #ffffff;">El Prisma Original</h2>
       <h3 style="font-family:var(--ff-body);font-weight: 300;padding-bottom: 6rem;padding-top: 1rem;color: #b8b8b8;">Un Ancla enlace de Alta Tecnología</h3>
       <img src="prisma.png"  class="img-prisma"  alt="Arquetipo Interno Prisma cuantico" /> 
       <p style="padding-top: 5rem; text-transform: uppercase; letter-spacing: 0.3rem;">Una Extensión fractal y holográfica de la unidad</p>
     </div>
-     
+
+    <div class="philosophy-header reveal">
+      <div class="philosophy-grid reveal">
+        
+        <!-- Columna 1: Naturaleza del Prisma -->
+        <article class="prisma-card">
+          <div class="contenedor-diagnostico">
+            <div class="icono-verde"></div>
+            <div class="contenido-card">
+              <h3 class="prisma-sub">Canal Universal</h3>
+              <ul class="lista-filosofia">
+                <li>Alineación directa con La Fuente</li>
+                <li>Estructura de Orden Superior</li>
+                <li>Geometría de origen Sagrado</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Columna 2: El Proceso Cósmico (Acción Profunda) -->
+        <article class="prisma-card">
+          <div class="contenedor-diagnostico">
+            <div class="icono-verde"></div>
+            <div class="contenido-card">
+              <h3 class="prisma-sub">Mecánica Sagrada</h3>
+              <ul class="lista-filosofia">
+                <li>Absorbe la frecuencia de tu palabra</li>
+                <li>Registra y codifica tu información</li>
+                <li>Integra, procesa y renderiza.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Columna 3: El Impacto Metafísico -->
+        <article class="prisma-card">
+          <div class="contenedor-diagnostico">
+            <div class="icono-verde"></div>
+            <div class="contenido-card">
+              <h3 class="prisma-sub">Potencia y Evolución</h3>
+              <ul class="lista-filosofia">
+                <li>Sana los bienes interiores</li>
+                <li>Transforma la estructura sutil</li>
+                <li>Expande al máximo potencial</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+   </div>
+    
   </div>
 </section>
 
@@ -2484,7 +2583,7 @@
             </div>
 
             <p class="philx-body" style="padding-top: 0.5rem;">
-              Comprendí el mundo binario y la lógica desde muy pequeña. Mi trasfondo en ingeniería, combinado con la ciberseguridad y el estudio del campo cuántico, me impulsó a descifrar patrones y la estructura lógica de la conciencia. Hoy comparto esta visión en CounterZeroSpace: un mapa de autogobierno diseñado para que cada persona recupere la dirección de su Origen.
+              Comprendí el mundo binario y la lógica desde muy temprana edad. Mi trasfondo en ingeniería, combinado con la ciberseguridad y el estudio del campo cuántico, me impulsó a descifrar patrones y la estructura lógica de la conciencia. Hoy comparto esta visión en CounterZeroSpace: un mapa de autogobierno diseñado para que cada persona recupere la dirección de su Origen.
             </p>
             <p class="philx-body" style="padding-top: 0.5rem;">
               Eres el jugador de tu propia partida y estás aquí para recordar cómo jugarla. Nadie más puede mover las piezas por ti. <strong style="font-weight: bold;"> Cada movimiento consciente que elijas te devuelve a tu estado Original de Soberanía</strong>.
