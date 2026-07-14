@@ -141,7 +141,7 @@
       overflow: hidden;
       background-image: url(/pieza-del-tablero-imagen-central.png);
       background-repeat: no-repeat;     
-      background-position: 280% center; 
+      background-position: 280% top; 
       background-size: 92% ;
       border-top: 1px solid rgb(30, 30, 30);
     }
@@ -435,7 +435,6 @@
 
     #subtitle-line3 {
       display: block;
-      margin-top: 50px;
       font-family: var(--ff-body);
       font-size: 1.1rem;
       color: rgba(222, 232, 222, 0.839);
